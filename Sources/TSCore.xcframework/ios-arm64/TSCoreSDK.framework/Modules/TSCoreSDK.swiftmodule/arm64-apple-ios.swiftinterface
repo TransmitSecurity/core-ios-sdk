@@ -123,6 +123,7 @@ public enum TSLogLevel : Swift.Int, Swift.CaseIterable {
   case info
   case warning
   case error
+  case noLogs
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [TSCoreSDK.TSLogLevel]
   public typealias RawValue = Swift.Int

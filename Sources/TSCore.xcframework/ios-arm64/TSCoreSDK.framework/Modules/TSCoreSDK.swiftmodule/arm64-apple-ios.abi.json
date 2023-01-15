@@ -2198,6 +2198,43 @@
             "moduleName": "TSCoreSDK"
           },
           {
+            "kind": "Var",
+            "name": "noLogs",
+            "printedName": "noLogs",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TSCoreSDK.TSLogLevel.Type) -> TSCoreSDK.TSLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLogLevel",
+                    "printedName": "TSCoreSDK.TSLogLevel",
+                    "usr": "s:9TSCoreSDK10TSLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TSCoreSDK.TSLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSLogLevel",
+                        "printedName": "TSCoreSDK.TSLogLevel",
+                        "usr": "s:9TSCoreSDK10TSLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9TSCoreSDK10TSLogLevelO6noLogsyA2CmF",
+            "mangledName": "$s9TSCoreSDK10TSLogLevelO6noLogsyA2CmF",
+            "moduleName": "TSCoreSDK"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -7368,21 +7405,21 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 1427,
+      "offset": 1459,
       "length": 55,
       "value": "\"Core data not encrypted \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 1481,
+      "offset": 1513,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 1696,
+      "offset": 1728,
       "length": 6,
       "value": "\"momd\""
     },
@@ -7522,37 +7559,9 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
-      "offset": 253,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 274,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 295,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 316,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 337,
-      "length": 1,
-      "value": "5"
+      "offset": 360,
+      "length": 4,
+      "value": "9999"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
@@ -7592,28 +7601,77 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1230,
+      "offset": 360,
+      "length": 4,
+      "value": "9999"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 253,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 274,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 295,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 316,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 337,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 360,
+      "length": 4,
+      "value": "9999"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1350,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1280,
+      "offset": 1400,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 4653,
+      "offset": 4774,
       "length": 32,
       "value": "\"com.TransmitSecurity.TSCoreSDK\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 4697,
+      "offset": 4818,
       "length": 9,
       "value": "\"default\""
     },
