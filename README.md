@@ -1,1 +1,3 @@
-# core-ios-sdk
+# TSCore
+
+A description of this package.
