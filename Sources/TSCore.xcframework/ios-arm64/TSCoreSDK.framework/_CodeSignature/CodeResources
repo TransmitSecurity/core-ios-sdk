@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yn9wGkguS2i6aJHEzvsrtk6DP7o=
+		gw1mKXdWApEpC51X7/q1rCYZdq8=
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		gdyPLJcv9YJRjzOQS9De/eMFgPo=
+		Jj10SpgPKyNti3xn8Owe7jG5Ork=
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		lI44k/B2+2moFWaug290KEZOC94=
+		yRhyKQ0GwftkH7gQ3fFuHejeACQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,7 +69,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ha0C1vNN2X/wjyY+AuugXnhMe0wziI6b0G7qhDo4/HM=
+			f5m47IYfXMuam4d0ZU5LYbdmE6nqc0Ka1PJfXq76YTE=
 			</data>
 		</dict>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RiJGq1Of7AkZT+CP7qa8F+QVAf6wHipDKLI896xbm8M=
+			nAegS0XG3ayZM3s3UH1wKm4snmWEh0TSWlJnImvdKA4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
