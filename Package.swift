@@ -3,20 +3,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "TSCoreSDK",
+    name: "TSCore",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "TSCore",
-            targets: ["TSCore"]),
+            name: "TSCoreSDK",
+            targets: ["TSCoreSDK"]),
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: "TSCore",
-            path: "Sources/TSCore.xcframework"
+            name: "TSCoreSDK",
+            path: "Sources/TSCoreSDK.xcframework"
         )
     ]
 )

@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
     #  summary should be tweet-length, and the description more in depth.
     #
   
-    spec.name         = "TSCore"
-    spec.version      = "1.0.5"
+    spec.name         = "TSCoreSDK"
+    spec.version      = "1.0.6"
     spec.summary      = "Internal service"
     spec.homepage     = "https://github.com/TransmitSecurity/core-ios-sdk"
   
@@ -95,7 +95,7 @@ Pod::Spec.new do |spec|
     #spec.exclude_files = "Classes/Exclude"
     #spec.public_header_files = "Classes/**/*.h"
   
-    spec.vendored_frameworks = "Sources/TSCore.xcframework*"
+    spec.vendored_frameworks = "Sources/TSCoreSDK.xcframework*"
   
   
     # ----- Resources ------------------------------------------------ #
