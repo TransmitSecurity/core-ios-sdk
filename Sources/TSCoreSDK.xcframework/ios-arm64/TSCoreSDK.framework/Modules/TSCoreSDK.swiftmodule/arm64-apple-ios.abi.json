@@ -12160,8 +12160,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "ts_base64urlToBase64",
-            "printedName": "ts_base64urlToBase64()",
+            "name": "base64urlToBase64",
+            "printedName": "base64urlToBase64()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12171,16 +12171,16 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:SS9TSCoreSDKE20ts_base64urlToBase64SSyF",
-            "mangledName": "$sSS9TSCoreSDKE20ts_base64urlToBase64SSyF",
+            "usr": "s:SS9TSCoreSDKE17base64urlToBase64SSyF",
+            "mangledName": "$sSS9TSCoreSDKE17base64urlToBase64SSyF",
             "moduleName": "TSCoreSDK",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "ts_base64ToBase64url",
-            "printedName": "ts_base64ToBase64url()",
+            "name": "base64ToBase64url",
+            "printedName": "base64ToBase64url()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12190,8 +12190,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:SS9TSCoreSDKE20ts_base64ToBase64urlSSyF",
-            "mangledName": "$sSS9TSCoreSDKE20ts_base64ToBase64urlSSyF",
+            "usr": "s:SS9TSCoreSDKE17base64ToBase64urlSSyF",
+            "mangledName": "$sSS9TSCoreSDKE17base64ToBase64urlSSyF",
             "moduleName": "TSCoreSDK",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"

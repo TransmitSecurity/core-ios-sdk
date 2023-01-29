@@ -61,8 +61,8 @@ public protocol ITSModuleInfo {
   @objc deinit
 }
 extension Swift.String {
-  public func ts_base64urlToBase64() -> Swift.String
-  public func ts_base64ToBase64url() -> Swift.String
+  public func base64urlToBase64() -> Swift.String
+  public func base64ToBase64url() -> Swift.String
 }
 @_hasMissingDesignatedInitializers public class TSKeychain {
   public static let shared: TSCoreSDK.TSKeychain
