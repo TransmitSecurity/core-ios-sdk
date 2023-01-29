@@ -282,6 +282,29 @@ SWIFT_CLASS("_TtC9TSCoreSDK6TSCore")
 @end
 
 
+
+SWIFT_CLASS("_TtC9TSCoreSDK8TSCrypto")
+@interface TSCrypto : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC9TSCoreSDK11TSECService")
+@interface TSECService : TSCrypto
+@end
+
+
+SWIFT_CLASS("_TtC9TSCoreSDK12TSRSAService")
+@interface TSRSAService : TSCrypto
+@end
+
+
+SWIFT_CLASS("_TtC9TSCoreSDK15TSSecurityUtils")
+@interface TSSecurityUtils : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #endif
 #if defined(__cplusplus)
 #endif
