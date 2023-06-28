@@ -3568,6 +3568,230 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSConstants",
+        "printedName": "TSConstants",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Keys",
+            "printedName": "Keys",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "terminateByUser",
+                "printedName": "terminateByUser",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9TSCoreSDK11TSConstantsV4KeysV15terminateByUserSSvpZ",
+                "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV15terminateByUserSSvpZ",
+                "moduleName": "TSCoreSDK",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9TSCoreSDK11TSConstantsV4KeysV15terminateByUserSSvgZ",
+                    "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV15terminateByUserSSvgZ",
+                    "moduleName": "TSCoreSDK",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "clientId",
+                "printedName": "clientId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9TSCoreSDK11TSConstantsV4KeysV8clientIdSSvpZ",
+                "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV8clientIdSSvpZ",
+                "moduleName": "TSCoreSDK",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9TSCoreSDK11TSConstantsV4KeysV8clientIdSSvgZ",
+                    "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV8clientIdSSvgZ",
+                    "moduleName": "TSCoreSDK",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "moduleName",
+                "printedName": "moduleName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9TSCoreSDK11TSConstantsV4KeysV10moduleNameSSvpZ",
+                "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV10moduleNameSSvpZ",
+                "moduleName": "TSCoreSDK",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9TSCoreSDK11TSConstantsV4KeysV10moduleNameSSvgZ",
+                    "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV10moduleNameSSvgZ",
+                    "moduleName": "TSCoreSDK",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "initializationParamsQuery",
+                "printedName": "initializationParamsQuery",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9TSCoreSDK11TSConstantsV4KeysV25initializationParamsQuerySSvpZ",
+                "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV25initializationParamsQuerySSvpZ",
+                "moduleName": "TSCoreSDK",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9TSCoreSDK11TSConstantsV4KeysV25initializationParamsQuerySSvgZ",
+                    "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV25initializationParamsQuerySSvgZ",
+                    "moduleName": "TSCoreSDK",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:9TSCoreSDK11TSConstantsV4KeysV",
+            "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV",
+            "moduleName": "TSCoreSDK",
+            "isFromExtension": true
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9TSCoreSDK11TSConstantsV",
+        "mangledName": "$s9TSCoreSDK11TSConstantsV",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -13922,45 +14146,94 @@
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 521,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
-      "offset": 917,
+      "offset": 1891,
       "length": 50,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
-      "offset": 939,
+      "offset": 1913,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
-      "offset": 963,
+      "offset": 1937,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
-      "offset": 966,
+      "offset": 1940,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
-      "offset": 1254,
+      "offset": 2264,
       "length": 24,
       "value": "\"Logs sent successfully\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
-      "offset": 2302,
+      "offset": 3299,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 304,
+      "length": 22,
+      "value": "\"ts-terminate-by-user\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 364,
+      "length": 14,
+      "value": "\"ts-client-id\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 418,
+      "length": 13,
+      "value": "\"ts-sdk-name\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 486,
+      "length": 34,
+      "value": "\"?\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 501,
+      "length": 2,
+      "value": "\"=%@&\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 516,
+      "length": 2,
+      "value": "\"=%@\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
@@ -14160,120 +14433,127 @@
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 596,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 982,
+      "offset": 989,
       "length": 103,
       "value": "\"\/log\/v\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1009,
+      "offset": 1016,
       "length": 1,
       "value": "\"\/client\/\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1037,
+      "offset": 1044,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1054,
+      "offset": 1061,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 1091,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1369,
+      "offset": 1376,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1378,
+      "offset": 1385,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1390,
+      "offset": 1397,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1396,
+      "offset": 1403,
       "length": 29,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1690,
+      "offset": 1697,
       "length": 7,
       "value": "\"https\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2395,
+      "offset": 2402,
       "length": 18,
       "value": "\"signature failed\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2515,
+      "offset": 2522,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2527,
+      "offset": 2534,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2572,
+      "offset": 2579,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2585,
+      "offset": 2592,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2630,
+      "offset": 2637,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2643,
+      "offset": 2650,
       "length": 1,
       "value": "\"\""
     },
@@ -15771,91 +16051,91 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 1470,
+      "offset": 1506,
       "length": 33,
       "value": "\"error generating keys: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 1502,
+      "offset": 1538,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 1600,
+      "offset": 1636,
       "length": 59,
       "value": "\"Generated new private key: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 1658,
+      "offset": 1694,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 1858,
+      "offset": 1894,
       "length": 47,
       "value": "\"failed to get appLicationTag  in \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 1904,
+      "offset": 1940,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "BooleanLiteral",
-      "offset": 2246,
+      "offset": 2282,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 2461,
+      "offset": 2515,
       "length": 33,
       "value": "\"keychain don't have private key\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 3186,
+      "offset": 3240,
       "length": 28,
       "value": "\"not supported cryptography\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 3482,
+      "offset": 3536,
       "length": 73,
       "value": "\"error encrypting data with error: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 3554,
+      "offset": 3608,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 4732,
+      "offset": 4786,
       "length": 73,
       "value": "\"error encrypting data with error: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
-      "offset": 4804,
+      "offset": 4858,
       "length": 2,
       "value": "\"\""
     },
