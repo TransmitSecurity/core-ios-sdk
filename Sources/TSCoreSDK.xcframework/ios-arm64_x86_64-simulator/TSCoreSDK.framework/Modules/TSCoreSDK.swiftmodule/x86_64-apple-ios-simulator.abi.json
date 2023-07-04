@@ -13615,14 +13615,14 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 5022,
+      "offset": 5182,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 5654,
+      "offset": 5814,
       "length": 1,
       "value": "0"
     },
@@ -14734,15 +14734,29 @@
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 889,
+      "length": 40,
+      "value": "\"ssn == '\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 927,
+      "length": 3,
+      "value": "\"'\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
       "kind": "BooleanLiteral",
-      "offset": 1256,
+      "offset": 1387,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
       "kind": "IntegerLiteral",
-      "offset": 1367,
+      "offset": 1498,
       "length": 1,
       "value": "0"
     },
