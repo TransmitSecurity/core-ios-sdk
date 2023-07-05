@@ -335,6 +335,7 @@ SWIFT_CLASS("_TtC9TSCoreSDK15TSSecurityUtils")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 #endif
 #if defined(__cplusplus)
 #endif

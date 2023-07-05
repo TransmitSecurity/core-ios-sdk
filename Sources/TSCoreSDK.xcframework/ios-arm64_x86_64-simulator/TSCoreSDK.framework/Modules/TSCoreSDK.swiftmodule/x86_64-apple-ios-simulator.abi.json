@@ -5552,6 +5552,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TSCoreSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -14189,7 +14196,7 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
-      "offset": 3299,
+      "offset": 3393,
       "length": 2,
       "value": "\"\""
     },
@@ -14700,35 +14707,42 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 295,
+      "offset": 308,
       "length": 8,
       "value": "\"mobile\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 343,
+      "offset": 356,
       "length": 5,
       "value": "\"iOS\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 419,
+      "offset": 432,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 463,
+      "offset": 476,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 776,
+      "offset": 789,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 872,
       "length": 2,
       "value": "\"\""
     },
