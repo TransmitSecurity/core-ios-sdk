@@ -127,6 +127,8 @@ extension TSCoreSDK.TSConstants {
     public static let clientId: Swift.String
     public static let moduleName: Swift.String
     public static let initializationParamsQuery: Swift.String
+    public static let TSCORE_REQUEST_DURATION_HEADER: Swift.String
+    public static let X_TS_PROCESSING_TIME_MS: Swift.String
   }
 }
 public enum TSCryptoException : Swift.Error {

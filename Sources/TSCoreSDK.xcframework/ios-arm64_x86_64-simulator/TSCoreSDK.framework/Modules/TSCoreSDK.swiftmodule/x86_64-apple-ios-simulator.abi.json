@@ -3773,6 +3773,100 @@
                     "accessorKind": "get"
                   }
                 ]
+              },
+              {
+                "kind": "Var",
+                "name": "TSCORE_REQUEST_DURATION_HEADER",
+                "printedName": "TSCORE_REQUEST_DURATION_HEADER",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9TSCoreSDK11TSConstantsV4KeysV30TSCORE_REQUEST_DURATION_HEADERSSvpZ",
+                "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV30TSCORE_REQUEST_DURATION_HEADERSSvpZ",
+                "moduleName": "TSCoreSDK",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9TSCoreSDK11TSConstantsV4KeysV30TSCORE_REQUEST_DURATION_HEADERSSvgZ",
+                    "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV30TSCORE_REQUEST_DURATION_HEADERSSvgZ",
+                    "moduleName": "TSCoreSDK",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "X_TS_PROCESSING_TIME_MS",
+                "printedName": "X_TS_PROCESSING_TIME_MS",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9TSCoreSDK11TSConstantsV4KeysV23X_TS_PROCESSING_TIME_MSSSvpZ",
+                "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV23X_TS_PROCESSING_TIME_MSSSvpZ",
+                "moduleName": "TSCoreSDK",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9TSCoreSDK11TSConstantsV4KeysV23X_TS_PROCESSING_TIME_MSSSvgZ",
+                    "mangledName": "$s9TSCoreSDK11TSConstantsV4KeysV23X_TS_PROCESSING_TIME_MSSSvgZ",
+                    "moduleName": "TSCoreSDK",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
               }
             ],
             "declKind": "Struct",
@@ -13606,2870 +13700,2912 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/NetworkMonitor\/TSNetworkMonitor.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/NetworkMonitor\/TSNetworkMonitor.swift",
       "kind": "BooleanLiteral",
       "offset": 318,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefauls.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefauls.swift",
       "kind": "StringLiteral",
       "offset": 475,
       "length": 15,
       "value": "\"user-defaults\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataRepository.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataRepository.swift",
       "kind": "BooleanLiteral",
       "offset": 5182,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataRepository.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataRepository.swift",
       "kind": "IntegerLiteral",
       "offset": 5814,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSExceptionDataSource.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSExceptionDataSource.swift",
       "kind": "Array",
       "offset": 318,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
       "length": 3,
       "value": "256"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 682,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 1531,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 1753,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 2024,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 3109,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 3316,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 5463,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 5696,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 6330,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 6427,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 6605,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 7269,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 7910,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 8118,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 8209,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 8478,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 9150,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 10098,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 10203,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 10402,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 10589,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 11268,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 12057,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 12154,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 12329,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 13031,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 13867,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 13959,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 14139,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 773,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 778,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 818,
       "length": 3,
       "value": "\"=\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 844,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 1366,
       "length": 6,
       "value": "\"%02x\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 1653,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 1664,
       "length": 3,
       "value": "\"+\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 1707,
       "length": 3,
       "value": "\"_\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 1718,
       "length": 3,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 1749,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 1754,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 1802,
       "length": 3,
       "value": "\"=\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 1814,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 1833,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 1988,
       "length": 3,
       "value": "\"+\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 1999,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 2042,
       "length": 3,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 2053,
       "length": 3,
       "value": "\"_\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 2096,
       "length": 3,
       "value": "\"=\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/StringExtension.swift",
       "kind": "StringLiteral",
       "offset": 2107,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "StringLiteral",
       "offset": 703,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 1548,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 2776,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 4264,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "Array",
       "offset": 5170,
       "length": 3,
       "value": "[1]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "Array",
       "offset": 5176,
       "length": 3,
       "value": "[0]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "IntegerLiteral",
       "offset": 5743,
       "length": 6,
       "value": "-67853"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 6215,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 6959,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "IntegerLiteral",
       "offset": 7709,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 8464,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 8517,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 8569,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 8770,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "Array",
       "offset": 9109,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "Array",
       "offset": 9134,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 9763,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 10558,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "StringLiteral",
       "offset": 10815,
       "length": 20,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "StringLiteral",
       "offset": 10828,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "StringLiteral",
       "offset": 10834,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 11914,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 11921,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "BooleanLiteral",
       "offset": 521,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
       "offset": 1891,
       "length": 50,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
       "offset": 1913,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
       "offset": 1937,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
       "offset": 1940,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
       "offset": 2264,
       "length": 24,
       "value": "\"Logs sent successfully\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
       "offset": 3393,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 304,
       "length": 22,
       "value": "\"ts-terminate-by-user\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 14,
       "value": "\"ts-client-id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 418,
       "length": 13,
       "value": "\"ts-sdk-name\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 486,
       "length": 34,
       "value": "\"?\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 501,
       "length": 2,
       "value": "\"=%@&\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 2,
       "value": "\"=%@\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 580,
+      "length": 37,
+      "value": "\"tscore-client-side-request-duration\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 670,
+      "length": 25,
+      "value": "\"x-ts-processing-time-ms\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 2647,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 3785,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 4760,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 4817,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 4859,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 5269,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 5907,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 6567,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 7263,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "IntegerLiteral",
       "offset": 9106,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "Array",
       "offset": 10422,
       "length": 505,
       "value": "[0x30, 0x59, 0x30, 0x13, 0x06, 0x07, 0x2A, 0x86, 0x48, 0xCE, 0x3D, 0x02, 0x01, 0x06, 0x08, 0x2A, 0x86, 0x48, 0xCE, 0x3D, 0x03, 0x01, 0x07, 0x03, 0x42, 0x00]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "StringLiteral",
       "offset": 11387,
       "length": 184,
       "value": "\"-----BEGIN PUBLIC KEY-----\n\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "Array",
       "offset": 11498,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "StringLiteral",
       "offset": 11502,
       "length": 5,
       "value": "\"\n-----END PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
       "offset": 1459,
       "length": 55,
       "value": "\"Core data not encrypted \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
       "offset": 1513,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
       "offset": 1728,
       "length": 6,
       "value": "\"momd\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "BooleanLiteral",
       "offset": 1888,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
       "offset": 2065,
       "length": 50,
       "value": "\"Unresolved error \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
       "offset": 2093,
       "length": 1,
       "value": "\", \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
       "offset": 2114,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 114,
       "length": 17,
       "value": "\"X-TSEC-Metadata\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 172,
       "length": 18,
       "value": "\"X-TSEC-Timestamp\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 231,
       "length": 18,
       "value": "\"X-TSEC-Signature\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 284,
       "length": 36,
       "value": "\"B8CD55A-9102-4F38-9FED-163C7CD576D\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 347,
       "length": 35,
       "value": "\"telemetry-zxxsfh4u7a-uc.a.run.app\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 482,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 513,
       "length": 6,
       "value": "\"key1\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 596,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 989,
       "length": 103,
       "value": "\"\/log\/v\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 1016,
       "length": 1,
       "value": "\"\/client\/\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 1044,
       "length": 1,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 1061,
       "length": 1,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 1091,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 1376,
       "length": 28,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 1385,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 1397,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 1403,
       "length": 29,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 1697,
       "length": 7,
       "value": "\"https\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 2402,
       "length": 18,
       "value": "\"signature failed\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 2522,
       "length": 13,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 2534,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 2579,
       "length": 14,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 2592,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 2637,
       "length": 14,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 2650,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/TSCoreConstants.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/TSCoreConstants.swift",
       "kind": "StringLiteral",
       "offset": 249,
       "length": 32,
       "value": "\"com.TransmitSecurity.TSCoreSDK\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/TSCoreConstants.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/TSCoreConstants.swift",
       "kind": "StringLiteral",
       "offset": 399,
       "length": 11,
       "value": "\"TSCoreSDK\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 472,
       "length": 5,
       "value": "\"all\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 472,
       "length": 5,
       "value": "\"all\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1174,
       "length": 21,
       "value": "\"\nTSLogModel: -> [ \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1211,
       "length": 26,
       "value": "\"timestamp: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1235,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1253,
       "length": 24,
       "value": "\"severity: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1275,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1324,
       "length": 27,
       "value": "\"class name: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1349,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1409,
       "length": 29,
       "value": "\"method name: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1436,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1497,
       "length": 31,
       "value": "\"package name: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1526,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1589,
       "length": 35,
       "value": "\"subsystem name: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1622,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1679,
       "length": 22,
       "value": "\"message: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1699,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 1727,
       "length": 3,
       "value": "\"]\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
       "offset": 308,
       "length": 8,
       "value": "\"mobile\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
       "offset": 356,
       "length": 5,
       "value": "\"iOS\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
       "offset": 432,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
       "offset": 476,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
       "offset": 789,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
       "offset": 872,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
       "kind": "StringLiteral",
       "offset": 889,
       "length": 40,
       "value": "\"ssn == '\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
       "kind": "StringLiteral",
       "offset": 927,
       "length": 3,
       "value": "\"'\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
       "kind": "BooleanLiteral",
       "offset": 1387,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSource.swift",
       "kind": "IntegerLiteral",
       "offset": 1498,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 366,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 833,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 999,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "StringLiteral",
       "offset": 1536,
       "length": 3,
       "value": "\"+\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "StringLiteral",
       "offset": 1547,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "StringLiteral",
       "offset": 1590,
       "length": 3,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "StringLiteral",
       "offset": 1601,
       "length": 3,
       "value": "\"_\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "StringLiteral",
       "offset": 1644,
       "length": 3,
       "value": "\"=\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "StringLiteral",
       "offset": 1655,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1799,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1822,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "StringLiteral",
       "offset": 1864,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1884,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1947,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1985,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 1995,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2049,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "StringLiteral",
       "offset": 2089,
       "length": 17,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "StringLiteral",
       "offset": 2105,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2156,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2306,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2321,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2334,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2363,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2682,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 2900,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "BooleanLiteral",
       "offset": 2982,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "BooleanLiteral",
       "offset": 3009,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 3115,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/TSSecurityUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 3211,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/DB Entities\/Log+CoreDataProperties.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/DB Entities\/Log+CoreDataProperties.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 5,
       "value": "\"Log\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCommonExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCommonExtension.swift",
       "kind": "StringLiteral",
       "offset": 232,
       "length": 9,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCommonExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCommonExtension.swift",
       "kind": "StringLiteral",
       "offset": 240,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCommonExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCommonExtension.swift",
       "kind": "BooleanLiteral",
       "offset": 465,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCommonExtension.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCommonExtension.swift",
       "kind": "Array",
       "offset": 657,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaulsController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaulsController.swift",
       "kind": "StringLiteral",
       "offset": 229,
       "length": 30,
       "value": "\"TSCoreSDK.TSSecuredUserDefaulsController\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaulsController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaulsController.swift",
       "kind": "BooleanLiteral",
       "offset": 2501,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaulsController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaulsController.swift",
       "kind": "StringLiteral",
       "offset": 2661,
       "length": 23,
       "value": "\"com.core.userDefaults\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 253,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 274,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 316,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 360,
       "length": 4,
       "value": "9999"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 253,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 274,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 316,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 360,
       "length": 4,
       "value": "9999"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 253,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 274,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 316,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 360,
       "length": 4,
       "value": "9999"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 487,
       "length": 6,
       "value": "\"🔬\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 534,
       "length": 6,
       "value": "\"💬\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 580,
       "length": 8,
       "value": "\"ℹ️\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 631,
       "length": 8,
       "value": "\"⚠️\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 680,
       "length": 8,
       "value": "\"‼️\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 730,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 1350,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 1399,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 1445,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 4699,
       "length": 38,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 4727,
       "length": 6,
       "value": "\"Core\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 4734,
       "length": 1,
       "value": "\": \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 4759,
       "length": 13,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 4771,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 4896,
       "length": 32,
       "value": "\"com.TransmitSecurity.TSCoreSDK\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 4940,
       "length": 9,
       "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 6733,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
-      "kind": "StringLiteral",
-      "offset": 6774,
+      "offset": 5772,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 7072,
+      "offset": 6328,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "kind": "StringLiteral",
+      "offset": 6622,
       "length": 3,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 7450,
+      "offset": 6663,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "kind": "StringLiteral",
+      "offset": 6961,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "kind": "StringLiteral",
+      "offset": 7339,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 7500,
+      "offset": 7389,
       "length": 24,
       "value": "\"yyyy-MM-dd'T'HH:mm:ssZ\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 1865,
       "length": 18,
       "value": "\"Account \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 1882,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 1914,
       "length": 18,
       "value": "\"Service \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 1931,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "BooleanLiteral",
       "offset": 1968,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 2525,
       "length": 18,
       "value": "\"Account \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 2542,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "BooleanLiteral",
       "offset": 2597,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "BooleanLiteral",
       "offset": 2640,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 3274,
       "length": 19,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSKeychainStoredKeyAESDataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 3292,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
       "kind": "IntegerLiteral",
       "offset": 1161,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
       "kind": "IntegerLiteral",
       "offset": 1206,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
       "kind": "IntegerLiteral",
       "offset": 3076,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
       "kind": "IntegerLiteral",
       "offset": 3125,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
       "kind": "IntegerLiteral",
       "offset": 4260,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
       "kind": "IntegerLiteral",
       "offset": 4597,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
       "kind": "Array",
       "offset": 4903,
       "length": 33,
       "value": "[0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
       "kind": "IntegerLiteral",
       "offset": 5046,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AES256.swift",
       "kind": "IntegerLiteral",
       "offset": 5473,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 286,
       "length": 4,
       "value": "2048"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 707,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 1519,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 1741,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 2012,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 2992,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 3199,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 4877,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 5110,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 5744,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 5841,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 6019,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 6683,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 7324,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 7531,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 7622,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 7912,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 8622,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 9289,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 9394,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 9582,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 9781,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 10415,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 11031,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 11268,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "Array",
       "offset": 11718,
       "length": 178,
       "value": "[0x30, 0x81, 0x9f, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x81, 0x8d, 0x00]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 13365,
       "length": 3,
       "value": "128"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 13531,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 13536,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 13667,
       "length": 3,
       "value": "128"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "Array",
       "offset": 13727,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 13747,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 13859,
       "length": 4,
       "value": "0xff"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 13957,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 14037,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 14138,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/SyncData\/TSDataSyncServerController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/SyncData\/TSDataSyncServerController.swift",
       "kind": "StringLiteral",
       "offset": 1882,
       "length": 64,
       "value": "\"Application did enter background - removed the all stored data\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/SyncData\/TSDataSyncServerController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/SyncData\/TSDataSyncServerController.swift",
       "kind": "Array",
       "offset": 4335,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/SyncData\/TSDataSyncServerController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/SyncData\/TSDataSyncServerController.swift",
       "kind": "IntegerLiteral",
       "offset": 5464,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSTimer.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSTimer.swift",
       "kind": "FloatLiteral",
       "offset": 222,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSTimer.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSTimer.swift",
       "kind": "BooleanLiteral",
       "offset": 471,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 307,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 373,
       "length": 15,
       "value": "\"[0-9a-f]{1,2}\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 477,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 642,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 684,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 733,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 904,
       "length": 8,
       "value": "\"%02hhx\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 1173,
       "length": 3,
       "value": "\"0\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 1186,
       "length": 3,
       "value": "\"7\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 1212,
       "length": 4,
       "value": "\"00\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 1380,
       "length": 5,
       "value": "\"%2X\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 1456,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 1461,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 1472,
       "length": 3,
       "value": "\"0\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 1593,
       "length": 3,
       "value": "127"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 1710,
       "length": 3,
       "value": "128"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 1730,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 2496,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 2541,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 2720,
       "length": 4,
       "value": "\"30\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 2812,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 2855,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 2859,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 2876,
       "length": 4,
       "value": "\"02\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 2922,
       "length": 4,
       "value": "\"02\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "IntegerLiteral",
       "offset": 3827,
       "length": 4,
       "value": "2048"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 3909,
       "length": 28,
       "value": "\"-----BEGIN PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 3945,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 3987,
       "length": 26,
       "value": "\"-----END PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 4021,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 4055,
       "length": 4,
       "value": "\"\n\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaultsFactory.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaultsFactory.swift",
       "kind": "Dictionary",
       "offset": 326,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "StringLiteral",
       "offset": 749,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "StringLiteral",
       "offset": 1100,
       "length": 42,
       "value": "\"Decrypt exception info: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "StringLiteral",
       "offset": 1141,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "IntegerLiteral",
       "offset": 1854,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "IntegerLiteral",
       "offset": 2283,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "IntegerLiteral",
       "offset": 2417,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "IntegerLiteral",
       "offset": 3771,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "IntegerLiteral",
       "offset": 3860,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "IntegerLiteral",
       "offset": 3915,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "IntegerLiteral",
       "offset": 3996,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "IntegerLiteral",
       "offset": 4037,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/AESCryptoKit.swift",
       "kind": "StringLiteral",
       "offset": 4260,
       "length": 6,
       "value": "\"%02x\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 777,
       "length": 47,
       "value": "\"failed to get appLicationTag  in \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 823,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "IntegerLiteral",
       "offset": 1027,
       "length": 4,
       "value": "2048"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "BooleanLiteral",
       "offset": 1111,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 1506,
       "length": 33,
       "value": "\"error generating keys: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 1538,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 1636,
       "length": 59,
       "value": "\"Generated new private key: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 1694,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 1894,
       "length": 47,
       "value": "\"failed to get appLicationTag  in \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 1940,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "BooleanLiteral",
       "offset": 2282,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 2515,
       "length": 33,
       "value": "\"keychain don't have private key\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 3240,
       "length": 28,
       "value": "\"not supported cryptography\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 3536,
       "length": 73,
       "value": "\"error encrypting data with error: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 3608,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 4786,
       "length": 73,
       "value": "\"error encrypting data with error: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/RSADataEncrypter.swift",
       "kind": "StringLiteral",
       "offset": 4858,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSEncryptServerRequestDataProvider.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSEncryptServerRequestDataProvider.swift",
       "kind": "StringLiteral",
       "offset": 1805,
       "length": 26,
       "value": "\"Invalid symmetric Key\/iv\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSEncryptServerRequestDataProvider.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSEncryptServerRequestDataProvider.swift",
       "kind": "StringLiteral",
       "offset": 3094,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Utils\/TSEncryptServerRequestDataProvider.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Utils\/TSEncryptServerRequestDataProvider.swift",
       "kind": "StringLiteral",
       "offset": 3111,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 15,
       "value": "\"data is empty\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 260,
       "length": 17,
       "value": "\"decoding failed\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 297,
       "length": 22,
       "value": "\"failed with code: %d\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "BooleanLiteral",
       "offset": 749,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 979,
       "length": 6,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 984,
       "length": 64,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "Dictionary",
       "offset": 1549,
       "length": 106,
       "value": "[(\"Accept\", \"application\/json\"), (\"Content-Type\", \"application\/json\"), (\"Accept-Encoding\", \"gzip, deflate, br\")]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2169,
       "length": 41,
       "value": "\"Request Url: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2209,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2247,
       "length": 73,
       "value": "\"Request allHTTPHeaderFields: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2319,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2355,
       "length": 92,
       "value": "\"Request httpBody: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2446,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2481,
       "length": 42,
       "value": "\"Request description: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2522,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2559,
       "length": 92,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2577,
       "length": 1,
       "value": "\"\n\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2603,
       "length": 1,
       "value": "\"\n\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2627,
       "length": 1,
       "value": "\"\n\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 2650,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 3110,
       "length": 38,
       "value": "\"Internet connection is not available\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4303,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4464,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
-      "offset": 4548,
+      "offset": 4760,
       "length": 100,
       "value": "\"Response description: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
-      "offset": 4594,
+      "offset": 4806,
       "length": 1,
       "value": "\"\n Data: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
-      "offset": 4644,
+      "offset": 4856,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
-      "offset": 4647,
+      "offset": 4859,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4782,
+      "offset": 4994,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4788,
+      "offset": 5000,
       "length": 3,
       "value": "299"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
-      "offset": 4915,
+      "offset": 5127,
       "length": 4,
       "value": "\"{}\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
-      "offset": 6097,
+      "offset": 6570,
       "length": 45,
       "value": "\"Network error with code: \""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
-      "offset": 6141,
+      "offset": 6614,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "Dictionary",
-      "offset": 6792,
+      "offset": 7265,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 233,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 257,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 306,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 233,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 257,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 306,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/core-ios-sdk\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/verifyid-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 8,
