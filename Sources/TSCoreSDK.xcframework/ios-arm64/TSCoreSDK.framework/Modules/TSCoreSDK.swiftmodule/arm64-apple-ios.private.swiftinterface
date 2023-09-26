@@ -42,25 +42,6 @@ public protocol ITSModuleInfo {
   func tenantID() -> Swift.String
   func version() -> Swift.String
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TSECService : TSCoreSDK.TSCrypto {
-  public var kECKeySize: Swift.Int
-  public var kECASignAlgorithm: Security.SecKeyAlgorithm
-  public var kECAEncryptAlgorithm: Security.SecKeyAlgorithm
-  public static let shared: TSCoreSDK.TSECService
-  public func createSecureKeyPair(kSecApplicationTag: Swift.String, requiresBiometry: Swift.Bool = false, completion: ((_ success: Swift.Bool, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)? = nil)
-  public func getPublicKeyData(kSecApplicationTag: Swift.String) -> Foundation.Data?
-  public func getPublicKeyReference(kSecApplicationTag: Swift.String) -> Security.SecKey?
-  public func getPrivateKeyReference(kSecApplicationTag: Swift.String) -> Security.SecKey?
-  public func isKeyExists(kSecApplicationTag: Swift.String) -> Swift.Bool
-  public func getPrivateSecKey(kSecApplicationTag: Swift.String, completion: ((_ secKey: Security.SecKey?, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)? = nil)
-  public func publicKeyAsPEMFormat(kSecApplicationTag: Swift.String) -> Swift.String?
-  override public func encryptMessageWithPublicKey(kSecApplicationTag: Swift.String, message: Swift.String, completion: @escaping (_ success: Swift.Bool, _ data: Foundation.Data?, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  override public func decryptMessageWithPrivateKey(kSecApplicationTag: Swift.String, encryptedData: Foundation.Data, completion: @escaping (_ success: Swift.Bool, _ result: Swift.String?, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  override public func signMessageWithPrivateKey(kSecApplicationTag: Swift.String, message: Swift.String, completion: @escaping (_ success: Swift.Bool, _ data: Foundation.Data?, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  public func signMessageWithPrivateKey(kSecApplicationTag: Swift.String, data: Foundation.Data, completion: @escaping (_ success: Swift.Bool, _ data: Foundation.Data?, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  override public func verifySignaturePublicKey(kSecApplicationTag: Swift.String, data: Foundation.Data, signatureData: Foundation.Data, completion: @escaping (Swift.Bool, TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  @objc deinit
-}
 extension Swift.String {
   public func base64urlToBase64() -> Swift.String
   public func base64ToBase64url() -> Swift.String
@@ -116,6 +97,7 @@ public enum TSRequestErrorCode : Swift.Error, Swift.Equatable {
 }
 public class TSRequestError : Swift.Error {
   final public let errorCode: TSCoreSDK.TSRequestErrorCode
+  public var rawResponse: Foundation.Data?
   public init(errorCode: TSCoreSDK.TSRequestErrorCode, errorMessage: Swift.String? = nil)
   @objc deinit
 }
@@ -133,41 +115,53 @@ extension TSCoreSDK.TSConstants {
 }
 public enum TSCryptoException : Swift.Error {
   case unknownError
-  case duplicateFoundWhileTryingToCreateKey
   case keyNotFound
-  case authFailed
-  case unableToAddPublicKeyToKeyChain
-  case wrongInputDataFormat
-  case unableToEncrypt
-  case unableToDecrypt
-  case unableToSignData
-  case unableToVerifySignedData
-  case unableToPerformHashOfData
-  case unableToGenerateAccessControlWithGivenSecurity
-  case outOfMemory
-  case unableToEncryptAlgorithmNotSupported
-  case unableToDecryptAlgorithmNotSupported
   case unableToSignDataAlgorithmNotSupported
-  case unableToVerifySignedDataAlgorithmNotSupported
-  case userCanceled
-  case platformError
-  case biometryAccessDenied
+  case unableConvertKeyToData
+  case errorSigingData
   case custom(error: (any Swift.Error)?)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TSCrypto : ObjectiveC.NSObject {
-  public func createSecureKeyPair(kSecApplicationTag: Swift.String, requiresBiometry: Swift.Bool = false, kKeyType: CoreFoundation.CFString, completion: ((Swift.Bool, TSCoreSDK.TSCryptoException?) -> Swift.Void)?)
-  public func publicKeyAsPEMFormat(kSecApplicationTag: Swift.String, kKeyType: CoreFoundation.CFString) -> Swift.String?
-  public func deleteSecureKeyPair(kApplicationTag: Swift.String, kKeyType: CoreFoundation.CFString, _ completion: ((_ success: Swift.Bool) -> Swift.Void)?)
-  public func isKeyExists(kSecApplicationTag: Swift.String, kKeyType: CoreFoundation.CFString) -> Swift.Bool
-  public func getPublicKeyData(kSecApplicationTag: Swift.String, kKeyType: CoreFoundation.CFString) -> Foundation.Data?
-  public func getPublicKeyReference(kSecApplicationTag: Swift.String, kKeyType: CoreFoundation.CFString) -> Security.SecKey?
-  public func getPrivateKeyReference(kSecApplicationTag: Swift.String, kKeyType: CoreFoundation.CFString) -> Security.SecKey?
-  public func getPrivateSecKey(kSecApplicationTag: Swift.String, kKeyType: CoreFoundation.CFString, completion: ((_ secKey: Security.SecKey?, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)? = nil)
-  public func encryptMessageWithPublicKey(kSecApplicationTag: Swift.String, message: Swift.String, completion: @escaping (Swift.Bool, Foundation.Data?, TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  public func decryptMessageWithPrivateKey(kSecApplicationTag: Swift.String, encryptedData: Foundation.Data, completion: @escaping (Swift.Bool, Swift.String?, TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  public func signMessageWithPrivateKey(kSecApplicationTag: Swift.String, message: Swift.String, completion: @escaping (Swift.Bool, Foundation.Data?, TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  public func verifySignaturePublicKey(kSecApplicationTag: Swift.String, data: Foundation.Data, signatureData: Foundation.Data, completion: @escaping (Swift.Bool, TSCoreSDK.TSCryptoException?) -> Swift.Void)
+public protocol TSCryptoBindingParameters : AnyObject {
+  var keyType: CoreFoundation.CFString { get set }
+  var keySize: Swift.Int { get set }
+  var signAlgorithm: Security.SecKeyAlgorithm { get set }
+  var encryptAlgorithm: Security.SecKeyAlgorithm { get set }
+}
+public protocol TSCryptoBindingProtocol : AnyObject {
+  #if compiler(>=5.3) && $AsyncAwait
+  func createKeys() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func clearKeys() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getPublicData() async throws -> TSCoreSDK.TSPublicKeyData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func sign(message: Swift.String) async throws -> Foundation.Data
+  #endif
+}
+public struct TSPublicKeyData {
+  public var keyIdentifier: Swift.String
+  public var publicKey: Swift.String
+}
+public class TSCryptoBinding<T> where T : TSCoreSDK.TSCryptoBindingParameters {
+  public init(service: T, kSecApplicationTag: Swift.String? = nil)
   @objc deinit
+}
+extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func createKeys() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func clearKeys() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func sign(message: Swift.String) async throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getPublicData() async throws -> TSCoreSDK.TSPublicKeyData
+  #endif
 }
 extension TSCoreSDK.TSCore {
   public static let clientPlatform: Swift.String
@@ -264,23 +258,12 @@ public struct AES256 {
   public init(key: Foundation.Data, iv: Foundation.Data) throws
   public func encrypt(_ digest: Foundation.Data) throws -> Foundation.Data
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TSRSAService : TSCoreSDK.TSCrypto {
-  public var kRSAKeySize: Swift.Int
-  public var kRSASignAlgorithm: Security.SecKeyAlgorithm
-  public var kRSAEncryptAlgorithm: Security.SecKeyAlgorithm
-  public static let shared: TSCoreSDK.TSRSAService
-  public func createSecureKeyPair(kSecApplicationTag: Swift.String, requiresBiometry: Swift.Bool = false, completion: ((_ success: Swift.Bool, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)? = nil)
-  public func getPublicKeyData(kSecApplicationTag: Swift.String) -> Foundation.Data?
-  public func getPublicKeyReference(kSecApplicationTag: Swift.String) -> Security.SecKey?
-  public func getPrivateKeyReference(kSecApplicationTag: Swift.String) -> Security.SecKey?
-  public func isKeyExists(kSecApplicationTag: Swift.String) -> Swift.Bool
-  public func getPrivateSecKey(kSecApplicationTag: Swift.String, completion: ((_ secKey: Security.SecKey?, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)? = nil)
-  override public func encryptMessageWithPublicKey(kSecApplicationTag: Swift.String, message: Swift.String, completion: @escaping (_ success: Swift.Bool, _ data: Foundation.Data?, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  override public func decryptMessageWithPrivateKey(kSecApplicationTag: Swift.String, encryptedData: Foundation.Data, completion: @escaping (_ success: Swift.Bool, _ result: Swift.String?, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  override public func signMessageWithPrivateKey(kSecApplicationTag: Swift.String, message: Swift.String, completion: @escaping (_ success: Swift.Bool, _ data: Foundation.Data?, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  override public func verifySignaturePublicKey(kSecApplicationTag: Swift.String, data: Foundation.Data, signatureData: Foundation.Data, completion: @escaping (_ success: Swift.Bool, _ error: TSCoreSDK.TSCryptoException?) -> Swift.Void)
-  public func publicKeyAsPEMFormatWithPrefixAndSuffix(kSecApplicationTag: Swift.String) -> Swift.String?
-  public func publicKeyFromX5c(certificateBase64: Swift.String) -> Security.SecKey?
+public class TSRSAService : TSCoreSDK.TSCryptoBindingParameters {
+  public var keyType: CoreFoundation.CFString
+  public var keySize: Swift.Int
+  public var signAlgorithm: Security.SecKeyAlgorithm
+  public var encryptAlgorithm: Security.SecKeyAlgorithm
+  public init()
   @objc deinit
 }
 public protocol TSDataSource {
@@ -388,6 +371,10 @@ public class TSEncryptServerRequestDataProvider {
 }
 extension TSCoreSDK.TSEncryptServerRequestDataProvider : TSCoreSDK.TSEncryptEventsProviderProtocol {
   public func encrypt(events: Foundation.Data, publicKey: TSCoreSDK.TSEncryptServerRequestDataProvider.EncryptionPublicKey) throws -> TSCoreSDK.TSEncryptServerRequestDataProvider.DataContainer
+}
+@_hasMissingDesignatedInitializers public class TSECService {
+  public static let shared: TSCoreSDK.TSECService
+  @objc deinit
 }
 public enum TSHttpMethod : Swift.String {
   case GET
