@@ -3539,17 +3539,23 @@
           {
             "kind": "Function",
             "name": "createKeys",
-            "printedName": "createKeys()",
+            "printedName": "createKeys(forTag:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP10createKeysyyYaKF",
-            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP10createKeysyyYaKF",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP10createKeys6forTagySS_tYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP10createKeys6forTagySS_tYaKF",
             "moduleName": "TSCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
             "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
@@ -3561,17 +3567,23 @@
           {
             "kind": "Function",
             "name": "clearKeys",
-            "printedName": "clearKeys()",
+            "printedName": "clearKeys(forTag:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP9clearKeysyyYaKF",
-            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP9clearKeysyyYaKF",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP9clearKeys6forTagySS_tYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP9clearKeys6forTagySS_tYaKF",
             "moduleName": "TSCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
             "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
@@ -3583,18 +3595,24 @@
           {
             "kind": "Function",
             "name": "getPublicData",
-            "printedName": "getPublicData()",
+            "printedName": "getPublicData(forTag:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "TSPublicKeyData",
                 "printedName": "TSCoreSDK.TSPublicKeyData",
                 "usr": "s:9TSCoreSDK15TSPublicKeyDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP13getPublicDataAA011TSPublicKeyH0VyYaKF",
-            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP13getPublicDataAA011TSPublicKeyH0VyYaKF",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP13getPublicData6forTagAA011TSPublicKeyH0VSS_tYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP13getPublicData6forTagAA011TSPublicKeyH0VSS_tYaKF",
             "moduleName": "TSCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
             "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
@@ -3606,7 +3624,64 @@
           {
             "kind": "Function",
             "name": "sign",
-            "printedName": "sign(message:)",
+            "printedName": "sign(_:forTag:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP4sign_6forTag10Foundation4DataVSS_SStYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP4sign_6forTag10Foundation4DataVSS_SStYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createApplicationKeys",
+            "printedName": "createApplicationKeys()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP21createApplicationKeysyyYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP21createApplicationKeysyyYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signWithApplicationKey",
+            "printedName": "signWithApplicationKey(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3622,8 +3697,31 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP4sign7message10Foundation4DataVSS_tYaKF",
-            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP4sign7message10Foundation4DataVSS_tYaKF",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP22signWithApplicationKeyy10Foundation4DataVSSYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP22signWithApplicationKeyy10Foundation4DataVSSYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPublicDataForApplicationKey",
+            "printedName": "getPublicDataForApplicationKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSPublicKeyData",
+                "printedName": "TSCoreSDK.TSPublicKeyData",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP30getPublicDataForApplicationKeyAA08TSPublickH0VyYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP30getPublicDataForApplicationKeyAA08TSPublickH0VyYaKF",
             "moduleName": "TSCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
             "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
@@ -3835,7 +3933,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(service:kSecApplicationTag:)",
+            "printedName": "init(service:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3854,26 +3952,11 @@
                 "kind": "TypeNominal",
                 "name": "GenericTypeParam",
                 "printedName": "τ_0_0"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9TSCoreSDK15TSCryptoBindingC7service18kSecApplicationTagACyxGx_SSSgtcfc",
-            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC7service18kSecApplicationTagACyxGx_SSSgtcfc",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC7serviceACyxGx_tcfc",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC7serviceACyxGx_tcfc",
             "moduleName": "TSCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
             "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
@@ -3885,17 +3968,23 @@
           {
             "kind": "Function",
             "name": "createKeys",
-            "printedName": "createKeys()",
+            "printedName": "createKeys(forTag:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9TSCoreSDK15TSCryptoBindingC10createKeysyyYaKF",
-            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC10createKeysyyYaKF",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC10createKeys6forTagySS_tYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC10createKeys6forTagySS_tYaKF",
             "moduleName": "TSCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
             "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
@@ -3909,17 +3998,23 @@
           {
             "kind": "Function",
             "name": "clearKeys",
-            "printedName": "clearKeys()",
+            "printedName": "clearKeys(forTag:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9TSCoreSDK15TSCryptoBindingC9clearKeysyyYaKF",
-            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC9clearKeysyyYaKF",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC9clearKeys6forTagySS_tYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC9clearKeys6forTagySS_tYaKF",
             "moduleName": "TSCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
             "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
@@ -3933,7 +4028,99 @@
           {
             "kind": "Function",
             "name": "sign",
-            "printedName": "sign(message:)",
+            "printedName": "sign(_:forTag:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC4sign_6forTag10Foundation4DataVSS_SStYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC4sign_6forTag10Foundation4DataVSS_SStYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPublicData",
+            "printedName": "getPublicData(forTag:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSPublicKeyData",
+                "printedName": "TSCoreSDK.TSPublicKeyData",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC13getPublicData6forTagAA011TSPublicKeyG0VSS_tYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC13getPublicData6forTagAA011TSPublicKeyG0VSS_tYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createApplicationKeys",
+            "printedName": "createApplicationKeys()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC21createApplicationKeysyyYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC21createApplicationKeysyyYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signWithApplicationKey",
+            "printedName": "signWithApplicationKey(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3949,8 +4136,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9TSCoreSDK15TSCryptoBindingC4sign7message10Foundation4DataVSS_tYaKF",
-            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC4sign7message10Foundation4DataVSS_tYaKF",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC22signWithApplicationKeyy10Foundation4DataVSSYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC22signWithApplicationKeyy10Foundation4DataVSSYaKF",
             "moduleName": "TSCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
             "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
@@ -3963,8 +4150,8 @@
           },
           {
             "kind": "Function",
-            "name": "getPublicData",
-            "printedName": "getPublicData()",
+            "name": "getPublicDataForApplicationKey",
+            "printedName": "getPublicDataForApplicationKey()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3974,8 +4161,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9TSCoreSDK15TSCryptoBindingC13getPublicDataAA011TSPublicKeyG0VyYaKF",
-            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC13getPublicDataAA011TSPublicKeyG0VyYaKF",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC30getPublicDataForApplicationKeyAA08TSPublicjG0VyYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC30getPublicDataForApplicationKeyAA08TSPublicjG0VyYaKF",
             "moduleName": "TSCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
             "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
@@ -11951,77 +12138,77 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "StringLiteral",
-      "offset": 2134,
-      "length": 37,
-      "value": "\"core-crypto-binding-\""
+      "offset": 2708,
+      "length": 50,
+      "value": "\"TSCoreSDK.cb_application_key_tag-\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "StringLiteral",
-      "offset": 2170,
+      "offset": 2757,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 2412,
+      "offset": 3050,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 2625,
+      "offset": 3259,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 3546,
+      "offset": 4205,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 4528,
+      "offset": 5183,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 4585,
+      "offset": 5240,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 4627,
+      "offset": 5282,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 5009,
+      "offset": 5689,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 5786,
+      "offset": 6491,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 6408,
+      "offset": 7138,
       "length": 4,
       "value": "true"
     },
@@ -12973,49 +13160,49 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 5789,
+      "offset": 5743,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 6345,
+      "offset": 6299,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 6639,
+      "offset": 6593,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 6680,
+      "offset": 6634,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 6978,
+      "offset": 6932,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 7356,
+      "offset": 7310,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/identity-orchestration-ios-demo-app\/TSCoreSDK\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
-      "offset": 7406,
+      "offset": 7360,
       "length": 24,
       "value": "\"yyyy-MM-dd'T'HH:mm:ssZ\""
     },

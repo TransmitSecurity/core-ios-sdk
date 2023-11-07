@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TSCoreSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
@@ -16,6 +16,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import os
 @_hasMissingDesignatedInitializers public class TSUserDefauls {
   public static let shared: TSCoreSDK.TSUserDefauls
@@ -129,16 +130,25 @@ public protocol TSCryptoBindingParameters : AnyObject {
 }
 public protocol TSCryptoBindingProtocol : AnyObject {
   #if compiler(>=5.3) && $AsyncAwait
-  func createKeys() async throws
+  func createKeys(forTag applicationTag: Swift.String) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func clearKeys() async throws
+  func clearKeys(forTag applicationTag: Swift.String) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func getPublicData() async throws -> TSCoreSDK.TSPublicKeyData
+  func getPublicData(forTag applicationTag: Swift.String) async throws -> TSCoreSDK.TSPublicKeyData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func sign(message: Swift.String) async throws -> Foundation.Data
+  func sign(_ message: Swift.String, forTag applicationTag: Swift.String) async throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func createApplicationKeys() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func signWithApplicationKey(_ message: Swift.String) async throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getPublicDataForApplicationKey() async throws -> TSCoreSDK.TSPublicKeyData
   #endif
 }
 public struct TSPublicKeyData {
@@ -146,21 +156,30 @@ public struct TSPublicKeyData {
   public var publicKey: Swift.String
 }
 public class TSCryptoBinding<T> where T : TSCoreSDK.TSCryptoBindingParameters {
-  public init(service: T, kSecApplicationTag: Swift.String? = nil)
+  public init(service: T)
   @objc deinit
 }
 extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
   #if compiler(>=5.3) && $AsyncAwait
-  public func createKeys() async throws
+  public func createKeys(forTag applicationTag: Swift.String) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func clearKeys() async throws
+  public func clearKeys(forTag tag: Swift.String) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func sign(message: Swift.String) async throws -> Foundation.Data
+  public func sign(_ message: Swift.String, forTag applicationTag: Swift.String) async throws -> Foundation.Data
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func getPublicData() async throws -> TSCoreSDK.TSPublicKeyData
+  public func getPublicData(forTag applicationTag: Swift.String) async throws -> TSCoreSDK.TSPublicKeyData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func createApplicationKeys() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func signWithApplicationKey(_ message: Swift.String) async throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getPublicDataForApplicationKey() async throws -> TSCoreSDK.TSPublicKeyData
   #endif
 }
 extension TSCoreSDK.TSCore {
