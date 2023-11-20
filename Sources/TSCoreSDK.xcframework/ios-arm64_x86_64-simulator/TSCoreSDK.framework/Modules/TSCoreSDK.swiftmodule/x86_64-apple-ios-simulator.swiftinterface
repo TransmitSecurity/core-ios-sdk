@@ -391,6 +391,14 @@ public class TSEncryptServerRequestDataProvider {
 extension TSCoreSDK.TSEncryptServerRequestDataProvider : TSCoreSDK.TSEncryptEventsProviderProtocol {
   public func encrypt(events: Foundation.Data, publicKey: TSCoreSDK.TSEncryptServerRequestDataProvider.EncryptionPublicKey) throws -> TSCoreSDK.TSEncryptServerRequestDataProvider.DataContainer
 }
+public class ThreadSafeContainer<T> {
+  public var safeValue: T {
+    get
+    set
+  }
+  public init(value: T, accessQueue: Dispatch.DispatchQueue = .init(label: "TSCoreSDK.concurrency.threadSafeContainer", qos: .default, attributes: .concurrent))
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class TSECService {
   public static let shared: TSCoreSDK.TSECService
   @objc deinit
