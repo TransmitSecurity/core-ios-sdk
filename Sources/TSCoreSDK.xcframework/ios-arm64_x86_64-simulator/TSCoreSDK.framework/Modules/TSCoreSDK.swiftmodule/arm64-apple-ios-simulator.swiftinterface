@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TSCoreSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
@@ -114,13 +114,22 @@ extension TSCoreSDK.TSConstants {
     public static let X_TS_PROCESSING_TIME_MS: Swift.String
   }
 }
+public struct TSLocalAuthContext {
+  public init(interactionNotAllowed: Swift.Bool = false)
+}
 public enum TSCryptoException : Swift.Error {
   case unknownError
-  case keyNotFound
+  case keyRepresentationFailed((any Swift.Error)?)
+  case keyGenerationFailed((any Swift.Error)?)
+  case keySignFailed((any Swift.Error)?)
+  case keyAccessControl((any Swift.Error)?)
+  case evaluatePolicyFailed((any Swift.Error)?)
+  case keyDeleteFailed(Darwin.OSStatus)
+  case keyCopyFailed(Darwin.OSStatus)
   case unableToSignDataAlgorithmNotSupported
   case unableConvertKeyToData
+  case unableToConvertMessageToData
   case errorSigingData
-  case custom(error: (any Swift.Error)?)
 }
 public protocol TSCryptoBindingParameters : AnyObject {
   var keyType: CoreFoundation.CFString { get set }
@@ -130,58 +139,73 @@ public protocol TSCryptoBindingParameters : AnyObject {
 }
 public protocol TSCryptoBindingProtocol : AnyObject {
   #if compiler(>=5.3) && $AsyncAwait
-  func createKeys(forTag applicationTag: Swift.String) async throws
+  func provideKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> TSCoreSDK.TSPublicKeyData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func clearKeys(forTag applicationTag: Swift.String) async throws
+  func provideApplicationKeys() async throws -> TSCoreSDK.TSPublicKeyData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func getPublicData(forTag applicationTag: Swift.String) async throws -> TSCoreSDK.TSPublicKeyData
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  func sign(_ message: Swift.String, forTag applicationTag: Swift.String) async throws -> Foundation.Data
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  func createApplicationKeys() async throws
+  func sign(_ message: Swift.String, forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> Foundation.Data
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func signWithApplicationKey(_ message: Swift.String) async throws -> Foundation.Data
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func getPublicDataForApplicationKey() async throws -> TSCoreSDK.TSPublicKeyData
+  func signWithApplicationKeyBase64String(_ message: Swift.String) async throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func deleteKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func deleteApplicationKeys() async throws
   #endif
 }
 public struct TSPublicKeyData {
   public var keyIdentifier: Swift.String
   public var publicKey: Swift.String
 }
-public class TSCryptoBinding<T> where T : TSCoreSDK.TSCryptoBindingParameters {
+#if compiler(>=5.3) && $Actors
+public actor TSCryptoBinding<T> where T : TSCoreSDK.TSCryptoBindingParameters {
   public init(service: T)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getPublicKeyOf_PEM_format(forTag tag: Swift.String, context: LocalAuthentication.LAContext?) async throws -> Swift.String
+  #endif
   @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
 }
+#endif
+#if compiler(>=5.3) && $Actors
 extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
   #if compiler(>=5.3) && $AsyncAwait
-  public func createKeys(forTag applicationTag: Swift.String) async throws
+  public func provideKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws -> TSCoreSDK.TSPublicKeyData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func clearKeys(forTag tag: Swift.String) async throws
+  public func provideApplicationKeys() async throws -> TSCoreSDK.TSPublicKeyData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func sign(_ message: Swift.String, forTag applicationTag: Swift.String) async throws -> Foundation.Data
+  public func sign(_ message: Swift.String, forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws -> Foundation.Data
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func getPublicData(forTag applicationTag: Swift.String) async throws -> TSCoreSDK.TSPublicKeyData
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func createApplicationKeys() async throws
+  public func signBase64String(of message: Swift.String, forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws -> Swift.String
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func signWithApplicationKey(_ message: Swift.String) async throws -> Foundation.Data
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func getPublicDataForApplicationKey() async throws -> TSCoreSDK.TSPublicKeyData
+  public func signWithApplicationKeyBase64String(_ message: Swift.String) async throws -> Swift.String
   #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func deleteKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func deleteApplicationKeys() async throws
+  #endif
+  public func isNativeBiometricsAvailable() throws -> Swift.Bool
 }
+#endif
 extension TSCoreSDK.TSCore {
   public static let clientPlatform: Swift.String
 }
