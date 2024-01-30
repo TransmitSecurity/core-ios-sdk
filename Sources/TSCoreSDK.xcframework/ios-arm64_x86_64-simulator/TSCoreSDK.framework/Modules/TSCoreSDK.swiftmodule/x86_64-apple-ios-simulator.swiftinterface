@@ -48,16 +48,25 @@ extension Swift.String {
   public func base64ToBase64url() -> Swift.String
 }
 @_hasMissingDesignatedInitializers public class TSKeychain {
+  public enum KeychainError : Swift.Error, Swift.CustomStringConvertible {
+    case unknownError
+    case itemAddFailed(Darwin.OSStatus)
+    case itemAccessControl((any Swift.Error)?)
+    case itemDeleteFailed(Darwin.OSStatus)
+    case itemCopyFailed(Darwin.OSStatus)
+    case incorrectDataFormat
+    case itemNotFound
+    public var description: Swift.String {
+      get
+    }
+  }
   public static let shared: TSCoreSDK.TSKeychain
-  @discardableResult
-  public func set(_ value: Swift.String, forKey key: Swift.String, withAccess access: TSCoreSDK.KeychainSwiftAccessOptions? = .accessibleWhenUnlockedThisDeviceOnly) -> Swift.Bool
-  @discardableResult
-  public func set(_ value: Foundation.Data, forKey key: Swift.String, withAccess access: TSCoreSDK.KeychainSwiftAccessOptions? = .accessibleWhenUnlockedThisDeviceOnly) -> Swift.Bool
-  @discardableResult
-  public func set(_ value: Swift.Bool, forKey key: Swift.String, withAccess access: TSCoreSDK.KeychainSwiftAccessOptions? = .accessibleWhenUnlockedThisDeviceOnly) -> Swift.Bool
-  public func get(_ key: Swift.String) -> Swift.String?
-  public func getData(_ key: Swift.String, asReference: Swift.Bool = false) -> Foundation.Data?
-  public func getBool(_ key: Swift.String) -> Swift.Bool?
+  public func set(_ value: Swift.String, forKey key: Swift.String, withAccess access: TSCoreSDK.KeychainSwiftAccessOptions? = .accessibleWhenUnlockedThisDeviceOnly, isBiometricProtected: Swift.Bool = false) throws
+  public func set(_ value: Foundation.Data, forKey key: Swift.String, withAccess access: TSCoreSDK.KeychainSwiftAccessOptions? = .accessibleWhenUnlockedThisDeviceOnly, isBiometricProtected: Swift.Bool = false) throws
+  public func set(_ value: Swift.Bool, forKey key: Swift.String, withAccess access: TSCoreSDK.KeychainSwiftAccessOptions? = .accessibleWhenUnlockedThisDeviceOnly) throws
+  public func get(_ key: Swift.String, context: LocalAuthentication.LAContext? = nil) throws -> Swift.String
+  public func getData(_ key: Swift.String, asReference: Swift.Bool = false, context: LocalAuthentication.LAContext? = nil) throws -> Foundation.Data
+  public func getBool(_ key: Swift.String) throws -> Swift.Bool
   @discardableResult
   public func delete(_ key: Swift.String) -> Swift.Bool
   @discardableResult
@@ -117,7 +126,7 @@ extension TSCoreSDK.TSConstants {
 public struct TSLocalAuthContext {
   public init(interactionNotAllowed: Swift.Bool = false)
 }
-public enum TSCryptoException : Swift.Error {
+public enum TSCryptoException : Swift.Error, Swift.CustomStringConvertible {
   case unknownError
   case keyRepresentationFailed((any Swift.Error)?)
   case keyGenerationFailed((any Swift.Error)?)
@@ -125,11 +134,15 @@ public enum TSCryptoException : Swift.Error {
   case keyAccessControl((any Swift.Error)?)
   case evaluatePolicyFailed((any Swift.Error)?)
   case keyDeleteFailed(Darwin.OSStatus)
+  case keyNotFound
   case keyCopyFailed(Darwin.OSStatus)
   case unableToSignDataAlgorithmNotSupported
   case unableConvertKeyToData
   case unableToConvertMessageToData
   case errorSigingData
+  public var description: Swift.String {
+    get
+  }
 }
 public protocol TSCryptoBindingParameters : AnyObject {
   var keyType: CoreFoundation.CFString { get set }
@@ -142,10 +155,16 @@ public protocol TSCryptoBindingProtocol : AnyObject {
   func provideKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> TSCoreSDK.TSPublicKeyData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  func getKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> TSCoreSDK.TSPublicKeyData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func provideApplicationKeys() async throws -> TSCoreSDK.TSPublicKeyData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func sign(_ message: Swift.String, forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func signBase64String(of message: Swift.String, forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> Swift.String
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func signWithApplicationKey(_ message: Swift.String) async throws -> Foundation.Data
@@ -183,6 +202,9 @@ extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
   public func provideKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws -> TSCoreSDK.TSPublicKeyData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  public func getKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws -> TSCoreSDK.TSPublicKeyData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func provideApplicationKeys() async throws -> TSCoreSDK.TSPublicKeyData
   #endif
   #if compiler(>=5.3) && $AsyncAwait
@@ -203,9 +225,12 @@ extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
   #if compiler(>=5.3) && $AsyncAwait
   public func deleteApplicationKeys() async throws
   #endif
-  public func isNativeBiometricsAvailable() throws -> Swift.Bool
 }
 #endif
+@_hasMissingDesignatedInitializers public class TSLocalAuthentication {
+  public static func isNativeBiometricsAvailable() -> Swift.Bool
+  @objc deinit
+}
 extension TSCoreSDK.TSCore {
   public static let clientPlatform: Swift.String
 }
