@@ -1,7 +1,7 @@
 framework module TSCoreSDK {
   umbrella header "TSCoreSDK.h"
-  export *
 
+  export *
   module * { export * }
 }
 
