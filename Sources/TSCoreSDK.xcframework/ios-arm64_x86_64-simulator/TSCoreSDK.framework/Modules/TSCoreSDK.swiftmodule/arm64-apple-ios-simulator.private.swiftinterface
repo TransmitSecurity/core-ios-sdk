@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TSCoreSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
@@ -16,20 +16,19 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
-import _SwiftConcurrencyShims
 import os
 @_hasMissingDesignatedInitializers public class TSUserDefauls {
   public static let shared: TSCoreSDK.TSUserDefauls
-  public func set(moduleInfo: any TSCoreSDK.ITSModuleInfo, value: Any?, forKey key: Swift.String) throws
-  public func getInt(moduleInfo: any TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Swift.Int?) -> Swift.Int?
-  public func getFloat(moduleInfo: any TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Swift.Float?) -> Swift.Float?
-  public func getDouble(moduleInfo: any TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Swift.Double?) -> Swift.Double?
-  public func getString(moduleInfo: any TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Swift.String?) -> Swift.String?
-  public func getStringArray(moduleInfo: any TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: [Swift.String]?) -> [Swift.String]?
-  public func getData(moduleInfo: any TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Foundation.Data?) -> Foundation.Data?
-  public func getObject(moduleInfo: any TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Any?) -> Any?
-  public func clearKey(moduleInfo: any TSCoreSDK.ITSModuleInfo, key: Swift.String)
-  public func clearUserDetails(moduleInfo: any TSCoreSDK.ITSModuleInfo)
+  public func set(moduleInfo: TSCoreSDK.ITSModuleInfo, value: Any?, forKey key: Swift.String) throws
+  public func getInt(moduleInfo: TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Swift.Int?) -> Swift.Int?
+  public func getFloat(moduleInfo: TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Swift.Float?) -> Swift.Float?
+  public func getDouble(moduleInfo: TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Swift.Double?) -> Swift.Double?
+  public func getString(moduleInfo: TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Swift.String?) -> Swift.String?
+  public func getStringArray(moduleInfo: TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: [Swift.String]?) -> [Swift.String]?
+  public func getData(moduleInfo: TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Foundation.Data?) -> Foundation.Data?
+  public func getObject(moduleInfo: TSCoreSDK.ITSModuleInfo, key: Swift.String, defaultValue: Any?) -> Any?
+  public func clearKey(moduleInfo: TSCoreSDK.ITSModuleInfo, key: Swift.String)
+  public func clearUserDetails(moduleInfo: TSCoreSDK.ITSModuleInfo)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class TSCore : ObjectiveC.NSObject {
@@ -51,7 +50,7 @@ extension Swift.String {
   public enum KeychainError : Swift.Error, Swift.CustomStringConvertible {
     case unknownError
     case itemAddFailed(Darwin.OSStatus)
-    case itemAccessControl((any Swift.Error)?)
+    case itemAccessControl(Swift.Error?)
     case itemDeleteFailed(Darwin.OSStatus)
     case itemCopyFailed(Darwin.OSStatus)
     case incorrectDataFormat
@@ -128,11 +127,11 @@ public struct TSLocalAuthContext {
 }
 public enum TSCryptoException : Swift.Error, Swift.CustomStringConvertible {
   case unknownError
-  case keyRepresentationFailed((any Swift.Error)?)
-  case keyGenerationFailed((any Swift.Error)?)
-  case keySignFailed((any Swift.Error)?)
-  case keyAccessControl((any Swift.Error)?)
-  case evaluatePolicyFailed((any Swift.Error)?)
+  case keyRepresentationFailed(Swift.Error?)
+  case keyGenerationFailed(Swift.Error?)
+  case keySignFailed(Swift.Error?)
+  case keyAccessControl(Swift.Error?)
+  case evaluatePolicyFailed(Swift.Error?)
   case keyDeleteFailed(Darwin.OSStatus)
   case keyNotFound
   case keyCopyFailed(Darwin.OSStatus)
@@ -289,12 +288,12 @@ extension Swift.Dictionary {
   public func ts_toData() -> Foundation.Data?
 }
 public struct NoReply : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public class TSNetworkService<Request, Response> where Request : TSCoreSDK.TSBaseNetworkRequest, Response : Swift.Decodable, Response : Swift.Encodable {
   public init(request: Request)
-  public func send(moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping (Swift.Result<Response, TSCoreSDK.TSRequestError>) -> Swift.Void)
+  public func send(moduleInfo: TSCoreSDK.ITSModuleInfo, completion: @escaping (Swift.Result<Response, TSCoreSDK.TSRequestError>) -> Swift.Void)
   @objc deinit
 }
 public enum TSLogLevel : Swift.Int, Swift.CaseIterable {
@@ -336,12 +335,12 @@ public class TSRSAService : TSCoreSDK.TSCryptoBindingParameters {
 }
 public protocol TSDataSource {
   associatedtype DataSourceType
-  func addData(data: Self.DataSourceType, moduleInfo: any TSCoreSDK.ITSModuleInfo)
-  func addData(dataList: Swift.Array<Self.DataSourceType>, moduleInfo: any TSCoreSDK.ITSModuleInfo)
-  func fetchAndRemove(moduleInfo: any TSCoreSDK.ITSModuleInfo) -> [Self.DataSourceType]?
-  func size(moduleInfo: any TSCoreSDK.ITSModuleInfo) -> Swift.Int
-  func isEmpty(moduleInfo: any TSCoreSDK.ITSModuleInfo) -> Swift.Bool
-  func removeData(moduleInfo: (any TSCoreSDK.ITSModuleInfo)?)
+  func addData(data: Self.DataSourceType, moduleInfo: TSCoreSDK.ITSModuleInfo)
+  func addData(dataList: Swift.Array<Self.DataSourceType>, moduleInfo: TSCoreSDK.ITSModuleInfo)
+  func fetchAndRemove(moduleInfo: TSCoreSDK.ITSModuleInfo) -> [Self.DataSourceType]?
+  func size(moduleInfo: TSCoreSDK.ITSModuleInfo) -> Swift.Int
+  func isEmpty(moduleInfo: TSCoreSDK.ITSModuleInfo) -> Swift.Bool
+  func removeData(moduleInfo: TSCoreSDK.ITSModuleInfo?)
 }
 public struct EnctyptedContainer {
   public let keyAsBase64: Swift.String?
@@ -368,19 +367,19 @@ public class TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTI
   public typealias TYPE = DataSource.DataSourceType
   public init(configuration: TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.Configuration)
   @objc deinit
-  public func changeParameters(bufferSize: Swift.Int, syncInterval: Swift.Double, moduleInfo: any TSCoreSDK.ITSModuleInfo)
-  public func addData(data: TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE, moduleInfo: any TSCoreSDK.ITSModuleInfo)
-  public func addData(dataList: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE], moduleInfo: any TSCoreSDK.ITSModuleInfo)
-  public func triggerData(data: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE]? = nil, moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping ((Swift.Result<TRIGGER_ACTION_EVENT, TSCoreSDK.TSRequestErrorCode>) -> Swift.Void))
+  public func changeParameters(bufferSize: Swift.Int, syncInterval: Swift.Double, moduleInfo: TSCoreSDK.ITSModuleInfo)
+  public func addData(data: TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE, moduleInfo: TSCoreSDK.ITSModuleInfo)
+  public func addData(dataList: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE], moduleInfo: TSCoreSDK.ITSModuleInfo)
+  public func triggerData(data: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE]? = nil, moduleInfo: TSCoreSDK.ITSModuleInfo, completion: @escaping ((Swift.Result<TRIGGER_ACTION_EVENT, TSCoreSDK.TSRequestErrorCode>) -> Swift.Void))
 }
 @_hasMissingDesignatedInitializers final public class TSLog {
-  public static func v(_ info: any TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
-  public static func d(_ info: any TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
-  public static func i(_ info: any TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
-  public static func w(_ info: any TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
-  public static func e(_ info: any TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
-  public static func exception(_ info: any TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
-  public static func logToConsole(level: TSCoreSDK.TSLogLevel, info: (any TSCoreSDK.ITSModuleInfo)? = nil, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public static func v(_ info: TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public static func d(_ info: TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public static func i(_ info: TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public static func w(_ info: TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public static func e(_ info: TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public static func exception(_ info: TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public static func logToConsole(level: TSCoreSDK.TSLogLevel, info: TSCoreSDK.ITSModuleInfo? = nil, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class TSRSAConverter {
@@ -420,7 +419,7 @@ public class TSStorageError : Swift.Error {
 extension TSCoreSDK.TSEncryptServerRequestDataProvider {
   public enum Error : Swift.Error {
     case publicKeyCreationFailed
-    case rsaEncryptionFailed((any Swift.Error)?)
+    case rsaEncryptionFailed(Swift.Error?)
   }
   public struct DataContainer {
     public let keyAsBase64: Swift.String
@@ -481,7 +480,7 @@ extension TSCoreSDK.TSBaseNetworkRequest {
 public protocol TSDataSyncServer {
   associatedtype TYPE : Swift.Encodable
   associatedtype Response : Swift.Decodable
-  func sendDataToServer(dataList: [Self.TYPE], moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping ((Swift.Result<Self.Response, TSCoreSDK.TSRequestErrorCode>) -> Swift.Void)) throws
+  func sendDataToServer(dataList: [Self.TYPE], moduleInfo: TSCoreSDK.ITSModuleInfo, completion: @escaping ((Swift.Result<Self.Response, TSCoreSDK.TSRequestErrorCode>) -> Swift.Void)) throws
 }
 extension TSCoreSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
 extension TSCoreSDK.KeychainSwiftAccessOptions : Swift.Hashable {}
