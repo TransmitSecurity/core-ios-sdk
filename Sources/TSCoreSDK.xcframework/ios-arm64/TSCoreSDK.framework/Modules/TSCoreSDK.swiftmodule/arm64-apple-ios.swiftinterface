@@ -342,6 +342,11 @@ public protocol TSDataSource {
   func isEmpty(moduleInfo: TSCoreSDK.ITSModuleInfo) -> Swift.Bool
   func removeData(moduleInfo: TSCoreSDK.ITSModuleInfo?)
 }
+@_hasMissingDesignatedInitializers public class TSFile {
+  public static func readFromAppPlist<T>(named: Swift.String, as type: T.Type) throws -> T where T : Swift.Decodable, T : Swift.Encodable
+  public static func readFromPlist<T>(named: Swift.String, bundle: Foundation.Bundle, as type: T.Type) throws -> T where T : Swift.Decodable, T : Swift.Encodable
+  @objc deinit
+}
 public struct EnctyptedContainer {
   public let keyAsBase64: Swift.String?
   public let ivAsBase64: Swift.String?

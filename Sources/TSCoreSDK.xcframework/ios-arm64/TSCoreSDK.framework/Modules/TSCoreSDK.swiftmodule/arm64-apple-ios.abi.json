@@ -7938,6 +7938,123 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TSFile",
+        "printedName": "TSFile",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "readFromAppPlist",
+            "printedName": "readFromAppPlist(named:as:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK6TSFileC16readFromAppPlist5named2asxSS_xmtKSeRzSERzlFZ",
+            "mangledName": "$s9TSCoreSDK6TSFileC16readFromAppPlist5named2asxSS_xmtKSeRzSERzlFZ",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "readFromPlist",
+            "printedName": "readFromPlist(named:bundle:as:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK6TSFileC13readFromPlist5named6bundle2asxSS_So8NSBundleCxmtKSeRzSERzlFZ",
+            "mangledName": "$s9TSCoreSDK6TSFileC13readFromPlist5named6bundle2asxSS_So8NSBundleCxmtKSeRzSERzlFZ",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9TSCoreSDK6TSFileC",
+        "mangledName": "$s9TSCoreSDK6TSFileC",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "CryptoKit",
         "printedName": "CryptoKit",
@@ -13890,6 +14007,13 @@
       "offset": 225,
       "length": 4,
       "value": "2048"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSFile.swift",
+      "kind": "StringLiteral",
+      "offset": 331,
+      "length": 7,
+      "value": "\"plist\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSTimer.swift",
