@@ -106,6 +106,7 @@ public enum TSRequestErrorCode : Swift.Error, Swift.Equatable {
 }
 public class TSRequestError : Swift.Error {
   final public let errorCode: TSCoreSDK.TSRequestErrorCode
+  final public let errorMessage: Swift.String?
   public var rawResponse: Foundation.Data?
   public init(errorCode: TSCoreSDK.TSRequestErrorCode, errorMessage: Swift.String? = nil)
   @objc deinit
