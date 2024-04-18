@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7pGu1VwGubxA8E09Rk6LxM7yv7M=
+		LymwPycSf2SCA1kKmsRMaEh3OJo=
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		l4V80I+aKUzwygH2nLCmXEreQ2A=
+		JPA5GJ51oVuU3r6/Z+uC4sWRMS4=
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+Of4wQCtR3daHoTxiQQMVV+J6jw=
+		8kQ34MDDXmS/O8r/Z5a78u110wM=
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+Of4wQCtR3daHoTxiQQMVV+J6jw=
+		8kQ34MDDXmS/O8r/Z5a78u110wM=
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Zc5Hd7RRvX+KgzEPpKZBzRzJ0VU=
+		b3udI55QLIncmQ0S/qH88oWucbw=
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		l4V80I+aKUzwygH2nLCmXEreQ2A=
+		JPA5GJ51oVuU3r6/Z+uC4sWRMS4=
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jCVVsXMEw5x/pZABgfqcGPvxLQM=
+		Z2LkdZwGGbD/qPMO5zNsn7TSlJg=
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jCVVsXMEw5x/pZABgfqcGPvxLQM=
+		Z2LkdZwGGbD/qPMO5zNsn7TSlJg=
 		</data>
 		<key>Modules/TSCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		upINQ2z6/ovRBKZGaYpEZMIoy7I=
+		/AHTG1VyLjYUVxZqSmf2Tw7yH04=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mcjM8jA0jex/koqDZMMPKgtbCU49GPyYkGghx20pEGc=
+			zXUonBkbLe8Xxm5ASJaUnL3RP8xMl7iyg3Cz3khehAs=
 			</data>
 		</dict>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6l3/2AFSfNDY2girMHJkF26bpSWA6IBmp6qyg3P+mR0=
+			05PhNq2A1dso4jgCpE+HBIDKZlR0qeuJF7CsjjDQefw=
 			</data>
 		</dict>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -114,28 +114,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6l3/2AFSfNDY2girMHJkF26bpSWA6IBmp6qyg3P+mR0=
+			05PhNq2A1dso4jgCpE+HBIDKZlR0qeuJF7CsjjDQefw=
 			</data>
 		</dict>
 		<key>Modules/TSCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s6tkw5cMOSCWlIa+w21sHvpLg9Wvq29B0X9b02zWhlw=
+			H9G/nLhyM+8M7sZV8lLMDYJSuoM0ntRdrU2x0GjRfEQ=
 			</data>
 		</dict>
 		<key>Modules/TSCoreSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mcjM8jA0jex/koqDZMMPKgtbCU49GPyYkGghx20pEGc=
+			zXUonBkbLe8Xxm5ASJaUnL3RP8xMl7iyg3Cz3khehAs=
 			</data>
 		</dict>
 		<key>Modules/TSCoreSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OHL2qX7Z6eJSbnAwRNFzha8EF/XXJ+GFNDVbWoY0i3g=
+			SP1UxPhky4QmnyrtJJspsum1sF66FVrg364meWwcQ1Q=
 			</data>
 		</dict>
 		<key>Modules/TSCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -149,14 +149,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OHL2qX7Z6eJSbnAwRNFzha8EF/XXJ+GFNDVbWoY0i3g=
+			SP1UxPhky4QmnyrtJJspsum1sF66FVrg364meWwcQ1Q=
 			</data>
 		</dict>
 		<key>Modules/TSCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SYDBn+isnPVW9Zg410AVcGk3KaCGbZMYAeRvOvuhvsA=
+			rIDABlJ9OJ9nuyngwA5/24VOOX26Jk7SURk0yVQb4ZU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
