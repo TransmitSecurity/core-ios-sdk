@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TSCoreSDK
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TSCoreSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
 import CommonCrypto
 import CoreData
@@ -178,7 +179,7 @@ public protocol TSCryptoBindingProtocol : AnyObject {
   func signWithApplicationKeyBase64String(_ message: Swift.String) async throws -> Swift.String
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func deleteKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws
+  func deleteKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> Swift.String
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func deleteApplicationKeys() async throws
@@ -225,7 +226,7 @@ extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
   public func signWithApplicationKeyBase64String(_ message: Swift.String) async throws -> Swift.String
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func deleteKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws
+  public func deleteKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws -> Swift.String
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func deleteApplicationKeys() async throws
@@ -234,6 +235,7 @@ extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
 #endif
 @_hasMissingDesignatedInitializers public class TSLocalAuthentication {
   public static func isNativeBiometricsAvailable() -> Swift.Bool
+  public static func isNativeBiometricsEnrolled() -> Swift.Bool
   @objc deinit
 }
 public protocol TSRetriableRequest {
