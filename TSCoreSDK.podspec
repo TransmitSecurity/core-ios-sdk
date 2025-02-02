@@ -95,7 +95,7 @@ Pod::Spec.new do |spec|
     #spec.exclude_files = "Classes/Exclude"
     #spec.public_header_files = "Classes/**/*.h"
   
-    spec.vendored_frameworks = "Sources/TSCoreSDK.xcframework*"
+    spec.vendored_frameworks = "Sources/TSCoreSDK.xcframework"
   
   
     # ----- Resources ------------------------------------------------ #
