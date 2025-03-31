@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TSCoreSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Combine
@@ -32,6 +32,39 @@ import os
   public func clearKey(moduleInfo: any TSCoreSDK.ITSModuleInfo, key: Swift.String)
   public func clearUserDetails(moduleInfo: any TSCoreSDK.ITSModuleInfo)
   @objc deinit
+}
+public struct TSJSONCodingKeys : Swift.CodingKey {
+  public var stringValue: Swift.String
+  public init(stringValue: Swift.String)
+  public var intValue: Swift.Int?
+  public init?(intValue: Swift.Int)
+}
+extension Swift.KeyedDecodingContainer {
+  public func ts_decode(_ type: Swift.Dictionary<Swift.String, Any>.Type, forKey key: K) throws -> Swift.Dictionary<Swift.String, Any>
+  public func ts_decode(_ type: Swift.Array<Any>.Type, forKey key: K) throws -> Swift.Array<Any>
+  public func ts_decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+  public func ts_decode(_ type: any Any.Type, forKey key: K) throws -> Any
+}
+extension Swift.UnkeyedDecodingContainer {
+  public mutating func ts_decode(_ type: Swift.Array<Any>.Type) throws -> Swift.Array<Any>
+  public mutating func ts_decode(_ type: any Any.Type) throws -> Any
+  public mutating func ts_decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+}
+extension Swift.KeyedEncodingContainerProtocol where Self.Key == TSCoreSDK.TSJSONCodingKeys {
+  public mutating func ts_encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
+}
+extension Swift.KeyedEncodingContainerProtocol {
+  public mutating func ts_encode(_ value: Swift.Dictionary<Swift.String, Any>?, forKey key: Self.Key) throws
+  public mutating func ts_encode(_ value: Swift.Array<Any>?, forKey key: Self.Key) throws
+  public mutating func ts_encode(_ value: Any?, forKey key: Self.Key) throws
+}
+extension Swift.UnkeyedEncodingContainer {
+  public mutating func ts_encode(_ value: Swift.Array<Any>) throws
+  public mutating func ts_encode(_ value: Any) throws
+  public mutating func ts_encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
+}
+extension Swift.Encodable {
+  public func ts_toDictionary(_ encoder: Foundation.JSONEncoder = JSONEncoder()) -> [Swift.String : Any]?
 }
 @objc @_inheritsConvenienceInitializers public class TSCore : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -106,7 +139,10 @@ public enum TSRequestErrorCode : Swift.Error, Swift.Equatable {
   case requestError(errorCode: Swift.Int)
   public static func == (a: TSCoreSDK.TSRequestErrorCode, b: TSCoreSDK.TSRequestErrorCode) -> Swift.Bool
 }
-public class TSRequestError : Swift.Error {
+public class TSRequestError : Swift.Error, Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
   final public let errorCode: TSCoreSDK.TSRequestErrorCode
   final public let errorMessage: Swift.String?
   public var rawResponse: Foundation.Data?
@@ -155,6 +191,8 @@ public protocol TSCryptoBindingParameters : AnyObject {
   var keySize: Swift.Int { get set }
   var signAlgorithm: Security.SecKeyAlgorithm { get set }
   var encryptAlgorithm: Security.SecKeyAlgorithm { get set }
+  var tokenId: CoreFoundation.CFString? { get set }
+  func convertPublicKeyToPEMFormat(_ key: Foundation.Data) -> Swift.String
 }
 public protocol TSCryptoBindingProtocol : AnyObject {
   func provideKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> TSCoreSDK.TSPublicKeyData
@@ -210,6 +248,57 @@ extension TSCoreSDK.TSRetriableRequest {
 }
 extension TSCoreSDK.TSCore {
   public static let clientPlatform: Swift.String
+}
+public struct TSCryptoSessionManagerConfiguration {
+  public let scheme: Swift.Int
+  public let baseUrl: Swift.String
+  public let clientId: Swift.String
+  public let aid: Swift.String
+  public let moduleInfo: any TSCoreSDK.ITSModuleInfo
+  public let flowId: Swift.String
+  public let did: Swift.String?
+  public let locale: Swift.String?
+  public let sessionId: Swift.String?
+  public init(scheme: Swift.Int, baseUrl: Swift.String, clientId: Swift.String, aid: Swift.String, moduleInfo: any TSCoreSDK.ITSModuleInfo, flowId: Swift.String, did: Swift.String?, locale: Swift.String?, sessionId: Swift.String? = nil)
+}
+@_hasMissingDesignatedInitializers public class TSResponseGenericHeader : Swift.Codable {
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class TSCryptoSessionManager {
+  public var currentSession: (any TSCoreSDK.TSCryptoSessionProtocol)? {
+    get
+  }
+  @_hasMissingDesignatedInitializers public class ServerResponseData : Swift.Codable {
+    required public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    @objc deinit
+  }
+  public struct ClientRequestData : Swift.Codable {
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct EncryptedClientRequestData : Swift.Codable {
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(configuration: TSCoreSDK.TSCryptoSessionManagerConfiguration, serverProvider: TSCoreSDK.TSCryptoSessionServerProvider = .init()) throws
+  public func createCryptoSession() async throws
+  @objc deinit
+}
+public typealias TSClientRequestData = TSCoreSDK.TSCryptoSessionManager.ClientRequestData
+public typealias TSEncryptedClientRequestData = TSCoreSDK.TSCryptoSessionManager.EncryptedClientRequestData
+public typealias TSServerResponseData = TSCoreSDK.TSCryptoSessionManager.ServerResponseData
+public protocol TSCryptoSessionProtocol {
+  func encrypt(_ data: TSCoreSDK.TSClientRequestData) throws -> TSCoreSDK.TSEncryptedClientRequestData
+  func decrypt(_ response: TSCoreSDK.TSServerResponseData) throws -> TSCoreSDK.TSServerResponseData
+}
+public struct TSCryptoSessionConfiguration {
+}
+public struct TSCryptoSession : TSCoreSDK.TSCryptoSessionProtocol {
+  public func encrypt(_ request: TSCoreSDK.TSClientRequestData) throws -> TSCoreSDK.TSEncryptedClientRequestData
+  public func decrypt(_ response: TSCoreSDK.TSServerResponseData) throws -> TSCoreSDK.TSServerResponseData
 }
 @objc @_inheritsConvenienceInitializers public class TSSecurityUtils : ObjectiveC.NSObject {
   public static func randomBase64EncodedString(length: Swift.Int) -> Swift.String?
@@ -323,8 +412,12 @@ public class TSRSAService : TSCoreSDK.TSCryptoBindingParameters {
   public var keySize: Swift.Int
   public var signAlgorithm: Security.SecKeyAlgorithm
   public var encryptAlgorithm: Security.SecKeyAlgorithm
+  public var tokenId: CoreFoundation.CFString?
   public init()
   @objc deinit
+}
+extension TSCoreSDK.TSRSAService {
+  public func convertPublicKeyToPEMFormat(_ key: Foundation.Data) -> Swift.String
 }
 public protocol TSDataSource {
   associatedtype DataSourceType
@@ -338,6 +431,17 @@ public protocol TSDataSource {
 @_hasMissingDesignatedInitializers public class TSFile {
   public static func readFromAppPlist<T>(named: Swift.String, as type: T.Type) throws -> T where T : Swift.Decodable, T : Swift.Encodable
   public static func readFromPlist<T>(named: Swift.String, bundle: Foundation.Bundle, as type: T.Type) throws -> T where T : Swift.Decodable, T : Swift.Encodable
+  @objc deinit
+}
+public class TSSDKError : Swift.Error {
+  final public let code: Swift.Int
+  final public let message: Swift.String
+  final public let details: [Swift.String : Any]?
+  public init(code: Swift.Int, message: Swift.String, details: [Swift.String : Any]? = nil)
+  public var description: Swift.String {
+    get
+  }
+  public static func withCustomMessage(_ error: TSCoreSDK.TSSDKError, message: Swift.String, details: [Swift.String : Any]? = nil) -> TSCoreSDK.TSSDKError
   @objc deinit
 }
 public struct EnctyptedContainer {
@@ -369,6 +473,10 @@ public class TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTI
   public func addData(data: TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE, moduleInfo: any TSCoreSDK.ITSModuleInfo)
   public func addData(dataList: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE], moduleInfo: any TSCoreSDK.ITSModuleInfo)
   public func triggerData(data: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE]? = nil, moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping ((Swift.Result<TRIGGER_ACTION_EVENT, TSCoreSDK.TSRequestErrorCode>) -> Swift.Void))
+}
+public class TSCryptoSessionServerProvider {
+  public init()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class TSLog {
   public static func v(_ info: any TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
@@ -446,9 +554,17 @@ public class ThreadSafeContainer<T> {
   public init(value: T, accessQueue: Dispatch.DispatchQueue = .init(label: "TSCoreSDK.concurrency.threadSafeContainer", qos: .default, attributes: .concurrent))
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class TSECService {
-  public static let shared: TSCoreSDK.TSECService
+public class TSECService : TSCoreSDK.TSCryptoBindingParameters {
+  public var keyType: CoreFoundation.CFString
+  public var keySize: Swift.Int
+  public var signAlgorithm: Security.SecKeyAlgorithm
+  public var encryptAlgorithm: Security.SecKeyAlgorithm
+  public var tokenId: CoreFoundation.CFString?
+  public init()
   @objc deinit
+}
+extension TSCoreSDK.TSECService {
+  public func convertPublicKeyToPEMFormat(_ key: Foundation.Data) -> Swift.String
 }
 extension Foundation.CharacterSet {
   public static let tsURLQueryAllowed: Foundation.CharacterSet
@@ -466,15 +582,28 @@ public enum TSHttpMethod : Swift.String {
   }
 }
 public typealias Parameters = [Swift.String : Swift.String]
+public class TSNetworkRequestConfiguration {
+  final public let cryptoSession: (any TSCoreSDK.TSCryptoSessionProtocol)?
+  public init(cryptoSession: (any TSCoreSDK.TSCryptoSessionProtocol)?)
+  @objc deinit
+}
 public protocol TSBaseNetworkRequest {
+  var configuration: TSCoreSDK.TSNetworkRequestConfiguration? { get }
   var httpMethod: TSCoreSDK.TSHttpMethod { get }
   func urlHost() -> Swift.String?
   func httpBody() -> Foundation.Data?
   func headers() -> [Swift.String : Swift.String]?
   func queriesParameters() -> TSCoreSDK.Parameters?
+  func bodyHeaders() -> [Any]?
+  func isEncrypted() -> Swift.Bool
   var keyDecodingStrategy: Foundation.JSONDecoder.KeyDecodingStrategy { get }
 }
 extension TSCoreSDK.TSBaseNetworkRequest {
+  public var configuration: TSCoreSDK.TSNetworkRequestConfiguration? {
+    get
+  }
+  public func bodyHeaders() -> [Any]?
+  public func isEncrypted() -> Swift.Bool
   public var keyDecodingStrategy: Foundation.JSONDecoder.KeyDecodingStrategy {
     get
   }
