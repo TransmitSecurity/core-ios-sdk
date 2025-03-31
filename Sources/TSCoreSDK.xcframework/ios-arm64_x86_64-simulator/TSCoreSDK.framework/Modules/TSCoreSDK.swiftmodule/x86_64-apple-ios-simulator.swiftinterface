@@ -554,17 +554,9 @@ public class ThreadSafeContainer<T> {
   public init(value: T, accessQueue: Dispatch.DispatchQueue = .init(label: "TSCoreSDK.concurrency.threadSafeContainer", qos: .default, attributes: .concurrent))
   @objc deinit
 }
-public class TSECService : TSCoreSDK.TSCryptoBindingParameters {
-  public var keyType: CoreFoundation.CFString
-  public var keySize: Swift.Int
-  public var signAlgorithm: Security.SecKeyAlgorithm
-  public var encryptAlgorithm: Security.SecKeyAlgorithm
-  public var tokenId: CoreFoundation.CFString?
-  public init()
+@_hasMissingDesignatedInitializers public class TSECService {
+  public static let shared: TSCoreSDK.TSECService
   @objc deinit
-}
-extension TSCoreSDK.TSECService {
-  public func convertPublicKeyToPEMFormat(_ key: Foundation.Data) -> Swift.String
 }
 extension Foundation.CharacterSet {
   public static let tsURLQueryAllowed: Foundation.CharacterSet

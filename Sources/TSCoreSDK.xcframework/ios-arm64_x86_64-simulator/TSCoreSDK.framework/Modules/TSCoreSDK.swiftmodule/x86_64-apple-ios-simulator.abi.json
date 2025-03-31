@@ -15537,464 +15537,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "keyType",
-            "printedName": "keyType",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CFString",
-                "printedName": "CoreFoundation.CFString",
-                "usr": "c:@T@CFStringRef"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9TSCoreSDK11TSECServiceC7keyTypeSo11CFStringRefavp",
-            "mangledName": "$s9TSCoreSDK11TSECServiceC7keyTypeSo11CFStringRefavp",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CFString",
-                    "printedName": "CoreFoundation.CFString",
-                    "usr": "c:@T@CFStringRef"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7keyTypeSo11CFStringRefavg",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7keyTypeSo11CFStringRefavg",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CFString",
-                    "printedName": "CoreFoundation.CFString",
-                    "usr": "c:@T@CFStringRef"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7keyTypeSo11CFStringRefavs",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7keyTypeSo11CFStringRefavs",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7keyTypeSo11CFStringRefavM",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7keyTypeSo11CFStringRefavM",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "keySize",
-            "printedName": "keySize",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9TSCoreSDK11TSECServiceC7keySizeSivp",
-            "mangledName": "$s9TSCoreSDK11TSECServiceC7keySizeSivp",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7keySizeSivg",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7keySizeSivg",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7keySizeSivs",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7keySizeSivs",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7keySizeSivM",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7keySizeSivM",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "signAlgorithm",
-            "printedName": "signAlgorithm",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "SecKeyAlgorithm",
-                "printedName": "Security.SecKeyAlgorithm",
-                "usr": "c:@T@SecKeyAlgorithm"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9TSCoreSDK11TSECServiceC13signAlgorithmSo06SecKeyE0avp",
-            "mangledName": "$s9TSCoreSDK11TSECServiceC13signAlgorithmSo06SecKeyE0avp",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SecKeyAlgorithm",
-                    "printedName": "Security.SecKeyAlgorithm",
-                    "usr": "c:@T@SecKeyAlgorithm"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC13signAlgorithmSo06SecKeyE0avg",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC13signAlgorithmSo06SecKeyE0avg",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SecKeyAlgorithm",
-                    "printedName": "Security.SecKeyAlgorithm",
-                    "usr": "c:@T@SecKeyAlgorithm"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC13signAlgorithmSo06SecKeyE0avs",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC13signAlgorithmSo06SecKeyE0avs",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC13signAlgorithmSo06SecKeyE0avM",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC13signAlgorithmSo06SecKeyE0avM",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "encryptAlgorithm",
-            "printedName": "encryptAlgorithm",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "SecKeyAlgorithm",
-                "printedName": "Security.SecKeyAlgorithm",
-                "usr": "c:@T@SecKeyAlgorithm"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9TSCoreSDK11TSECServiceC16encryptAlgorithmSo06SecKeyE0avp",
-            "mangledName": "$s9TSCoreSDK11TSECServiceC16encryptAlgorithmSo06SecKeyE0avp",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SecKeyAlgorithm",
-                    "printedName": "Security.SecKeyAlgorithm",
-                    "usr": "c:@T@SecKeyAlgorithm"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC16encryptAlgorithmSo06SecKeyE0avg",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC16encryptAlgorithmSo06SecKeyE0avg",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SecKeyAlgorithm",
-                    "printedName": "Security.SecKeyAlgorithm",
-                    "usr": "c:@T@SecKeyAlgorithm"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC16encryptAlgorithmSo06SecKeyE0avs",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC16encryptAlgorithmSo06SecKeyE0avs",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC16encryptAlgorithmSo06SecKeyE0avM",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC16encryptAlgorithmSo06SecKeyE0avM",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tokenId",
-            "printedName": "tokenId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreFoundation.CFString?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CFString",
-                    "printedName": "CoreFoundation.CFString",
-                    "usr": "c:@T@CFStringRef"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvp",
-            "mangledName": "$s9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvp",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreFoundation.CFString?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CFString",
-                        "printedName": "CoreFoundation.CFString",
-                        "usr": "c:@T@CFStringRef"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvg",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvg",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreFoundation.CFString?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CFString",
-                        "printedName": "CoreFoundation.CFString",
-                        "usr": "c:@T@CFStringRef"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvs",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvs",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvM",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvM",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
+            "name": "shared",
+            "printedName": "shared",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16003,42 +15547,44 @@
                 "usr": "s:9TSCoreSDK11TSECServiceC"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:9TSCoreSDK11TSECServiceCACycfc",
-            "mangledName": "$s9TSCoreSDK11TSECServiceCACycfc",
+            "declKind": "Var",
+            "usr": "s:9TSCoreSDK11TSECServiceC6sharedACvpZ",
+            "mangledName": "$s9TSCoreSDK11TSECServiceC6sharedACvpZ",
             "moduleName": "TSCoreSDK",
+            "static": true,
             "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
               "AccessControl"
             ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "convertPublicKeyToPEMFormat",
-            "printedName": "convertPublicKeyToPEMFormat(_:)",
-            "children": [
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
               {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSECService",
+                    "printedName": "TSCoreSDK.TSECService",
+                    "usr": "s:9TSCoreSDK11TSECServiceC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK11TSECServiceC6sharedACvgZ",
+                "mangledName": "$s9TSCoreSDK11TSECServiceC6sharedACvgZ",
+                "moduleName": "TSCoreSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
               }
-            ],
-            "declKind": "Func",
-            "usr": "s:9TSCoreSDK11TSECServiceC27convertPublicKeyToPEMFormatySS10Foundation4DataVF",
-            "mangledName": "$s9TSCoreSDK11TSECServiceC27convertPublicKeyToPEMFormatySS10Foundation4DataVF",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
+            ]
           }
         ],
         "declKind": "Class",
@@ -16048,6 +15594,7 @@
         "declAttributes": [
           "AccessControl"
         ],
+        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -16062,13 +15609,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TSCryptoBindingParameters",
-            "printedName": "TSCryptoBindingParameters",
-            "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP",
-            "mangledName": "$s9TSCoreSDK25TSCryptoBindingParametersP"
           }
         ]
       },
@@ -20408,27 +19948,6 @@
       "offset": 566,
       "length": 43,
       "value": "\"TSCoreSDK.concurrency.threadSafeContainer\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 304,
-      "length": 3,
-      "value": "256"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
-      "kind": "StringLiteral",
-      "offset": 792,
-      "length": 28,
-      "value": "\"-----BEGIN PUBLIC KEY-----\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
-      "kind": "StringLiteral",
-      "offset": 877,
-      "length": 26,
-      "value": "\"-----END PUBLIC KEY-----\""
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
