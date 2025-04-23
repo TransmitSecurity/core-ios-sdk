@@ -4784,6 +4784,219 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "TSCryptoBindingKeyType",
+        "printedName": "TSCryptoBindingKeyType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rsa",
+            "printedName": "rsa",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TSCoreSDK.TSCryptoBindingKeyType.Type) -> TSCoreSDK.TSCryptoBindingKeyType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingKeyType",
+                    "printedName": "TSCoreSDK.TSCryptoBindingKeyType",
+                    "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TSCoreSDK.TSCryptoBindingKeyType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSCryptoBindingKeyType",
+                        "printedName": "TSCoreSDK.TSCryptoBindingKeyType",
+                        "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO3rsayA2CmF",
+            "mangledName": "$s9TSCoreSDK22TSCryptoBindingKeyTypeO3rsayA2CmF",
+            "moduleName": "TSCoreSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "ec",
+            "printedName": "ec",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TSCoreSDK.TSCryptoBindingKeyType.Type) -> TSCoreSDK.TSCryptoBindingKeyType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingKeyType",
+                    "printedName": "TSCoreSDK.TSCryptoBindingKeyType",
+                    "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TSCoreSDK.TSCryptoBindingKeyType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSCryptoBindingKeyType",
+                        "printedName": "TSCoreSDK.TSCryptoBindingKeyType",
+                        "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO2ecyA2CmF",
+            "mangledName": "$s9TSCoreSDK22TSCryptoBindingKeyTypeO2ecyA2CmF",
+            "moduleName": "TSCoreSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSCryptoBindingKeyType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingKeyType",
+                    "printedName": "TSCoreSDK.TSCryptoBindingKeyType",
+                    "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s9TSCoreSDK22TSCryptoBindingKeyTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "TSCoreSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO8rawValueSSvp",
+            "mangledName": "$s9TSCoreSDK22TSCryptoBindingKeyTypeO8rawValueSSvp",
+            "moduleName": "TSCoreSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO8rawValueSSvg",
+                "mangledName": "$s9TSCoreSDK22TSCryptoBindingKeyTypeO8rawValueSSvg",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO",
+        "mangledName": "$s9TSCoreSDK22TSCryptoBindingKeyTypeO",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "TSCryptoBindingParameters",
         "printedName": "TSCryptoBindingParameters",
         "children": [
@@ -5153,27 +5366,19 @@
           },
           {
             "kind": "Var",
-            "name": "tokenId",
-            "printedName": "tokenId",
+            "name": "storeInSecureEnclave",
+            "printedName": "storeInSecureEnclave",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreFoundation.CFString?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CFString",
-                    "printedName": "CoreFoundation.CFString",
-                    "usr": "c:@T@CFStringRef"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP7tokenIdSo11CFStringRefaSgvp",
-            "mangledName": "$s9TSCoreSDK25TSCryptoBindingParametersP7tokenIdSo11CFStringRefaSgvp",
+            "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP20storeInSecureEnclaveSbvp",
+            "mangledName": "$s9TSCoreSDK25TSCryptoBindingParametersP20storeInSecureEnclaveSbvp",
             "moduleName": "TSCoreSDK",
             "protocolReq": true,
             "accessors": [
@@ -5184,22 +5389,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreFoundation.CFString?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CFString",
-                        "printedName": "CoreFoundation.CFString",
-                        "usr": "c:@T@CFStringRef"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP7tokenIdSo11CFStringRefaSgvg",
-                "mangledName": "$s9TSCoreSDK25TSCryptoBindingParametersP7tokenIdSo11CFStringRefaSgvg",
+                "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP20storeInSecureEnclaveSbvg",
+                "mangledName": "$s9TSCoreSDK25TSCryptoBindingParametersP20storeInSecureEnclaveSbvg",
                 "moduleName": "TSCoreSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
                 "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingParameters>",
@@ -5219,22 +5416,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreFoundation.CFString?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CFString",
-                        "printedName": "CoreFoundation.CFString",
-                        "usr": "c:@T@CFStringRef"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP7tokenIdSo11CFStringRefaSgvs",
-                "mangledName": "$s9TSCoreSDK25TSCryptoBindingParametersP7tokenIdSo11CFStringRefaSgvs",
+                "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP20storeInSecureEnclaveSbvs",
+                "mangledName": "$s9TSCoreSDK25TSCryptoBindingParametersP20storeInSecureEnclaveSbvs",
                 "moduleName": "TSCoreSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
                 "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingParameters>",
@@ -5254,8 +5443,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP7tokenIdSo11CFStringRefaSgvM",
-                "mangledName": "$s9TSCoreSDK25TSCryptoBindingParametersP7tokenIdSo11CFStringRefaSgvM",
+                "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP20storeInSecureEnclaveSbvM",
+                "mangledName": "$s9TSCoreSDK25TSCryptoBindingParametersP20storeInSecureEnclaveSbvM",
                 "moduleName": "TSCoreSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
                 "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingParameters>",
@@ -5292,6 +5481,33 @@
             "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingParameters>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertPublicKeyToPEMFormat",
+            "printedName": "convertPublicKeyToPEMFormat(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK25TSCryptoBindingParametersPAAE27convertPublicKeyToPEMFormatySS10Foundation4DataVF",
+            "mangledName": "$s9TSCoreSDK25TSCryptoBindingParametersPAAE27convertPublicKeyToPEMFormatySS10Foundation4DataVF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingParameters>",
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -5394,6 +5610,83 @@
           },
           {
             "kind": "Function",
+            "name": "provideKeysWithFallback",
+            "printedName": "provideKeysWithFallback(forTag:isBiometricProtected:username:context:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSPublicKeyData",
+                "printedName": "TSCoreSDK.TSPublicKeyData",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSLocalAuthContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLocalAuthContext",
+                    "printedName": "TSCoreSDK.TSLocalAuthContext",
+                    "usr": "s:9TSCoreSDK18TSLocalAuthContextV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP23provideKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsAA15TSPublicKeyDataVSS_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP23provideKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsAA15TSPublicKeyDataVSS_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getKeys",
             "printedName": "getKeys(forTag:isBiometricProtected:username:context:)",
             "children": [
@@ -5460,6 +5753,83 @@
           },
           {
             "kind": "Function",
+            "name": "getKeysWithFallback",
+            "printedName": "getKeysWithFallback(forTag:isBiometricProtected:username:context:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSPublicKeyData",
+                "printedName": "TSCoreSDK.TSPublicKeyData",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSLocalAuthContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLocalAuthContext",
+                    "printedName": "TSCoreSDK.TSLocalAuthContext",
+                    "usr": "s:9TSCoreSDK18TSLocalAuthContextV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP19getKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsAA15TSPublicKeyDataVSS_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP19getKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsAA15TSPublicKeyDataVSS_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "provideApplicationKeys",
             "printedName": "provideApplicationKeys()",
             "children": [
@@ -5480,6 +5850,43 @@
             "declAttributes": [
               "RawDocComment"
             ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provideApplicationKeysWithFallback",
+            "printedName": "provideApplicationKeysWithFallback(fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSPublicKeyData",
+                "printedName": "TSCoreSDK.TSPublicKeyData",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP34provideApplicationKeysWithFallback20fallbackCryptoParamsAA15TSPublicKeyDataVAA0cD10Parameters_pSg_tYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP34provideApplicationKeysWithFallback20fallbackCryptoParamsAA15TSPublicKeyDataVAA0cD10Parameters_pSg_tYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -5558,6 +5965,89 @@
           },
           {
             "kind": "Function",
+            "name": "signWithFallback",
+            "printedName": "signWithFallback(_:forTag:isBiometricProtected:username:context:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSLocalAuthContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLocalAuthContext",
+                    "printedName": "TSCoreSDK.TSLocalAuthContext",
+                    "usr": "s:9TSCoreSDK18TSLocalAuthContextV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP16signWithFallback_6forTag20isBiometricProtected8username7context20fallbackCryptoParams10Foundation4DataVSS_SSSbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP16signWithFallback_6forTag20isBiometricProtected8username7context20fallbackCryptoParams10Foundation4DataVSS_SSSbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "signBase64String",
             "printedName": "signBase64String(of:forTag:isBiometricProtected:username:context:)",
             "children": [
@@ -5630,6 +6120,89 @@
           },
           {
             "kind": "Function",
+            "name": "signBase64StringWithFallback",
+            "printedName": "signBase64StringWithFallback(of:forTag:isBiometricProtected:username:context:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSLocalAuthContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLocalAuthContext",
+                    "printedName": "TSCoreSDK.TSLocalAuthContext",
+                    "usr": "s:9TSCoreSDK18TSLocalAuthContextV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP28signBase64StringWithFallback2of6forTag20isBiometricProtected8username7context20fallbackCryptoParamsS2S_SSSbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP28signBase64StringWithFallback2of6forTag20isBiometricProtected8username7context20fallbackCryptoParamsS2S_SSSbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "signWithApplicationKey",
             "printedName": "signWithApplicationKey(_:)",
             "children": [
@@ -5662,6 +6235,49 @@
           },
           {
             "kind": "Function",
+            "name": "signWithApplicationKeyWithFallback",
+            "printedName": "signWithApplicationKeyWithFallback(_:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP022signWithApplicationKeyG8Fallback_20fallbackCryptoParams10Foundation4DataVSS_AA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP022signWithApplicationKeyG8Fallback_20fallbackCryptoParams10Foundation4DataVSS_AA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "signWithApplicationKeyBase64String",
             "printedName": "signWithApplicationKeyBase64String(_:)",
             "children": [
@@ -5688,6 +6304,49 @@
             "declAttributes": [
               "RawDocComment"
             ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signWithApplicationKeyBase64StringWithFallback",
+            "printedName": "signWithApplicationKeyBase64StringWithFallback(_:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP034signWithApplicationKeyBase64StringG8Fallback_20fallbackCryptoParamsS2S_AA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP034signWithApplicationKeyBase64StringG8Fallback_20fallbackCryptoParamsS2S_AA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -5760,6 +6419,83 @@
           },
           {
             "kind": "Function",
+            "name": "deleteKeysWithFallback",
+            "printedName": "deleteKeysWithFallback(forTag:isBiometricProtected:username:context:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSLocalAuthContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLocalAuthContext",
+                    "printedName": "TSCoreSDK.TSLocalAuthContext",
+                    "usr": "s:9TSCoreSDK18TSLocalAuthContextV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP22deleteKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsS2S_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP22deleteKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsS2S_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "deleteApplicationKeys",
             "printedName": "deleteApplicationKeys()",
             "children": [
@@ -5779,6 +6515,42 @@
             "declAttributes": [
               "RawDocComment"
             ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteApplicationKeysWithFallback",
+            "printedName": "deleteApplicationKeysWithFallback(fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK23TSCryptoBindingProtocolP33deleteApplicationKeysWithFallback20fallbackCryptoParamsyAA0cD10Parameters_pSg_tYaKF",
+            "mangledName": "$s9TSCoreSDK23TSCryptoBindingProtocolP33deleteApplicationKeysWithFallback20fallbackCryptoParamsyAA0cD10Parameters_pSg_tYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingProtocol>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSCryptoBindingProtocol>",
+            "protocolReq": true,
             "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -5979,6 +6751,91 @@
                 "declKind": "Accessor",
                 "usr": "s:9TSCoreSDK15TSPublicKeyDataV06publicD0SSvM",
                 "mangledName": "$s9TSCoreSDK15TSPublicKeyDataV06publicD0SSvM",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyType",
+            "printedName": "keyType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9TSCoreSDK15TSPublicKeyDataV7keyTypeSSvp",
+            "mangledName": "$s9TSCoreSDK15TSPublicKeyDataV7keyTypeSSvp",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV7keyTypeSSvg",
+                "mangledName": "$s9TSCoreSDK15TSPublicKeyDataV7keyTypeSSvg",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV7keyTypeSSvs",
+                "mangledName": "$s9TSCoreSDK15TSPublicKeyDataV7keyTypeSSvs",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV7keyTypeSSvM",
+                "mangledName": "$s9TSCoreSDK15TSPublicKeyDataV7keyTypeSSvM",
                 "moduleName": "TSCoreSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6488,7 +7345,7 @@
           {
             "kind": "Function",
             "name": "getPublicKeyOf_PEM_format",
-            "printedName": "getPublicKeyOf_PEM_format(forTag:context:)",
+            "printedName": "getPublicKeyOf_PEM_format(forTag:fallbackCryptoParams:context:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6501,6 +7358,20 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -6518,8 +7389,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9TSCoreSDK15TSCryptoBindingC25getPublicKeyOf_PEM_format6forTag7contextS2S_So9LAContextCSgtYaKF",
-            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC25getPublicKeyOf_PEM_format6forTag7contextS2S_So9LAContextCSgtYaKF",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC25getPublicKeyOf_PEM_format6forTag20fallbackCryptoParams7contextS2S_AA0cD10Parameters_pSgSo9LAContextCSgtYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC25getPublicKeyOf_PEM_format6forTag20fallbackCryptoParams7contextS2S_AA0cD10Parameters_pSgSo9LAContextCSgtYaKF",
             "moduleName": "TSCoreSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
             "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
@@ -6619,6 +7490,580 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provideKeysWithFallback",
+            "printedName": "provideKeysWithFallback(forTag:isBiometricProtected:username:context:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSPublicKeyData",
+                "printedName": "TSCoreSDK.TSPublicKeyData",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSLocalAuthContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLocalAuthContext",
+                    "printedName": "TSCoreSDK.TSLocalAuthContext",
+                    "usr": "s:9TSCoreSDK18TSLocalAuthContextV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC23provideKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsAA15TSPublicKeyDataVSS_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC23provideKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsAA15TSPublicKeyDataVSS_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getKeysWithFallback",
+            "printedName": "getKeysWithFallback(forTag:isBiometricProtected:username:context:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSPublicKeyData",
+                "printedName": "TSCoreSDK.TSPublicKeyData",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSLocalAuthContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLocalAuthContext",
+                    "printedName": "TSCoreSDK.TSLocalAuthContext",
+                    "usr": "s:9TSCoreSDK18TSLocalAuthContextV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC19getKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsAA15TSPublicKeyDataVSS_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC19getKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsAA15TSPublicKeyDataVSS_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provideApplicationKeysWithFallback",
+            "printedName": "provideApplicationKeysWithFallback(fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSPublicKeyData",
+                "printedName": "TSCoreSDK.TSPublicKeyData",
+                "usr": "s:9TSCoreSDK15TSPublicKeyDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC34provideApplicationKeysWithFallback20fallbackCryptoParamsAA15TSPublicKeyDataVAA0cD10Parameters_pSg_tYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC34provideApplicationKeysWithFallback20fallbackCryptoParamsAA15TSPublicKeyDataVAA0cD10Parameters_pSg_tYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signWithFallback",
+            "printedName": "signWithFallback(_:forTag:isBiometricProtected:username:context:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSLocalAuthContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLocalAuthContext",
+                    "printedName": "TSCoreSDK.TSLocalAuthContext",
+                    "usr": "s:9TSCoreSDK18TSLocalAuthContextV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC16signWithFallback_6forTag20isBiometricProtected8username7context20fallbackCryptoParams10Foundation4DataVSS_SSSbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC16signWithFallback_6forTag20isBiometricProtected8username7context20fallbackCryptoParams10Foundation4DataVSS_SSSbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signBase64StringWithFallback",
+            "printedName": "signBase64StringWithFallback(of:forTag:isBiometricProtected:username:context:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSLocalAuthContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLocalAuthContext",
+                    "printedName": "TSCoreSDK.TSLocalAuthContext",
+                    "usr": "s:9TSCoreSDK18TSLocalAuthContextV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC28signBase64StringWithFallback2of6forTag20isBiometricProtected8username7context20fallbackCryptoParamsS2S_SSSbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC28signBase64StringWithFallback2of6forTag20isBiometricProtected8username7context20fallbackCryptoParamsS2S_SSSbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signWithApplicationKeyWithFallback",
+            "printedName": "signWithApplicationKeyWithFallback(_:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC022signWithApplicationKeyF8Fallback_20fallbackCryptoParams10Foundation4DataVSS_AA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC022signWithApplicationKeyF8Fallback_20fallbackCryptoParams10Foundation4DataVSS_AA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signWithApplicationKeyBase64StringWithFallback",
+            "printedName": "signWithApplicationKeyBase64StringWithFallback(_:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC034signWithApplicationKeyBase64StringF8Fallback_20fallbackCryptoParamsS2S_AA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC034signWithApplicationKeyBase64StringF8Fallback_20fallbackCryptoParamsS2S_AA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteKeysWithFallback",
+            "printedName": "deleteKeysWithFallback(forTag:isBiometricProtected:username:context:fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSLocalAuthContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSLocalAuthContext",
+                    "printedName": "TSCoreSDK.TSLocalAuthContext",
+                    "usr": "s:9TSCoreSDK18TSLocalAuthContextV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC22deleteKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsS2S_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC22deleteKeysWithFallback6forTag20isBiometricProtected8username7context20fallbackCryptoParamsS2S_SbSSSgAA18TSLocalAuthContextVSgAA0cD10Parameters_pSgtYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteApplicationKeysWithFallback",
+            "printedName": "deleteApplicationKeysWithFallback(fallbackCryptoParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoBindingParameters)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoBindingParameters",
+                    "printedName": "any TSCoreSDK.TSCryptoBindingParameters",
+                    "usr": "s:9TSCoreSDK25TSCryptoBindingParametersP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK15TSCryptoBindingC33deleteApplicationKeysWithFallback20fallbackCryptoParamsyAA0cD10Parameters_pSg_tYaKF",
+            "mangledName": "$s9TSCoreSDK15TSCryptoBindingC33deleteApplicationKeysWithFallback20fallbackCryptoParamsyAA0cD10Parameters_pSg_tYaKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
+            "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
+            "declAttributes": [
+              "AccessControl"
             ],
             "isFromExtension": true,
             "throwing": true,
@@ -10665,27 +12110,19 @@
           },
           {
             "kind": "Var",
-            "name": "tokenId",
-            "printedName": "tokenId",
+            "name": "storeInSecureEnclave",
+            "printedName": "storeInSecureEnclave",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreFoundation.CFString?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CFString",
-                    "printedName": "CoreFoundation.CFString",
-                    "usr": "c:@T@CFStringRef"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9TSCoreSDK12TSRSAServiceC7tokenIdSo11CFStringRefaSgvp",
-            "mangledName": "$s9TSCoreSDK12TSRSAServiceC7tokenIdSo11CFStringRefaSgvp",
+            "usr": "s:9TSCoreSDK12TSRSAServiceC20storeInSecureEnclaveSbvp",
+            "mangledName": "$s9TSCoreSDK12TSRSAServiceC20storeInSecureEnclaveSbvp",
             "moduleName": "TSCoreSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -10702,22 +12139,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreFoundation.CFString?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CFString",
-                        "printedName": "CoreFoundation.CFString",
-                        "usr": "c:@T@CFStringRef"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK12TSRSAServiceC7tokenIdSo11CFStringRefaSgvg",
-                "mangledName": "$s9TSCoreSDK12TSRSAServiceC7tokenIdSo11CFStringRefaSgvg",
+                "usr": "s:9TSCoreSDK12TSRSAServiceC20storeInSecureEnclaveSbvg",
+                "mangledName": "$s9TSCoreSDK12TSRSAServiceC20storeInSecureEnclaveSbvg",
                 "moduleName": "TSCoreSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -10734,22 +12163,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreFoundation.CFString?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CFString",
-                        "printedName": "CoreFoundation.CFString",
-                        "usr": "c:@T@CFStringRef"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK12TSRSAServiceC7tokenIdSo11CFStringRefaSgvs",
-                "mangledName": "$s9TSCoreSDK12TSRSAServiceC7tokenIdSo11CFStringRefaSgvs",
+                "usr": "s:9TSCoreSDK12TSRSAServiceC20storeInSecureEnclaveSbvs",
+                "mangledName": "$s9TSCoreSDK12TSRSAServiceC20storeInSecureEnclaveSbvs",
                 "moduleName": "TSCoreSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -10766,8 +12187,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK12TSRSAServiceC7tokenIdSo11CFStringRefaSgvM",
-                "mangledName": "$s9TSCoreSDK12TSRSAServiceC7tokenIdSo11CFStringRefaSgvM",
+                "usr": "s:9TSCoreSDK12TSRSAServiceC20storeInSecureEnclaveSbvM",
+                "mangledName": "$s9TSCoreSDK12TSRSAServiceC20storeInSecureEnclaveSbvM",
                 "moduleName": "TSCoreSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -10816,6 +12237,28 @@
             "declKind": "Func",
             "usr": "s:9TSCoreSDK12TSRSAServiceC27convertPublicKeyToPEMFormatySS10Foundation4DataVF",
             "mangledName": "$s9TSCoreSDK12TSRSAServiceC27convertPublicKeyToPEMFormatySS10Foundation4DataVF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "keyTypeString",
+            "printedName": "keyTypeString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSCryptoBindingKeyType",
+                "printedName": "TSCoreSDK.TSCryptoBindingKeyType",
+                "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK12TSRSAServiceC13keyTypeStringAA018TSCryptoBindingKeyE0OyF",
+            "mangledName": "$s9TSCoreSDK12TSRSAServiceC13keyTypeStringAA018TSCryptoBindingKeyE0OyF",
             "moduleName": "TSCoreSDK",
             "declAttributes": [
               "AccessControl"
@@ -15882,33 +17325,24 @@
           },
           {
             "kind": "Var",
-            "name": "tokenId",
-            "printedName": "tokenId",
+            "name": "storeInSecureEnclave",
+            "printedName": "storeInSecureEnclave",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CoreFoundation.CFString?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CFString",
-                    "printedName": "CoreFoundation.CFString",
-                    "usr": "c:@T@CFStringRef"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvp",
-            "mangledName": "$s9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvp",
+            "usr": "s:9TSCoreSDK11TSECServiceC20storeInSecureEnclaveSbvp",
+            "mangledName": "$s9TSCoreSDK11TSECServiceC20storeInSecureEnclaveSbvp",
             "moduleName": "TSCoreSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -15919,22 +17353,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreFoundation.CFString?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CFString",
-                        "printedName": "CoreFoundation.CFString",
-                        "usr": "c:@T@CFStringRef"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvg",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvg",
+                "usr": "s:9TSCoreSDK11TSECServiceC20storeInSecureEnclaveSbvg",
+                "mangledName": "$s9TSCoreSDK11TSECServiceC20storeInSecureEnclaveSbvg",
                 "moduleName": "TSCoreSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -15951,22 +17377,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "CoreFoundation.CFString?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CFString",
-                        "printedName": "CoreFoundation.CFString",
-                        "usr": "c:@T@CFStringRef"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvs",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvs",
+                "usr": "s:9TSCoreSDK11TSECServiceC20storeInSecureEnclaveSbvs",
+                "mangledName": "$s9TSCoreSDK11TSECServiceC20storeInSecureEnclaveSbvs",
                 "moduleName": "TSCoreSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -15983,8 +17401,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvM",
-                "mangledName": "$s9TSCoreSDK11TSECServiceC7tokenIdSo11CFStringRefaSgvM",
+                "usr": "s:9TSCoreSDK11TSECServiceC20storeInSecureEnclaveSbvM",
+                "mangledName": "$s9TSCoreSDK11TSECServiceC20storeInSecureEnclaveSbvM",
                 "moduleName": "TSCoreSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -16033,6 +17451,28 @@
             "declKind": "Func",
             "usr": "s:9TSCoreSDK11TSECServiceC27convertPublicKeyToPEMFormatySS10Foundation4DataVF",
             "mangledName": "$s9TSCoreSDK11TSECServiceC27convertPublicKeyToPEMFormatySS10Foundation4DataVF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "keyTypeString",
+            "printedName": "keyTypeString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSCryptoBindingKeyType",
+                "printedName": "TSCoreSDK.TSCryptoBindingKeyType",
+                "usr": "s:9TSCoreSDK22TSCryptoBindingKeyTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK11TSECServiceC13keyTypeStringAA018TSCryptoBindingKeyE0OyF",
+            "mangledName": "$s9TSCoreSDK11TSECServiceC13keyTypeStringAA018TSCryptoBindingKeyE0OyF",
             "moduleName": "TSCoreSDK",
             "declAttributes": [
               "AccessControl"
@@ -19705,98 +21145,126 @@
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "Dictionary",
-      "offset": 6505,
+      "offset": 8395,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "Array",
-      "offset": 7509,
+      "offset": 9844,
       "length": 6,
       "value": "[0, 0]"
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "StringLiteral",
-      "offset": 7658,
+      "offset": 9993,
       "length": 12,
       "value": "\"_biometric\""
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 9032,
+      "offset": 11367,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 9927,
+      "offset": 11858,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 11855,
+      "offset": 12898,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 12376,
+      "offset": 14488,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 14663,
+      "offset": 14950,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 20587,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
-      "kind": "IntegerLiteral",
-      "offset": 20675,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
-      "kind": "BooleanLiteral",
-      "offset": 21913,
+      "offset": 17053,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 22644,
+      "offset": 21589,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "IntegerLiteral",
-      "offset": 22732,
+      "offset": 21677,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 23921,
+      "offset": 23083,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23613,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "kind": "BooleanLiteral",
+      "offset": 25613,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26921,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "kind": "BooleanLiteral",
+      "offset": 31653,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31741,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "kind": "BooleanLiteral",
+      "offset": 33216,
       "length": 5,
       "value": "false"
     },
@@ -20341,15 +21809,22 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 507,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "StringLiteral",
-      "offset": 628,
+      "offset": 662,
       "length": 32,
       "value": "\"-----BEGIN RSA PUBLIC KEY-----\""
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "StringLiteral",
-      "offset": 720,
+      "offset": 754,
       "length": 30,
       "value": "\"-----END RSA PUBLIC KEY-----\""
     },
@@ -20418,15 +21893,22 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 613,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "StringLiteral",
-      "offset": 792,
+      "offset": 763,
       "length": 28,
       "value": "\"-----BEGIN PUBLIC KEY-----\""
     },
     {
       "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "StringLiteral",
-      "offset": 877,
+      "offset": 848,
       "length": 26,
       "value": "\"-----END PUBLIC KEY-----\""
     },
