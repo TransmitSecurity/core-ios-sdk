@@ -77,9 +77,24 @@ public protocol ITSModuleInfo {
   func tenantID() -> Swift.String
   func version() -> Swift.String
 }
+final public class TSEC {
+  public struct Configuration {
+    public init()
+  }
+  public init(configuration: TSCoreSDK.TSEC.Configuration = .init())
+  final public func createVolatileRawECCryptoKeysData(seed: Foundation.Data, keySize: TSCoreSDK.TSVolatileECKeySize) async throws -> TSCoreSDK.TSCryptoKeysData
+  final public func createVolatileECKeyPair(withSeed seed: Foundation.Data, keySize: TSCoreSDK.TSVolatileECKeySize) async throws -> any TSCoreSDK.TSECCVolatileKeyPair
+  @objc deinit
+}
+public struct TSCryptoKeysData {
+  public let kp: any TSCoreSDK.TSECCVolatileKeyPair
+  public let keyId: Swift.String
+  public let keyType: Swift.String
+}
 extension Swift.String {
   public func base64urlToBase64() -> Swift.String
   public func base64ToBase64url() -> Swift.String
+  public func ts_asciiToHex() -> Swift.String
 }
 @_hasMissingDesignatedInitializers public class TSKeychain {
   public enum KeychainError : Swift.Error, Swift.CustomStringConvertible {
@@ -282,6 +297,29 @@ extension TSCoreSDK.TSRetriableRequest {
 extension TSCoreSDK.TSCore {
   public static let clientPlatform: Swift.String
 }
+public class TSCryptoSessionManager {
+  public var currentSession: (any TSCoreSDK.TSCryptoSessionProtocol)? {
+    get
+  }
+  public init(configuration: TSCoreSDK.TSCryptoSessionManagerConfiguration, serverProvider: TSCoreSDK.TSCryptoSessionServerProvider = .init(), aes: TSCoreSDK.TSAES = .init()) throws
+  public func createCryptoSession() async throws
+  @objc deinit
+}
+extension TSCoreSDK.TSCryptoSessionManager {
+  @_hasMissingDesignatedInitializers public class ServerResponseData : Swift.Codable {
+    required public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    @objc deinit
+  }
+  public struct ClientRequestData : Swift.Codable {
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct EncryptedClientRequestData : Swift.Codable {
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
 public struct TSCryptoSessionManagerConfiguration {
   public let scheme: Swift.Int
   public let baseUrl: Swift.String
@@ -297,27 +335,6 @@ public struct TSCryptoSessionManagerConfiguration {
 @_hasMissingDesignatedInitializers public class TSResponseGenericHeader : Swift.Codable {
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
-public class TSCryptoSessionManager {
-  public var currentSession: (any TSCoreSDK.TSCryptoSessionProtocol)? {
-    get
-  }
-  @_hasMissingDesignatedInitializers public class ServerResponseData : Swift.Codable {
-    required public init(from decoder: any Swift.Decoder) throws
-    public func encode(to encoder: any Swift.Encoder) throws
-    @objc deinit
-  }
-  public struct ClientRequestData : Swift.Codable {
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct EncryptedClientRequestData : Swift.Codable {
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public init(configuration: TSCoreSDK.TSCryptoSessionManagerConfiguration, serverProvider: TSCoreSDK.TSCryptoSessionServerProvider = .init()) throws
-  public func createCryptoSession() async throws
   @objc deinit
 }
 public typealias TSClientRequestData = TSCoreSDK.TSCryptoSessionManager.ClientRequestData
@@ -422,6 +439,29 @@ extension TSCoreSDK.TSLogLevel {
     get
   }
 }
+public enum TSpseudoRandomAlgorithm : Swift.Int32 {
+  case sha1
+  case sha224
+  case sha256
+  case sha384
+  case sha512
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+final public class TSAES {
+  public struct Configuration {
+    public init()
+  }
+  public init(configuration: TSCoreSDK.TSAES.Configuration = .init())
+  final public func encrypt(data: Foundation.Data, key: CryptoKit.SymmetricKey, iv: Foundation.Data, padding: Swift.Int) throws -> Foundation.Data
+  final public func decrypt(data: Foundation.Data, key: CryptoKit.SymmetricKey, iv: Foundation.Data, padding: Swift.Int) throws -> Foundation.Data
+  final public func generateIV(bytes: Swift.Int) -> Foundation.Data?
+  final public func pbkdfStretchSecretIntoAESKey(salt: Foundation.Data, secret: Foundation.Data, keySizeInBytes: Swift.Int, pbkdfIterationCount: Swift.Int, randomAlgorithm: TSCoreSDK.TSpseudoRandomAlgorithm) throws -> CryptoKit.SymmetricKey
+  @objc deinit
+}
 public struct AES256 {
   public init(key: Foundation.Data, iv: Foundation.Data) throws
   public func encrypt(_ digest: Foundation.Data) throws -> Foundation.Data
@@ -496,6 +536,37 @@ extension TSCoreSDK.TSAESDataEncrypter {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
+public enum TSVolatileECKeySize : Swift.Int {
+  case s256
+  case s384
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol TSECCVolatileKeyPair {
+  func rawECPublicKey() -> Foundation.Data
+  func rawECPublicKeyHex() -> Swift.String
+  func signedChallengeRaw(_ challenge: Foundation.Data) throws -> Foundation.Data
+  func signedDerChallengeDer(_ challenge: Foundation.Data) throws -> Foundation.Data
+  func verifySignature(_ signature: Foundation.Data, for challenge: Foundation.Data) throws -> Swift.Bool
+}
+public struct TSECVolatile256KeyPair : TSCoreSDK.TSECCVolatileKeyPair {
+  public func rawECPublicKey() -> Foundation.Data
+  public func rawECPublicKeyHex() -> Swift.String
+  public func signedChallengeRaw(_ challenge: Foundation.Data) throws -> Foundation.Data
+  public func signedDerChallengeDer(_ challenge: Foundation.Data) throws -> Foundation.Data
+  public func verifySignature(_ signature: Foundation.Data, for challenge: Foundation.Data) throws -> Swift.Bool
+}
+public struct TSECVolatile384KeyPair : TSCoreSDK.TSECCVolatileKeyPair {
+  public func rawECPublicKey() -> Foundation.Data
+  public func rawECPublicKeyHex() -> Swift.String
+  public func signChallenge(_ challenge: Foundation.Data) throws -> Foundation.Data
+  public func signedChallengeRaw(_ challenge: Foundation.Data) throws -> Foundation.Data
+  public func signedDerChallengeDer(_ challenge: Foundation.Data) throws -> Foundation.Data
+  public func verifySignature(_ signature: Foundation.Data, for challenge: Foundation.Data) throws -> Swift.Bool
+}
 public class TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT> where DataSource : TSCoreSDK.TSDataSource, DataSyncServer : TSCoreSDK.TSDataSyncServer, TRIGGER_ACTION_EVENT == DataSyncServer.Response, DataSource.DataSourceType == DataSyncServer.TYPE {
   public struct Configuration {
     public init(dataSource: DataSource, serverProvider: DataSyncServer, dataBufferSize: Swift.Int, dataSyncInterval: Swift.Double)
@@ -556,6 +627,13 @@ public enum TSStorageErrorCode : Swift.Error {
 public class TSStorageError : Swift.Error {
   public init(errorCode: TSCoreSDK.TSStorageErrorCode, errorMessage: Swift.String? = nil)
   @objc deinit
+}
+extension Foundation.Data {
+  public init?(ts_hex: Swift.String)
+  public var ts_hexString: Swift.String {
+    get
+  }
+  public func ts_decoded<T>(_ type: T.Type) -> T? where T : Swift.Decodable
 }
 extension TSCoreSDK.TSEncryptServerRequestDataProvider {
   public enum Error : Swift.Error {
@@ -659,6 +737,12 @@ extension TSCoreSDK.TSCryptoBindingKeyType : Swift.RawRepresentable {}
 extension TSCoreSDK.TSLogLevel : Swift.Equatable {}
 extension TSCoreSDK.TSLogLevel : Swift.Hashable {}
 extension TSCoreSDK.TSLogLevel : Swift.RawRepresentable {}
+extension TSCoreSDK.TSpseudoRandomAlgorithm : Swift.Equatable {}
+extension TSCoreSDK.TSpseudoRandomAlgorithm : Swift.Hashable {}
+extension TSCoreSDK.TSpseudoRandomAlgorithm : Swift.RawRepresentable {}
+extension TSCoreSDK.TSVolatileECKeySize : Swift.Equatable {}
+extension TSCoreSDK.TSVolatileECKeySize : Swift.Hashable {}
+extension TSCoreSDK.TSVolatileECKeySize : Swift.RawRepresentable {}
 extension TSCoreSDK.TSStorageErrorCode : Swift.Equatable {}
 extension TSCoreSDK.TSStorageErrorCode : Swift.Hashable {}
 extension TSCoreSDK.TSHttpMethod : Swift.Equatable {}
