@@ -1317,6 +1317,365 @@
       },
       {
         "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "TSCoreSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSEC",
+        "printedName": "TSEC",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Configuration",
+            "printedName": "Configuration",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Configuration",
+                    "printedName": "TSCoreSDK.TSEC.Configuration",
+                    "usr": "s:9TSCoreSDK4TSECC13ConfigurationV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9TSCoreSDK4TSECC13ConfigurationVAEycfc",
+                "mangledName": "$s9TSCoreSDK4TSECC13ConfigurationVAEycfc",
+                "moduleName": "TSCoreSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:9TSCoreSDK4TSECC13ConfigurationV",
+            "mangledName": "$s9TSCoreSDK4TSECC13ConfigurationV",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSEC",
+                "printedName": "TSCoreSDK.TSEC",
+                "usr": "s:9TSCoreSDK4TSECC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "TSCoreSDK.TSEC.Configuration",
+                "hasDefaultArg": true,
+                "usr": "s:9TSCoreSDK4TSECC13ConfigurationV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9TSCoreSDK4TSECC13configurationA2C13ConfigurationV_tcfc",
+            "mangledName": "$s9TSCoreSDK4TSECC13configurationA2C13ConfigurationV_tcfc",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "createVolatileRawECCryptoKeysData",
+            "printedName": "createVolatileRawECCryptoKeysData(seed:keySize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSCryptoKeysData",
+                "printedName": "TSCoreSDK.TSCryptoKeysData",
+                "usr": "s:9TSCoreSDK16TSCryptoKeysDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TSVolatileECKeySize",
+                "printedName": "TSCoreSDK.TSVolatileECKeySize",
+                "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK4TSECC33createVolatileRawECCryptoKeysData4seed7keySizeAA08TSCryptohI0V10Foundation0I0V_AA015TSVolatileECKeyL0OtYaKF",
+            "mangledName": "$s9TSCoreSDK4TSECC33createVolatileRawECCryptoKeysData4seed7keySizeAA08TSCryptohI0V10Foundation0I0V_AA015TSVolatileECKeyL0OtYaKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createVolatileECKeyPair",
+            "printedName": "createVolatileECKeyPair(withSeed:keySize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSECCVolatileKeyPair",
+                "printedName": "any TSCoreSDK.TSECCVolatileKeyPair",
+                "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TSVolatileECKeySize",
+                "printedName": "TSCoreSDK.TSVolatileECKeySize",
+                "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK4TSECC23createVolatileECKeyPair8withSeed7keySizeAA016TSECCVolatileKeyG0_p10Foundation4DataV_AA010TSVolatilefK0OtYaKF",
+            "mangledName": "$s9TSCoreSDK4TSECC23createVolatileECKeyPair8withSeed7keySizeAA016TSECCVolatileKeyG0_p10Foundation4DataV_AA010TSVolatilefK0OtYaKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9TSCoreSDK4TSECC",
+        "mangledName": "$s9TSCoreSDK4TSECC",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSCryptoKeysData",
+        "printedName": "TSCryptoKeysData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "kp",
+            "printedName": "kp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSECCVolatileKeyPair",
+                "printedName": "any TSCoreSDK.TSECCVolatileKeyPair",
+                "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9TSCoreSDK16TSCryptoKeysDataV2kpAA20TSECCVolatileKeyPair_pvp",
+            "mangledName": "$s9TSCoreSDK16TSCryptoKeysDataV2kpAA20TSECCVolatileKeyPair_pvp",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSECCVolatileKeyPair",
+                    "printedName": "any TSCoreSDK.TSECCVolatileKeyPair",
+                    "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK16TSCryptoKeysDataV2kpAA20TSECCVolatileKeyPair_pvg",
+                "mangledName": "$s9TSCoreSDK16TSCryptoKeysDataV2kpAA20TSECCVolatileKeyPair_pvg",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyId",
+            "printedName": "keyId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9TSCoreSDK16TSCryptoKeysDataV5keyIdSSvp",
+            "mangledName": "$s9TSCoreSDK16TSCryptoKeysDataV5keyIdSSvp",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK16TSCryptoKeysDataV5keyIdSSvg",
+                "mangledName": "$s9TSCoreSDK16TSCryptoKeysDataV5keyIdSSvg",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyType",
+            "printedName": "keyType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9TSCoreSDK16TSCryptoKeysDataV7keyTypeSSvp",
+            "mangledName": "$s9TSCoreSDK16TSCryptoKeysDataV7keyTypeSSvp",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK16TSCryptoKeysDataV7keyTypeSSvg",
+                "mangledName": "$s9TSCoreSDK16TSCryptoKeysDataV7keyTypeSSvg",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9TSCoreSDK16TSCryptoKeysDataV",
+        "mangledName": "$s9TSCoreSDK16TSCryptoKeysDataV",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -8519,6 +8878,456 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "TSCryptoSessionManager",
+        "printedName": "TSCryptoSessionManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "currentSession",
+            "printedName": "currentSession",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any TSCoreSDK.TSCryptoSessionProtocol)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSCryptoSessionProtocol",
+                    "printedName": "any TSCoreSDK.TSCryptoSessionProtocol",
+                    "usr": "s:9TSCoreSDK23TSCryptoSessionProtocolP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC07currentD0AA0cD8Protocol_pSgvp",
+            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC07currentD0AA0cD8Protocol_pSgvp",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any TSCoreSDK.TSCryptoSessionProtocol)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSCryptoSessionProtocol",
+                        "printedName": "any TSCoreSDK.TSCryptoSessionProtocol",
+                        "usr": "s:9TSCoreSDK23TSCryptoSessionProtocolP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC07currentD0AA0cD8Protocol_pSgvg",
+                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC07currentD0AA0cD8Protocol_pSgvg",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:serverProvider:aes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSCryptoSessionManager",
+                "printedName": "TSCoreSDK.TSCryptoSessionManager",
+                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TSCryptoSessionManagerConfiguration",
+                "printedName": "TSCoreSDK.TSCryptoSessionManagerConfiguration",
+                "usr": "s:9TSCoreSDK35TSCryptoSessionManagerConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TSCryptoSessionServerProvider",
+                "printedName": "TSCoreSDK.TSCryptoSessionServerProvider",
+                "hasDefaultArg": true,
+                "usr": "s:9TSCoreSDK29TSCryptoSessionServerProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TSAES",
+                "printedName": "TSCoreSDK.TSAES",
+                "hasDefaultArg": true,
+                "usr": "s:9TSCoreSDK5TSAESC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC13configuration14serverProvider3aesAcA0cdE13ConfigurationV_AA0cd6ServerH0CAA5TSAESCtKcfc",
+            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC13configuration14serverProvider3aesAcA0cdE13ConfigurationV_AA0cd6ServerH0CAA5TSAESCtKcfc",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "createCryptoSession",
+            "printedName": "createCryptoSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC012createCryptoD0yyYaKF",
+            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC012createCryptoD0yyYaKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ServerResponseData",
+            "printedName": "ServerResponseData",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServerResponseData",
+                    "printedName": "TSCoreSDK.TSCryptoSessionManager.ServerResponseData",
+                    "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "TSCoreSDK",
+                "declAttributes": [
+                  "AccessControl",
+                  "Required"
+                ],
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC6encode2toys7Encoder_p_tKF",
+                "moduleName": "TSCoreSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC",
+            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ClientRequestData",
+            "printedName": "ClientRequestData",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClientRequestData",
+                    "printedName": "TSCoreSDK.TSCryptoSessionManager.ClientRequestData",
+                    "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV6encode2toys7Encoder_p_tKF",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV",
+            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "EncryptedClientRequestData",
+            "printedName": "EncryptedClientRequestData",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV6encode2toys7Encoder_p_tKF",
+                "moduleName": "TSCoreSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EncryptedClientRequestData",
+                    "printedName": "TSCoreSDK.TSCryptoSessionManager.EncryptedClientRequestData",
+                    "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV",
+            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC",
+        "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "TSCryptoSessionManagerConfiguration",
         "printedName": "TSCryptoSessionManagerConfiguration",
         "children": [
@@ -9189,446 +9998,6 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TSCryptoSessionManager",
-        "printedName": "TSCryptoSessionManager",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "currentSession",
-            "printedName": "currentSession",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any TSCoreSDK.TSCryptoSessionProtocol)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TSCryptoSessionProtocol",
-                    "printedName": "any TSCoreSDK.TSCryptoSessionProtocol",
-                    "usr": "s:9TSCoreSDK23TSCryptoSessionProtocolP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC07currentD0AA0cD8Protocol_pSgvp",
-            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC07currentD0AA0cD8Protocol_pSgvp",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any TSCoreSDK.TSCryptoSessionProtocol)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TSCryptoSessionProtocol",
-                        "printedName": "any TSCoreSDK.TSCryptoSessionProtocol",
-                        "usr": "s:9TSCoreSDK23TSCryptoSessionProtocolP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC07currentD0AA0cD8Protocol_pSgvg",
-                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC07currentD0AA0cD8Protocol_pSgvg",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "ServerResponseData",
-            "printedName": "ServerResponseData",
-            "children": [
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ServerResponseData",
-                    "printedName": "TSCoreSDK.TSCryptoSessionManager.ServerResponseData",
-                    "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "TSCoreSDK",
-                "declAttributes": [
-                  "AccessControl",
-                  "Required"
-                ],
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC6encode2toys7Encoder_p_tKF",
-                "moduleName": "TSCoreSDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC",
-            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC18ServerResponseDataC",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "hasMissingDesignatedInitializers": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "ClientRequestData",
-            "printedName": "ClientRequestData",
-            "children": [
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ClientRequestData",
-                    "printedName": "TSCoreSDK.TSCryptoSessionManager.ClientRequestData",
-                    "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV6encode2toys7Encoder_p_tKF",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV",
-            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC17ClientRequestDataV",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "EncryptedClientRequestData",
-            "printedName": "EncryptedClientRequestData",
-            "children": [
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV6encode2toys7Encoder_p_tKF",
-                "moduleName": "TSCoreSDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EncryptedClientRequestData",
-                    "printedName": "TSCoreSDK.TSCryptoSessionManager.EncryptedClientRequestData",
-                    "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "TSCoreSDK",
-                "implicit": true,
-                "throwing": true,
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV",
-            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC26EncryptedClientRequestDataV",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(configuration:serverProvider:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TSCryptoSessionManager",
-                "printedName": "TSCoreSDK.TSCryptoSessionManager",
-                "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TSCryptoSessionManagerConfiguration",
-                "printedName": "TSCoreSDK.TSCryptoSessionManagerConfiguration",
-                "usr": "s:9TSCoreSDK35TSCryptoSessionManagerConfigurationV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TSCryptoSessionServerProvider",
-                "printedName": "TSCoreSDK.TSCryptoSessionServerProvider",
-                "hasDefaultArg": true,
-                "usr": "s:9TSCoreSDK29TSCryptoSessionServerProviderC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC13configuration14serverProviderAcA0cdE13ConfigurationV_AA0cd6ServerH0CtKcfc",
-            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC13configuration14serverProviderAcA0cdE13ConfigurationV_AA0cd6ServerH0CtKcfc",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "createCryptoSession",
-            "printedName": "createCryptoSession()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC012createCryptoD0yyYaKF",
-            "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC012createCryptoD0yyYaKF",
-            "moduleName": "TSCoreSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:9TSCoreSDK22TSCryptoSessionManagerC",
-        "mangledName": "$s9TSCoreSDK22TSCryptoSessionManagerC",
-        "moduleName": "TSCoreSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -11366,6 +11735,648 @@
         "printedName": "CryptoKit",
         "declKind": "Import",
         "moduleName": "TSCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "TSCoreSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "TSCoreSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSpseudoRandomAlgorithm",
+        "printedName": "TSpseudoRandomAlgorithm",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sha1",
+            "printedName": "sha1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TSCoreSDK.TSpseudoRandomAlgorithm.Type) -> TSCoreSDK.TSpseudoRandomAlgorithm",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSpseudoRandomAlgorithm",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                    "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSpseudoRandomAlgorithm",
+                        "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                        "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO4sha1yA2CmF",
+            "mangledName": "$s9TSCoreSDK23TSpseudoRandomAlgorithmO4sha1yA2CmF",
+            "moduleName": "TSCoreSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sha224",
+            "printedName": "sha224",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TSCoreSDK.TSpseudoRandomAlgorithm.Type) -> TSCoreSDK.TSpseudoRandomAlgorithm",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSpseudoRandomAlgorithm",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                    "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSpseudoRandomAlgorithm",
+                        "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                        "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO6sha224yA2CmF",
+            "mangledName": "$s9TSCoreSDK23TSpseudoRandomAlgorithmO6sha224yA2CmF",
+            "moduleName": "TSCoreSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sha256",
+            "printedName": "sha256",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TSCoreSDK.TSpseudoRandomAlgorithm.Type) -> TSCoreSDK.TSpseudoRandomAlgorithm",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSpseudoRandomAlgorithm",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                    "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSpseudoRandomAlgorithm",
+                        "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                        "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO6sha256yA2CmF",
+            "mangledName": "$s9TSCoreSDK23TSpseudoRandomAlgorithmO6sha256yA2CmF",
+            "moduleName": "TSCoreSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sha384",
+            "printedName": "sha384",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TSCoreSDK.TSpseudoRandomAlgorithm.Type) -> TSCoreSDK.TSpseudoRandomAlgorithm",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSpseudoRandomAlgorithm",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                    "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSpseudoRandomAlgorithm",
+                        "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                        "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO6sha384yA2CmF",
+            "mangledName": "$s9TSCoreSDK23TSpseudoRandomAlgorithmO6sha384yA2CmF",
+            "moduleName": "TSCoreSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sha512",
+            "printedName": "sha512",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TSCoreSDK.TSpseudoRandomAlgorithm.Type) -> TSCoreSDK.TSpseudoRandomAlgorithm",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSpseudoRandomAlgorithm",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                    "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSpseudoRandomAlgorithm",
+                        "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                        "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO6sha512yA2CmF",
+            "mangledName": "$s9TSCoreSDK23TSpseudoRandomAlgorithmO6sha512yA2CmF",
+            "moduleName": "TSCoreSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSpseudoRandomAlgorithm",
+                    "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                    "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO8rawValueACSgs5Int32V_tcfc",
+            "mangledName": "$s9TSCoreSDK23TSpseudoRandomAlgorithmO8rawValueACSgs5Int32V_tcfc",
+            "moduleName": "TSCoreSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO8rawValues5Int32Vvp",
+            "mangledName": "$s9TSCoreSDK23TSpseudoRandomAlgorithmO8rawValues5Int32Vvp",
+            "moduleName": "TSCoreSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO8rawValues5Int32Vvg",
+                "mangledName": "$s9TSCoreSDK23TSpseudoRandomAlgorithmO8rawValues5Int32Vvg",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO",
+        "mangledName": "$s9TSCoreSDK23TSpseudoRandomAlgorithmO",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int32",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSAES",
+        "printedName": "TSAES",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Configuration",
+            "printedName": "Configuration",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Configuration",
+                    "printedName": "TSCoreSDK.TSAES.Configuration",
+                    "usr": "s:9TSCoreSDK5TSAESC13ConfigurationV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9TSCoreSDK5TSAESC13ConfigurationVAEycfc",
+                "mangledName": "$s9TSCoreSDK5TSAESC13ConfigurationVAEycfc",
+                "moduleName": "TSCoreSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:9TSCoreSDK5TSAESC13ConfigurationV",
+            "mangledName": "$s9TSCoreSDK5TSAESC13ConfigurationV",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSAES",
+                "printedName": "TSCoreSDK.TSAES",
+                "usr": "s:9TSCoreSDK5TSAESC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "TSCoreSDK.TSAES.Configuration",
+                "hasDefaultArg": true,
+                "usr": "s:9TSCoreSDK5TSAESC13ConfigurationV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9TSCoreSDK5TSAESC13configurationA2C13ConfigurationV_tcfc",
+            "mangledName": "$s9TSCoreSDK5TSAESC13configurationA2C13ConfigurationV_tcfc",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encrypt",
+            "printedName": "encrypt(data:key:iv:padding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SymmetricKey",
+                "printedName": "CryptoKit.SymmetricKey",
+                "usr": "s:9CryptoKit12SymmetricKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK5TSAESC7encrypt4data3key2iv7padding10Foundation4DataVAK_9CryptoKit12SymmetricKeyVAKSitKF",
+            "mangledName": "$s9TSCoreSDK5TSAESC7encrypt4data3key2iv7padding10Foundation4DataVAK_9CryptoKit12SymmetricKeyVAKSitKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decrypt",
+            "printedName": "decrypt(data:key:iv:padding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SymmetricKey",
+                "printedName": "CryptoKit.SymmetricKey",
+                "usr": "s:9CryptoKit12SymmetricKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK5TSAESC7decrypt4data3key2iv7padding10Foundation4DataVAK_9CryptoKit12SymmetricKeyVAKSitKF",
+            "mangledName": "$s9TSCoreSDK5TSAESC7decrypt4data3key2iv7padding10Foundation4DataVAK_9CryptoKit12SymmetricKeyVAKSitKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "generateIV",
+            "printedName": "generateIV(bytes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK5TSAESC10generateIV5bytes10Foundation4DataVSgSi_tF",
+            "mangledName": "$s9TSCoreSDK5TSAESC10generateIV5bytes10Foundation4DataVSgSi_tF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pbkdfStretchSecretIntoAESKey",
+            "printedName": "pbkdfStretchSecretIntoAESKey(salt:secret:keySizeInBytes:pbkdfIterationCount:randomAlgorithm:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SymmetricKey",
+                "printedName": "CryptoKit.SymmetricKey",
+                "usr": "s:9CryptoKit12SymmetricKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TSpseudoRandomAlgorithm",
+                "printedName": "TSCoreSDK.TSpseudoRandomAlgorithm",
+                "usr": "s:9TSCoreSDK23TSpseudoRandomAlgorithmO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK5TSAESC28pbkdfStretchSecretIntoAESKey4salt6secret14keySizeInBytes0D14IterationCount15randomAlgorithm9CryptoKit12SymmetricKeyV10Foundation4DataV_AOS2iAA014TSpseudoRandomR0OtKF",
+            "mangledName": "$s9TSCoreSDK5TSAESC28pbkdfStretchSecretIntoAESKey4salt6secret14keySizeInBytes0D14IterationCount15randomAlgorithm9CryptoKit12SymmetricKeyV10Foundation4DataV_AOS2iAA014TSpseudoRandomR0OtKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9TSCoreSDK5TSAESC",
+        "mangledName": "$s9TSCoreSDK5TSAESC",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -14354,6 +15365,767 @@
             ],
             "usr": "s:7Combine16ObservableObjectP",
             "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSVolatileECKeySize",
+        "printedName": "TSVolatileECKeySize",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "s256",
+            "printedName": "s256",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TSCoreSDK.TSVolatileECKeySize.Type) -> TSCoreSDK.TSVolatileECKeySize",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSVolatileECKeySize",
+                    "printedName": "TSCoreSDK.TSVolatileECKeySize",
+                    "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TSCoreSDK.TSVolatileECKeySize.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSVolatileECKeySize",
+                        "printedName": "TSCoreSDK.TSVolatileECKeySize",
+                        "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO4s256yA2CmF",
+            "mangledName": "$s9TSCoreSDK19TSVolatileECKeySizeO4s256yA2CmF",
+            "moduleName": "TSCoreSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "s384",
+            "printedName": "s384",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TSCoreSDK.TSVolatileECKeySize.Type) -> TSCoreSDK.TSVolatileECKeySize",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSVolatileECKeySize",
+                    "printedName": "TSCoreSDK.TSVolatileECKeySize",
+                    "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TSCoreSDK.TSVolatileECKeySize.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSVolatileECKeySize",
+                        "printedName": "TSCoreSDK.TSVolatileECKeySize",
+                        "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO4s384yA2CmF",
+            "mangledName": "$s9TSCoreSDK19TSVolatileECKeySizeO4s384yA2CmF",
+            "moduleName": "TSCoreSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TSCoreSDK.TSVolatileECKeySize?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSVolatileECKeySize",
+                    "printedName": "TSCoreSDK.TSVolatileECKeySize",
+                    "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s9TSCoreSDK19TSVolatileECKeySizeO8rawValueACSgSi_tcfc",
+            "moduleName": "TSCoreSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO8rawValueSivp",
+            "mangledName": "$s9TSCoreSDK19TSVolatileECKeySizeO8rawValueSivp",
+            "moduleName": "TSCoreSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO8rawValueSivg",
+                "mangledName": "$s9TSCoreSDK19TSVolatileECKeySizeO8rawValueSivg",
+                "moduleName": "TSCoreSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9TSCoreSDK19TSVolatileECKeySizeO",
+        "mangledName": "$s9TSCoreSDK19TSVolatileECKeySizeO",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSECCVolatileKeyPair",
+        "printedName": "TSECCVolatileKeyPair",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "rawECPublicKey",
+            "printedName": "rawECPublicKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP011rawECPublicD010Foundation4DataVyF",
+            "mangledName": "$s9TSCoreSDK20TSECCVolatileKeyPairP011rawECPublicD010Foundation4DataVyF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSECCVolatileKeyPair>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSECCVolatileKeyPair>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "rawECPublicKeyHex",
+            "printedName": "rawECPublicKeyHex()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP011rawECPublicD3HexSSyF",
+            "mangledName": "$s9TSCoreSDK20TSECCVolatileKeyPairP011rawECPublicD3HexSSyF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSECCVolatileKeyPair>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSECCVolatileKeyPair>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signedChallengeRaw",
+            "printedName": "signedChallengeRaw(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP18signedChallengeRawy10Foundation4DataVAGKF",
+            "mangledName": "$s9TSCoreSDK20TSECCVolatileKeyPairP18signedChallengeRawy10Foundation4DataVAGKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSECCVolatileKeyPair>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSECCVolatileKeyPair>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signedDerChallengeDer",
+            "printedName": "signedDerChallengeDer(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP018signedDerChallengeG0y10Foundation4DataVAGKF",
+            "mangledName": "$s9TSCoreSDK20TSECCVolatileKeyPairP018signedDerChallengeG0y10Foundation4DataVAGKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSECCVolatileKeyPair>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSECCVolatileKeyPair>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verifySignature",
+            "printedName": "verifySignature(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP15verifySignature_3forSb10Foundation4DataV_AHtKF",
+            "mangledName": "$s9TSCoreSDK20TSECCVolatileKeyPairP15verifySignature_3forSb10Foundation4DataV_AHtKF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSECCVolatileKeyPair>",
+            "sugared_genericSig": "<Self where Self : TSCoreSDK.TSECCVolatileKeyPair>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP",
+        "mangledName": "$s9TSCoreSDK20TSECCVolatileKeyPairP",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSECVolatile256KeyPair",
+        "printedName": "TSECVolatile256KeyPair",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "rawECPublicKey",
+            "printedName": "rawECPublicKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile256KeyPairV011rawECPublicD010Foundation4DataVyF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile256KeyPairV011rawECPublicD010Foundation4DataVyF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "rawECPublicKeyHex",
+            "printedName": "rawECPublicKeyHex()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile256KeyPairV011rawECPublicD3HexSSyF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile256KeyPairV011rawECPublicD3HexSSyF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signedChallengeRaw",
+            "printedName": "signedChallengeRaw(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile256KeyPairV18signedChallengeRawy10Foundation4DataVAGKF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile256KeyPairV18signedChallengeRawy10Foundation4DataVAGKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signedDerChallengeDer",
+            "printedName": "signedDerChallengeDer(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile256KeyPairV018signedDerChallengeG0y10Foundation4DataVAGKF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile256KeyPairV018signedDerChallengeG0y10Foundation4DataVAGKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verifySignature",
+            "printedName": "verifySignature(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile256KeyPairV15verifySignature_3forSb10Foundation4DataV_AHtKF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile256KeyPairV15verifySignature_3forSb10Foundation4DataV_AHtKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9TSCoreSDK22TSECVolatile256KeyPairV",
+        "mangledName": "$s9TSCoreSDK22TSECVolatile256KeyPairV",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TSECCVolatileKeyPair",
+            "printedName": "TSECCVolatileKeyPair",
+            "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP",
+            "mangledName": "$s9TSCoreSDK20TSECCVolatileKeyPairP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSECVolatile384KeyPair",
+        "printedName": "TSECVolatile384KeyPair",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "rawECPublicKey",
+            "printedName": "rawECPublicKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile384KeyPairV011rawECPublicD010Foundation4DataVyF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile384KeyPairV011rawECPublicD010Foundation4DataVyF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "rawECPublicKeyHex",
+            "printedName": "rawECPublicKeyHex()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile384KeyPairV011rawECPublicD3HexSSyF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile384KeyPairV011rawECPublicD3HexSSyF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signChallenge",
+            "printedName": "signChallenge(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile384KeyPairV13signChallengey10Foundation4DataVAGKF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile384KeyPairV13signChallengey10Foundation4DataVAGKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signedChallengeRaw",
+            "printedName": "signedChallengeRaw(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile384KeyPairV18signedChallengeRawy10Foundation4DataVAGKF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile384KeyPairV18signedChallengeRawy10Foundation4DataVAGKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signedDerChallengeDer",
+            "printedName": "signedDerChallengeDer(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile384KeyPairV018signedDerChallengeG0y10Foundation4DataVAGKF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile384KeyPairV018signedDerChallengeG0y10Foundation4DataVAGKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verifySignature",
+            "printedName": "verifySignature(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TSCoreSDK22TSECVolatile384KeyPairV15verifySignature_3forSb10Foundation4DataV_AHtKF",
+            "mangledName": "$s9TSCoreSDK22TSECVolatile384KeyPairV15verifySignature_3forSb10Foundation4DataV_AHtKF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9TSCoreSDK22TSECVolatile384KeyPairV",
+        "mangledName": "$s9TSCoreSDK22TSECVolatile384KeyPairV",
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TSECCVolatileKeyPair",
+            "printedName": "TSECCVolatileKeyPair",
+            "usr": "s:9TSCoreSDK20TSECCVolatileKeyPairP",
+            "mangledName": "$s9TSCoreSDK20TSECCVolatileKeyPairP"
           }
         ]
       },
@@ -19729,6 +21501,28 @@
             "moduleName": "TSCoreSDK",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ts_asciiToHex",
+            "printedName": "ts_asciiToHex()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS9TSCoreSDKE13ts_asciiToHexSSyF",
+            "mangledName": "$sSS9TSCoreSDKE13ts_asciiToHexSSyF",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -20666,6 +22460,629 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Data",
+        "printedName": "Data",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(ts_hex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10Foundation4DataV9TSCoreSDKE6ts_hexACSgSS_tcfc",
+            "mangledName": "$s10Foundation4DataV9TSCoreSDKE6ts_hexACSgSS_tcfc",
+            "moduleName": "TSCoreSDK",
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "ts_hexString",
+            "printedName": "ts_hexString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation4DataV9TSCoreSDKE12ts_hexStringSSvp",
+            "mangledName": "$s10Foundation4DataV9TSCoreSDKE12ts_hexStringSSvp",
+            "moduleName": "TSCoreSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation4DataV9TSCoreSDKE12ts_hexStringSSvg",
+                "mangledName": "$s10Foundation4DataV9TSCoreSDKE12ts_hexStringSSvg",
+                "moduleName": "TSCoreSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "ts_decoded",
+            "printedName": "ts_decoded(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10Foundation4DataV9TSCoreSDKE10ts_decodedyxSgxmSeRzlF",
+            "mangledName": "$s10Foundation4DataV9TSCoreSDKE10ts_decodedyxSgxmSeRzlF",
+            "moduleName": "TSCoreSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Foundation4DataV",
+        "mangledName": "$s10Foundation4DataV",
+        "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RandomAccessCollection",
+            "printedName": "RandomAccessCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sk",
+            "mangledName": "$sSk"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableCollection",
+            "printedName": "MutableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SM",
+            "mangledName": "$sSM"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Foundation.Data.Iterator",
+                    "usr": "s:10Foundation4DataV8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<Foundation.Data>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Foundation.Data.Iterator",
+                    "usr": "s:10Foundation4DataV8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "SymmetricKey",
         "printedName": "SymmetricKey",
         "children": [
@@ -21024,980 +23441,1036 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/NetworkMonitor\/TSNetworkMonitor.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/NetworkMonitor\/TSNetworkMonitor.swift",
       "kind": "BooleanLiteral",
       "offset": 318,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSExceptionDataSource.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSExceptionDataSource.swift",
       "kind": "Array",
       "offset": 352,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "StringLiteral",
       "offset": 1754,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 2599,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 3607,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
       "offset": 4569,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Keychain\/TSKeychain.swift",
       "kind": "BooleanLiteral",
-      "offset": 8229,
+      "offset": 8459,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/SyncData\/TSLogDataSyncServer.swift",
       "kind": "StringLiteral",
       "offset": 3393,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 304,
       "length": 22,
       "value": "\"ts-terminate-by-user\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 14,
       "value": "\"ts-client-id\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 418,
       "length": 13,
       "value": "\"ts-sdk-name\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 486,
       "length": 34,
       "value": "\"?\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 501,
       "length": 2,
       "value": "\"=%@&\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 2,
       "value": "\"=%@\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 580,
       "length": 37,
       "value": "\"tscore-client-side-request-duration\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSConstants.swift",
       "kind": "StringLiteral",
       "offset": 670,
       "length": 25,
       "value": "\"x-ts-processing-time-ms\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 333,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "Dictionary",
       "offset": 8395,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "Array",
       "offset": 9844,
       "length": 6,
       "value": "[0, 0]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "StringLiteral",
       "offset": 9993,
       "length": 12,
       "value": "\"_biometric\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 11367,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 11858,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 12898,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 14488,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 14950,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 17053,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 21589,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "IntegerLiteral",
       "offset": 21677,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 23083,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 23613,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 25613,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 26921,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 31653,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "IntegerLiteral",
       "offset": 31741,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
       "offset": 33216,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
       "offset": 1459,
       "length": 34,
       "value": "\"Core data not encrypted \""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
       "offset": 1492,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Storage\/CoreData\/TSCoreDataStack.swift",
       "kind": "StringLiteral",
       "offset": 1707,
       "length": 6,
       "value": "\"momd\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 140,
       "length": 17,
       "value": "\"X-TSEC-Metadata\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 18,
       "value": "\"X-TSEC-Timestamp\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 257,
       "length": 18,
       "value": "\"X-TSEC-Signature\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 310,
       "length": 36,
       "value": "\"B8CD55A-9102-4F38-9FED-163C7CD576D\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 373,
       "length": 35,
       "value": "\"telemetry-zxxsfh4u7a-uc.a.run.app\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 508,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "StringLiteral",
       "offset": 539,
       "length": 6,
       "value": "\"key1\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Requests\/TSUploadLogsRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 622,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/TSCoreConstants.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/TSCoreConstants.swift",
       "kind": "StringLiteral",
       "offset": 249,
       "length": 32,
       "value": "\"com.TransmitSecurity.TSCoreSDK\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/TSCoreConstants.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/TSCoreConstants.swift",
       "kind": "StringLiteral",
       "offset": 399,
       "length": 11,
       "value": "\"TSCoreSDK\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/Models\/TSLogModel.swift",
       "kind": "StringLiteral",
       "offset": 472,
       "length": 5,
       "value": "\"all\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSRetriableRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSRetriableRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 1120,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
       "offset": 308,
       "length": 8,
       "value": "\"mobile\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSCoreSDKExtensions.swift",
       "kind": "StringLiteral",
       "offset": 356,
       "length": 5,
       "value": "\"iOS\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 273,
       "length": 4,
       "value": "3000"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 288,
       "length": 39,
       "value": "\"Failed to serialize key exchange data\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 374,
       "length": 4,
       "value": "3001"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 389,
       "length": 27,
       "value": "\"Missing client public key\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 463,
       "length": 4,
       "value": "3002"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 478,
       "length": 48,
       "value": "\"Missing key exchange header in server response\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 573,
       "length": 4,
       "value": "3003"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 588,
       "length": 42,
       "value": "\"Failed to convert decrypted data to Data\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 677,
       "length": 4,
       "value": "3004"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 692,
       "length": 28,
       "value": "\"Key exchange data mismatch\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 767,
       "length": 4,
       "value": "3005"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 782,
       "length": 37,
       "value": "\"Missing crypto scheme in the header\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 866,
       "length": 4,
       "value": "3006"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 881,
       "length": 27,
       "value": "\"Unsupported crypto scheme\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 955,
       "length": 4,
       "value": "3007"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 970,
       "length": 27,
       "value": "\"Missing server public key\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1044,
       "length": 4,
       "value": "3008"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 1059,
       "length": 41,
       "value": "\"Failed to deserialize server public key\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1147,
       "length": 4,
       "value": "3009"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 1162,
-      "length": 18,
-      "value": "\"Invalid key size\""
+      "length": 16,
+      "value": "\"Internal Error\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1227,
+      "offset": 1245,
       "length": 4,
       "value": "3010"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1242,
-      "length": 17,
-      "value": "\"Invalid IV size\""
+      "offset": 1260,
+      "length": 16,
+      "value": "\"Internal Error\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1306,
+      "offset": 1342,
       "length": 4,
       "value": "3011"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1321,
+      "offset": 1357,
       "length": 25,
       "value": "\"Crypto operation failed\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1393,
+      "offset": 1429,
       "length": 4,
       "value": "3012"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1408,
+      "offset": 1444,
       "length": 17,
       "value": "\"Missing AES key\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1472,
+      "offset": 1508,
       "length": 4,
       "value": "3013"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1487,
+      "offset": 1523,
       "length": 25,
       "value": "\"Failed to deseialize IV\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1559,
+      "offset": 1595,
       "length": 4,
       "value": "3014"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1574,
+      "offset": 1610,
       "length": 37,
       "value": "\"Failed to deserialize response data\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1658,
+      "offset": 1694,
       "length": 4,
       "value": "3015"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1673,
+      "offset": 1709,
       "length": 23,
       "value": "\"Failed to generate IV\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1743,
+      "offset": 1779,
       "length": 4,
       "value": "3016"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1758,
+      "offset": 1794,
       "length": 17,
       "value": "\"Missing AES key\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1822,
+      "offset": 1858,
       "length": 4,
       "value": "3017"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1837,
+      "offset": 1873,
       "length": 29,
       "value": "\"Missing Keys pair parameter\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2947,
-      "length": 19,
-      "value": "\"crypto_session_id\""
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1949,
+      "length": 4,
+      "value": "3018"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4729,
-      "length": 14,
-      "value": "\"key_exchange\""
+      "offset": 1964,
+      "length": 16,
+      "value": "\"Internal Error\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 4776,
-      "length": 12,
-      "value": "\"encryption\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4880,
+      "offset": 2101,
       "length": 23,
       "value": "\"hello encrypted world\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 8802,
+      "offset": 15249,
       "length": 13,
       "value": "\"enc_headers\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 9479,
+      "offset": 15926,
       "length": 13,
       "value": "\"enc_headers\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Networking\/Requests\/TSCryptoKeysExchangeRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 17154,
+      "length": 19,
+      "value": "\"crypto_session_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 18936,
+      "length": 14,
+      "value": "\"key_exchange\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCryptoSessionManager\/TSCryptoSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 18983,
+      "length": 12,
+      "value": "\"encryption\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Networking\/Requests\/TSCryptoKeysExchangeRequest.swift",
       "kind": "StringLiteral",
       "offset": 281,
       "length": 26,
       "value": "\"api\/v2\/auth\/key_exchange\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Networking\/Requests\/TSCryptoKeysExchangeRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Networking\/Requests\/TSCryptoKeysExchangeRequest.swift",
       "kind": "StringLiteral",
       "offset": 2971,
       "length": 9,
       "value": "\"flow_id\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaulsController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaulsController.swift",
       "kind": "StringLiteral",
       "offset": 2661,
       "length": 23,
       "value": "\"com.core.userDefaults\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 253,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 274,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 316,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 359,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 379,
       "length": 4,
       "value": "9999"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 1525,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 1574,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 1620,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "Array",
       "offset": 1830,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 5369,
       "length": 32,
       "value": "\"com.TransmitSecurity.TSCoreSDK\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "StringLiteral",
       "offset": 5413,
       "length": 9,
       "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Logger\/TSLogController.swift",
       "kind": "IntegerLiteral",
       "offset": 5960,
       "length": 6,
       "value": "500000"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/TSAES.swift",
+      "kind": "IntegerLiteral",
+      "offset": 274,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/TSAES.swift",
+      "kind": "IntegerLiteral",
+      "offset": 290,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/TSAES.swift",
+      "kind": "IntegerLiteral",
+      "offset": 306,
+      "length": 6,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/AES\/TSAES.swift",
+      "kind": "IntegerLiteral",
+      "offset": 322,
+      "length": 6,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 4,
       "value": "2048"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "BooleanLiteral",
       "offset": 507,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "StringLiteral",
       "offset": 662,
       "length": 32,
       "value": "\"-----BEGIN RSA PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAService.swift",
       "kind": "StringLiteral",
       "offset": 754,
       "length": 30,
       "value": "\"-----END RSA PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSFile.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSFile.swift",
       "kind": "StringLiteral",
       "offset": 331,
       "length": 7,
       "value": "\"plist\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSTimer.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECVolatileKeyPair.swift",
+      "kind": "IntegerLiteral",
+      "offset": 270,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECVolatileKeyPair.swift",
+      "kind": "IntegerLiteral",
+      "offset": 289,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Utils\/TSTimer.swift",
       "kind": "FloatLiteral",
       "offset": 222,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 1098,
       "length": 28,
       "value": "\"-----BEGIN PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 1192,
       "length": 26,
       "value": "\"-----END PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 1287,
       "length": 32,
       "value": "\"-----BEGIN RSA PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/RSA\/TSRSAConverter.swift",
       "kind": "StringLiteral",
       "offset": 1388,
       "length": 30,
       "value": "\"-----END RSA PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaultsFactory.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Storage\/UserDefaults\/TSUserDefaultsFactory.swift",
       "kind": "Dictionary",
       "offset": 326,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/SyncData\/ThreadSafeContainer.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/SyncData\/ThreadSafeContainer.swift",
       "kind": "StringLiteral",
       "offset": 566,
       "length": 43,
       "value": "\"TSCoreSDK.concurrency.threadSafeContainer\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "IntegerLiteral",
       "offset": 304,
       "length": 3,
       "value": "256"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "BooleanLiteral",
       "offset": 613,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "StringLiteral",
       "offset": 763,
       "length": 28,
       "value": "\"-----BEGIN PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/EC\/TSECService.swift",
       "kind": "StringLiteral",
       "offset": 848,
       "length": 26,
       "value": "\"-----END PUBLIC KEY-----\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 238,
       "length": 15,
       "value": "\"data is empty\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 275,
       "length": 17,
       "value": "\"decoding failed\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 312,
       "length": 22,
       "value": "\"failed with code: %d\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 1047,
       "length": 7,
       "value": "\":#[]@\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 1152,
       "length": 13,
       "value": "\"!$&'()*+,;=\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 1227,
       "length": 54,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 1256,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Impl\/TSNetworkRequestUrlSessionController.swift",
       "kind": "StringLiteral",
       "offset": 1280,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 233,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 257,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 306,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Network\/Service\/TSBaseNetworkRequest.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 8,
