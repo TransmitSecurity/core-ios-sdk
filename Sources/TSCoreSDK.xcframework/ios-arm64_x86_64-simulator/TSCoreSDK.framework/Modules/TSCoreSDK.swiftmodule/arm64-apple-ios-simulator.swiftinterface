@@ -227,6 +227,8 @@ extension TSCoreSDK.TSCryptoBindingParameters {
 public protocol TSCryptoBindingProtocol : AnyObject {
   func provideKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, override: Swift.Bool) async throws -> TSCoreSDK.TSPublicKeyData
   func provideKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?, override: Swift.Bool) async throws -> TSCoreSDK.TSPublicKeyData
+  func provideKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> TSCoreSDK.TSPublicKeyData
+  func provideKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> TSCoreSDK.TSPublicKeyData
   func getKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> TSCoreSDK.TSPublicKeyData
   func getKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> TSCoreSDK.TSPublicKeyData
   func provideApplicationKeys() async throws -> TSCoreSDK.TSPublicKeyData
@@ -274,7 +276,8 @@ public actor TSCryptoBinding<T> : TSCoreSDK.TSKeysRotationProvider where T : TSC
   }
 }
 extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
-  public func provideKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil, override: Swift.Bool = true) async throws -> TSCoreSDK.TSPublicKeyData
+  public func provideKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil, override: Swift.Bool) async throws -> TSCoreSDK.TSPublicKeyData
+  public func provideKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?) async throws -> TSCoreSDK.TSPublicKeyData
   public func getKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws -> TSCoreSDK.TSPublicKeyData
   public func provideApplicationKeys() async throws -> TSCoreSDK.TSPublicKeyData
   public func sign(_ message: Swift.String, forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws -> Foundation.Data
@@ -290,7 +293,8 @@ extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
   public func deleteApplicationKeys() async throws
 }
 extension TSCoreSDK.TSCryptoBinding {
-  public func provideKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?, override: Swift.Bool = true) async throws -> TSCoreSDK.TSPublicKeyData
+  public func provideKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?, override: Swift.Bool) async throws -> TSCoreSDK.TSPublicKeyData
+  public func provideKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> TSCoreSDK.TSPublicKeyData
   public func getKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> TSCoreSDK.TSPublicKeyData
   public func provideApplicationKeysWithFallback(fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> TSCoreSDK.TSPublicKeyData
   public func signWithFallback(_ message: Swift.String, forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> Foundation.Data
