@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     #
   
     spec.name         = "TSCoreSDK"
-    spec.version      = "1.0.32"
+    spec.version      = "0.0.1911251401"
     spec.summary      = "Internal service"
     spec.homepage     = "https://github.com/TransmitSecurity/core-ios-sdk"
   
