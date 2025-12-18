@@ -142,6 +142,13 @@ extension Swift.Encodable {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class TSStandardUserDefaults {
+  public static let shared: TSCoreSDK.TSStandardUserDefaults
+  public func set(_ value: Any?, forKey key: Swift.String)
+  public func getValue(forKey key: Swift.String) -> Any?
+  public func getString(forKey key: Swift.String) -> Swift.String?
+  @objc deinit
+}
 public enum TSRequestErrorCode : Swift.Error, Swift.Equatable {
   case noInternet
   case invalidResponse
@@ -308,6 +315,23 @@ extension TSCoreSDK.TSCryptoBinding {
   public func signWithApplicationKeyBase64StringWithFallback(_ message: Foundation.Data, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> Swift.String
   public func deleteKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> Swift.String
   public func deleteApplicationKeysWithFallback(fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws
+}
+@_hasMissingDesignatedInitializers public actor TSDeviceMigrationHelper {
+  public static let shared: TSCoreSDK.TSDeviceMigrationHelper
+  public struct DeviceRecord : Swift.Codable {
+    public let oldPublicKeyId: Swift.String
+    public let keyCreationDate: Swift.String?
+    public let count: Swift.Int
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func getDeviceKeyRecord() -> TSCoreSDK.TSDeviceMigrationHelper.DeviceRecord?
+  public func resetDeviceRecord()
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class TSLocalAuthentication {
   public static func isNativeBiometricsAvailable() -> Swift.Bool
@@ -551,12 +575,14 @@ public protocol TSCryptoDataProvider {
   func keyStatus(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) -> (status: TSCoreSDK.TSKeychainItemStatus, service: any TSCoreSDK.TSCryptoBindingParameters)
   func signDataWithKey(message: Foundation.Data, privateKey: Security.SecKey, algorithm: Security.SecKeyAlgorithm) throws -> Foundation.Data
   func getPublicKeyRepresentation(publicKey: Security.SecKey) throws -> Foundation.Data
+  func getPublicKeyIdentifier(_ publicKeyRef: Security.SecKey) throws -> Swift.String
 }
 public class TSKeychainDataProvider : TSCoreSDK.TSCryptoDataProvider {
   public init()
   public func getPublicKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> (key: Security.SecKey, creationDate: Foundation.Date?)
   public func getPrivateKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> Security.SecKey
   public func calcKeyIdentifier(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> Swift.String
+  public func getPublicKeyIdentifier(_ publicKeyRef: Security.SecKey) throws -> Swift.String
   public func deleteSecureKeyPair(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws
   public func generateSecureKeyPair(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws
   public func keyStatus(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) -> (status: TSCoreSDK.TSKeychainItemStatus, service: any TSCoreSDK.TSCryptoBindingParameters)
