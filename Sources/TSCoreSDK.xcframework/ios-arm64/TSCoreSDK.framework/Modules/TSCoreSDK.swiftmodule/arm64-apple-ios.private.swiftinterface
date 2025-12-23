@@ -142,6 +142,13 @@ extension Swift.Encodable {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class TSStandardUserDefaults {
+  public static let shared: TSCoreSDK.TSStandardUserDefaults
+  public func set(_ value: Any?, forKey key: Swift.String)
+  public func getValue(forKey key: Swift.String) -> Any?
+  public func getString(forKey key: Swift.String) -> Swift.String?
+  @objc deinit
+}
 public enum TSRequestErrorCode : Swift.Error, Swift.Equatable {
   case noInternet
   case invalidResponse
@@ -204,6 +211,15 @@ public enum TSCryptoException : Swift.Error, Swift.CustomStringConvertible {
     get
   }
 }
+public enum TSNotificationsKeys : Swift.String {
+  case deleteDeviceKey
+  case generateDeviceKey
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public enum TSCryptoBindingKeyType : Swift.String {
   case rsa
   case ec
@@ -253,12 +269,14 @@ public protocol TSCryptoBindingProtocol : AnyObject {
   func deleteKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> Swift.String
   func deleteApplicationKeys() async throws
   func deleteApplicationKeysWithFallback(fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws
+  func verifyRSASignature(publicKey: Security.SecKey, signature: Foundation.Data, challenge: Foundation.Data) async -> Swift.Bool
 }
 public struct TSPublicKeyData {
   public var keyIdentifier: Swift.String
   public var publicKey: Swift.String
   public var keyType: Swift.String
   public var createdDate: Swift.Int64?
+  public var rawPublicKey: Security.SecKey?
 }
 public enum TSKeychainItemStatus : Swift.Equatable {
   case exists
@@ -289,9 +307,10 @@ extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
   public func signWithApplicationKey(_ message: Foundation.Data) async throws -> Foundation.Data
   public func signWithApplicationKeyBase64String(_ message: Swift.String) async throws -> Swift.String
   public func signWithApplicationKeyBase64String(_ message: Foundation.Data) async throws -> Swift.String
-  public func getPublicKeyOf_PEM_format(forTag tag: Swift.String, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?, context: LocalAuthentication.LAContext?) async throws -> Swift.String
+  public func getPublicKeyOf_PEM_format(forTag tag: Swift.String, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?, context: LocalAuthentication.LAContext?) async throws -> (Swift.String, Security.SecKey)
   public func deleteKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws -> Swift.String
   public func deleteApplicationKeys() async throws
+  public func verifyRSASignature(publicKey: Security.SecKey, signature: Foundation.Data, challenge: Foundation.Data) async -> Swift.Bool
 }
 extension TSCoreSDK.TSCryptoBinding {
   public func provideKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?, override: Swift.Bool) async throws -> TSCoreSDK.TSPublicKeyData
@@ -308,6 +327,23 @@ extension TSCoreSDK.TSCryptoBinding {
   public func signWithApplicationKeyBase64StringWithFallback(_ message: Foundation.Data, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> Swift.String
   public func deleteKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> Swift.String
   public func deleteApplicationKeysWithFallback(fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws
+}
+@_hasMissingDesignatedInitializers public actor TSDeviceMigrationHelper {
+  public static let shared: TSCoreSDK.TSDeviceMigrationHelper
+  public struct DeviceRecord : Swift.Codable {
+    public let oldPublicKeyId: Swift.String
+    public let keyCreationDate: Swift.String?
+    public let count: Swift.Int
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func getDeviceKeyRecord() -> TSCoreSDK.TSDeviceMigrationHelper.DeviceRecord?
+  public func resetDeviceRecord()
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class TSLocalAuthentication {
   public static func isNativeBiometricsAvailable() -> Swift.Bool
@@ -551,17 +587,21 @@ public protocol TSCryptoDataProvider {
   func keyStatus(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) -> (status: TSCoreSDK.TSKeychainItemStatus, service: any TSCoreSDK.TSCryptoBindingParameters)
   func signDataWithKey(message: Foundation.Data, privateKey: Security.SecKey, algorithm: Security.SecKeyAlgorithm) throws -> Foundation.Data
   func getPublicKeyRepresentation(publicKey: Security.SecKey) throws -> Foundation.Data
+  func getPublicKeyIdentifier(_ publicKeyRef: Security.SecKey) throws -> Swift.String
+  func verifyRSASignature(publicKey: Security.SecKey, signature: Foundation.Data, challenge: Foundation.Data) async -> Swift.Bool
 }
 public class TSKeychainDataProvider : TSCoreSDK.TSCryptoDataProvider {
   public init()
   public func getPublicKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> (key: Security.SecKey, creationDate: Foundation.Date?)
   public func getPrivateKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> Security.SecKey
   public func calcKeyIdentifier(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> Swift.String
+  public func getPublicKeyIdentifier(_ publicKeyRef: Security.SecKey) throws -> Swift.String
   public func deleteSecureKeyPair(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws
   public func generateSecureKeyPair(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws
   public func keyStatus(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) -> (status: TSCoreSDK.TSKeychainItemStatus, service: any TSCoreSDK.TSCryptoBindingParameters)
   public func signDataWithKey(message: Foundation.Data, privateKey: Security.SecKey, algorithm: Security.SecKeyAlgorithm) throws -> Foundation.Data
   public func getPublicKeyRepresentation(publicKey: Security.SecKey) throws -> Foundation.Data
+  public func verifyRSASignature(publicKey: Security.SecKey, signature: Foundation.Data, challenge: Foundation.Data) async -> Swift.Bool
   @objc deinit
 }
 public class TSRSAService : TSCoreSDK.TSCryptoBindingParameters {
@@ -849,6 +889,9 @@ public protocol TSDataSyncServer {
 }
 extension TSCoreSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
 extension TSCoreSDK.KeychainSwiftAccessOptions : Swift.Hashable {}
+extension TSCoreSDK.TSNotificationsKeys : Swift.Equatable {}
+extension TSCoreSDK.TSNotificationsKeys : Swift.Hashable {}
+extension TSCoreSDK.TSNotificationsKeys : Swift.RawRepresentable {}
 extension TSCoreSDK.TSCryptoBindingKeyType : Swift.Equatable {}
 extension TSCoreSDK.TSCryptoBindingKeyType : Swift.Hashable {}
 extension TSCoreSDK.TSCryptoBindingKeyType : Swift.RawRepresentable {}
