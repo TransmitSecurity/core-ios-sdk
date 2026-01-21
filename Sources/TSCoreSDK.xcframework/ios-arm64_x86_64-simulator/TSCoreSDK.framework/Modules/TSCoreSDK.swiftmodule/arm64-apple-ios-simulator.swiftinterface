@@ -2,20 +2,12 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TSCoreSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
-import AVFoundation
-import SystemConfiguration.CaptiveNetwork
 import Combine
 import CommonCrypto
 import CoreData
-import CoreLocation
-import CoreMotion
-import CoreTelephony
 import CryptoKit
-import Darwin
-import ExternalAccessory
 import Foundation
 import LocalAuthentication
-import MachO
 import Network
 import Security
 import Swift
@@ -27,12 +19,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
-final public class TSSafeCheckedContonuation<T> {
-  public init(_ cont: _Concurrency.CheckedContinuation<T, any Swift.Error>)
-  final public func resume(returning value: T)
-  final public func resume(throwing error: any Swift.Error)
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class TSUserDefauls : TSCoreSDK.TSUserDefaulsProtocol {
   public static let shared: TSCoreSDK.TSUserDefauls
   public func set(moduleInfo: any TSCoreSDK.ITSModuleInfo, value: Any?, forKey key: Swift.String) throws
@@ -85,16 +71,6 @@ extension Swift.Encodable {
 @objc @_inheritsConvenienceInitializers public class TSCore : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
-}
-public struct TSCryptoBindingData : Swift.Codable {
-  public let publicKey: Swift.String?
-  public let keyIdentifier: Swift.String?
-  public init(publicKey: Swift.String?, keyIdentifier: Swift.String?)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public protocol ITSCryptoBindingDataProvider {
-  func providePublicKeyData() async throws -> TSCoreSDK.TSCryptoBindingData
 }
 public protocol ITSModuleInfo {
   func subSystemName() -> Swift.String
@@ -357,92 +333,6 @@ extension TSCoreSDK.TSCryptoBinding {
     get
   }
 }
-public protocol ITSDeviceDataProvider {
-  var deviceName: Swift.String { get }
-  var deviceModel: Swift.String { get }
-  var machineName: Swift.String { get }
-  var systemName: Swift.String { get }
-  var osVersion: Swift.String { get }
-  var productName: Swift.String? { get }
-  var packageName: Swift.String? { get }
-  var appVersion: Swift.String? { get }
-  var appBuild: Swift.String? { get }
-  var currentCountry: Swift.String? { get }
-  var currentCurrency: Swift.String? { get }
-  var currentCurrencySymbol: Swift.String? { get }
-  var currentLanguage: Swift.String? { get }
-  var preferredLanguages: [Swift.String] { get }
-  var currentTimeZone: Swift.String? { get }
-  var currentTimeZoneName: Swift.String? { get }
-  var usesMetricSystem: Swift.Bool { get }
-  var cpuType: Swift.Int? { get }
-  var cpuSubType: Swift.Int? { get }
-  var cpuThreadType: Swift.Int? { get }
-  var logicalCPU: Swift.Int? { get }
-  var physicalCPU: Swift.Int? { get }
-  var availCPUs: Swift.Int? { get }
-  var maxCPUs: Swift.Int? { get }
-  var logicalCPUMax: Swift.Int? { get }
-  var physicalCPUMax: Swift.Int? { get }
-  var memorySize: Swift.UInt32? { get }
-  var ram: Swift.UInt64? { get }
-  var batteryLevel: Swift.Float? { get }
-  var batteryState: Swift.Int { get }
-  var isLowPowerModeEnabled: Swift.Bool { get }
-  var screenScale: Swift.Float { get }
-  var screenNativeScale: Swift.Float { get }
-  var screenBrightness: Swift.Float { get }
-  var screenBounds: CoreFoundation.CGRect { get }
-  var screenNativeBounds: CoreFoundation.CGRect { get }
-  var isReduceMotionEnabled: Swift.Bool { get }
-  var buttonShapesEnabled: Swift.Bool { get }
-  var isBoldTextEnabled: Swift.Bool { get }
-  var isGrayscaleEnabled: Swift.Bool { get }
-  var isMonoAudioEnabled: Swift.Bool { get }
-  var prefersCrossFadeTransitions: Swift.Bool { get }
-  var shouldDifferentiateWithoutColor: Swift.Bool { get }
-  var isClosedCaptioningEnabled: Swift.Bool { get }
-  var isPasscodeEnabled: Swift.Bool { get }
-  var isSwitchControlRunning: Swift.Bool { get }
-  var isReduceTransparencyEnabled: Swift.Bool { get }
-  var isShakeToUndoEnabled: Swift.Bool { get }
-  var isDarkerSystemColorsEnabled: Swift.Bool { get }
-  var isOnOffSwitchLabelsEnabled: Swift.Bool { get }
-  var isVoiceOverRunning: Swift.Bool { get }
-  var isInvertColorsEnabled: Swift.Bool { get }
-  var isSpeakSelectionEnabled: Swift.Bool { get }
-  var isSpeakScreenEnabled: Swift.Bool { get }
-  var isVideoAutoplayEnabled: Swift.Bool { get }
-  var isJailbroken: Swift.Bool { get }
-  var isSimulator: Swift.Bool { get }
-  var isReverseEngineered: Swift.Bool { get }
-  var isBiometricsEnabled: Swift.Bool { get }
-  var supportedBiometryType: Swift.String { get }
-  var isInternetAvailable: Swift.Bool { get }
-  var isConnectedViaWiFi: Swift.Bool { get }
-  var isProxied: Swift.Bool { get }
-  var cellularProviders: [TSCoreSDK.TSCellularProvider] { get }
-  var isAccelerometerAvailable: Swift.Bool { get }
-  var isGyroAvailable: Swift.Bool { get }
-  var isMagnetometerAvailable: Swift.Bool { get }
-  var isDeviceMotionAvailable: Swift.Bool { get }
-  var isHeadsetPluggedIn: Swift.Bool { get }
-  var isScreenMirrored: Swift.Bool { get }
-  var userInterfaceStyle: Swift.String { get }
-  var kernelHostName: Swift.String? { get }
-  var iOSKernelVersion: Swift.String? { get }
-  var uuid: Swift.String? { get }
-  var deviceOrientation: Swift.Int { get }
-  var connectedAudioAccessories: [TSCoreSDK.TSAudioAccessoryInfo] { get }
-  func isGuidedAccessEnabled() async -> Swift.Bool
-  func isAssistiveTouchRunning() async -> Swift.Bool
-  func isBackgroundDownloadEnabled() async -> Swift.Bool
-  func locationData(moduleInfo: any TSCoreSDK.ITSModuleInfo) async -> TSCoreSDK.TSGeoLocationData?
-  func cryptoBindingData(moduleInfo: any TSCoreSDK.ITSModuleInfo) async throws -> TSCoreSDK.TSCryptoBindingData
-}
-@_hasMissingDesignatedInitializers public class TSDeviceDataTypes {
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class TSLocalAuthentication {
   public static func isNativeBiometricsAvailable() -> Swift.Bool
   public static func isNativeBiometricsEnrolled() -> Swift.Bool
@@ -635,10 +525,6 @@ extension TSCoreSDK.TSLogLevel {
     get
   }
 }
-public struct TSGeoLocationData : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public enum TSpseudoRandomAlgorithm : Swift.Int32 {
   case sha1
   case sha224
@@ -679,157 +565,6 @@ public enum TSLoggerDestination {
 }
 @_hasMissingDesignatedInitializers final public class TSLogger : TSCoreSDK.TSLogConfigurable {
   @objc deinit
-}
-public typealias TSAudioAccessoryInfo = TSCoreSDK.TSDeviceDataTypes.Hardware.Accessory.AudioAccessoryInfo
-extension TSCoreSDK.TSDeviceDataTypes {
-  @_hasMissingDesignatedInitializers public class Hardware {
-    @_hasMissingDesignatedInitializers public class Accessory {
-      public struct AudioAccessoryInfo : Swift.Codable {
-        public func encode(to encoder: any Swift.Encoder) throws
-        public init(from decoder: any Swift.Decoder) throws
-      }
-      @objc deinit
-    }
-    @objc deinit
-  }
-}
-@_hasMissingDesignatedInitializers final public class TSSafeLock {
-  final public func withLock<T>(_ body: () throws -> T) rethrows -> T
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers final public class TSSafeRecursiveLock {
-  final public func withLock<T>(_ body: () throws -> T) rethrows -> T
-  @objc deinit
-}
-public protocol SystemControlValueDefining {
-  associatedtype ValueType : TSCoreSDK.RawPointerConvertible
-  var flags: [Swift.Int32] { get }
-}
-public struct SystemControlValueDefinition<T> : TSCoreSDK.SystemControlValueDefining where T : TSCoreSDK.RawPointerConvertible {
-  public typealias ValueType = T
-  public let flags: [Swift.Int32]
-  public init(flags: [Swift.Int32])
-}
-public enum SystemControlError : Swift.Error, Swift.Equatable {
-  case osError(Swift.Int32)
-  case valueHasZeroSize
-  public static func == (a: TSCoreSDK.SystemControlError, b: TSCoreSDK.SystemControlError) -> Swift.Bool
-}
-public protocol ITSGeoLocationManager : AnyObject {
-  var authorizationStatus: CoreLocation.CLAuthorizationStatus { get }
-  var delegate: (any CoreLocation.CLLocationManagerDelegate)? { get set }
-  var desiredAccuracy: CoreLocation.CLLocationAccuracy { get set }
-  var location: CoreLocation.CLLocation? { get }
-  func hasLocationPermission() -> Swift.Bool
-  func requestLocation()
-  func stopUpdatingLocation()
-}
-@objc public class TSGeoLocationManager : ObjectiveC.NSObject, TSCoreSDK.ITSGeoLocationManager {
-  weak public var delegate: (any CoreLocation.CLLocationManagerDelegate)? {
-    get
-    set
-  }
-  public var desiredAccuracy: CoreLocation.CLLocationAccuracy {
-    get
-    set
-  }
-  public var authorizationStatus: CoreLocation.CLAuthorizationStatus {
-    get
-  }
-  public var location: CoreLocation.CLLocation? {
-    get
-  }
-  public init(locationManager: CoreLocation.CLLocationManager = CLLocationManager())
-  public func hasLocationPermission() -> Swift.Bool
-  public func requestLocation()
-  public func stopUpdatingLocation()
-  @objc deinit
-}
-extension TSCoreSDK.TSDeviceDataTypes {
-  public enum BiometryType : Swift.String, Swift.Encodable {
-    case faceID
-    case touchID
-    case opticID
-    case none
-    case unknown
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-}
-public struct TSCryptoBindingConfiguration {
-  public init(cryptoByndingParams: any TSCoreSDK.TSCryptoBindingParameters)
-}
-public struct TSDeviceDataConfiguration {
-  public init(cryptoByndingProvider: any TSCoreSDK.ITSCryptoBindingDataProvider, ignoringTypes: [TSCoreSDK.TSDeviceDataAttributes.CodingKeys])
-}
-public struct TSDeviceDataAttributes : Swift.Codable {
-  public enum CodingKeys : Swift.String, Swift.CodingKey, Swift.CaseIterable, Swift.Codable {
-    case cpuSubType, osVersion, deviceModel, isReduceMotionEnabled, buttonShapesEnabled, supportedBiometryType, currentTimeZoneName, isProxied, cpuType, deviceName, currentCountry, connectedAudioAccessories, isReverseEngineered, isMonoAudioEnabled, prefersCrossFadeTransitions, shouldDifferentiateWithoutColor, isClosedCaptioningEnabled, isPasscodeEnabled, isSwitchControlRunning, isReduceTransparencyEnabled, iOSKernelVersion, isAccelerometerAvailable, currentLanguage, isConnectedViaWiFi, physicalCPUMax, currentCurrency, isDarkerSystemColorsEnabled, cryptoBindingData, isBoldTextEnabled, screenNativeBounds, screenNativeScale, deviceOrientation, kernelHostName, screenBrightness, isGrayscaleEnabled, screenScale, logicalCPUMax, isVideoAutoplayEnabled, productName, currentTimeZone, isGuidedAccessEnabled, userInterfaceStyle, isShakeToUndoEnabled, isScreenMirrored, machineName, isInternetAvailable, isSimulator, packageName, isGyroAvailable, availCPUs, appBuild, isSpeakScreenEnabled, isMagnetometerAvailable, uuid, currentCurrencySymbol, systemName, cpuThreadType, preferredLanguages, usesMetricSystem, screenBounds, batteryLevel, isAssistiveTouchRunning, memorySize, appVersion, physicalCPU, batteryState, isOnOffSwitchLabelsEnabled, isVoiceOverRunning, isLowPowerModeEnabled, isHeadsetPluggedIn, isBackgroundDownloadEnabled, isDeviceMotionAvailable, logicalCPU, maxCPUs, isBiometricsEnabled, locationData, isJailbroken, isInvertColorsEnabled, cellularProviders, isSpeakSelectionEnabled, ram
-    public init?(rawValue: Swift.String)
-    public init?(stringValue: Swift.String)
-    public init?(intValue: Swift.Int)
-    public typealias AllCases = [TSCoreSDK.TSDeviceDataAttributes.CodingKeys]
-    public typealias RawValue = Swift.String
-    nonisolated public static var allCases: [TSCoreSDK.TSDeviceDataAttributes.CodingKeys] {
-      get
-    }
-    public var intValue: Swift.Int? {
-      get
-    }
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public protocol ITSDeviceDataCollector {
-  func collect(moduleInfo: any TSCoreSDK.ITSModuleInfo, configuration: TSCoreSDK.TSDeviceDataConfiguration) async throws -> TSCoreSDK.TSDeviceDataAttributes
-}
-@_hasMissingDesignatedInitializers public class TSDeviceDataCollectorFactory {
-  public static func makeDeviceDataProvider(moduleInfo: any TSCoreSDK.ITSModuleInfo, locationProvider: any TSCoreSDK.ITSGeoLocationProvider, cryptoBindingProvider: any TSCoreSDK.ITSCryptoBindingDataProvider) -> any TSCoreSDK.ITSDeviceDataProvider
-  @objc deinit
-}
-public class TSDeviceDataCollector : TSCoreSDK.ITSDeviceDataCollector {
-  public init(deviceDataProvider: any TSCoreSDK.ITSDeviceDataProvider)
-  public func collect(moduleInfo: any TSCoreSDK.ITSModuleInfo, configuration: TSCoreSDK.TSDeviceDataConfiguration) async throws -> TSCoreSDK.TSDeviceDataAttributes
-  @objc deinit
-}
-public protocol SystemControlValuesProviding {
-  func getSystemValue<T>(_ definition: T) throws -> T.ValueType where T : TSCoreSDK.SystemControlValueDefining
-}
-public struct SystemControlValuesProvider : TSCoreSDK.SystemControlValuesProviding {
-  public init()
-  public func getSystemValue<T>(_ definition: T) throws -> T.ValueType where T : TSCoreSDK.SystemControlValueDefining
-}
-public typealias TSCellularProvider = TSCoreSDK.TSDeviceDataTypes.Carrier.CellularProvider
-extension TSCoreSDK.TSDeviceDataTypes {
-  @_hasMissingDesignatedInitializers public class Carrier {
-    @_hasMissingDesignatedInitializers public class CellularProvider : Swift.Codable {
-      @objc deinit
-      public func encode(to encoder: any Swift.Encoder) throws
-      required public init(from decoder: any Swift.Decoder) throws
-    }
-    @objc deinit
-  }
-}
-public protocol RawPointerConvertible {
-  static func loadValue(_ from: Swift.UnsafeRawPointer, of size: Swift.Int) -> Self
-  static func withRawMemory(of size: Swift.Int, body: (inout Swift.UnsafeMutableRawPointer) throws -> Self) rethrows -> Self
-}
-extension TSCoreSDK.RawPointerConvertible {
-  public static func withRawMemory(of size: Swift.Int, body: (inout Swift.UnsafeMutableRawPointer) throws -> Self) rethrows -> Self
-  public static func loadValue(_ from: Swift.UnsafeRawPointer, of size: Swift.Int) -> Self
-}
-extension Swift.String : TSCoreSDK.RawPointerConvertible {
-  public static func withRawMemory(of size: Swift.Int, body: (inout Swift.UnsafeMutableRawPointer) throws -> Swift.String) rethrows -> Swift.String
-  public static func loadValue(_ from: Swift.UnsafeRawPointer, of size: Swift.Int) -> Swift.String
 }
 public protocol TSCryptoDataProvider {
   func getPublicKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> (key: Security.SecKey, creationDate: Foundation.Date?)
@@ -956,31 +691,6 @@ public class TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTI
   public func addData(data: TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE, moduleInfo: any TSCoreSDK.ITSModuleInfo)
   public func addData(dataList: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE], moduleInfo: any TSCoreSDK.ITSModuleInfo)
   public func triggerData(data: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE]? = nil, moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping ((Swift.Result<TRIGGER_ACTION_EVENT, TSCoreSDK.TSRequestErrorCode>) -> Swift.Void))
-}
-public protocol ITSGeoLocationProvider {
-  var authorizationStatus: CoreLocation.CLAuthorizationStatus { get }
-  var delegate: (any CoreLocation.CLLocationManagerDelegate)? { get set }
-  func requestCurrentLocation()
-  func provideLastKnownLocation() -> TSCoreSDK.TSGeoLocationData?
-  func provideRawLastKnownLocation() -> CoreLocation.CLLocation?
-  func hasLocationPermission() -> Swift.Bool
-  func stopUpdatingLocation()
-}
-@objc public class TSGeoLocationProvider : ObjectiveC.NSObject, TSCoreSDK.ITSGeoLocationProvider {
-  weak public var delegate: (any CoreLocation.CLLocationManagerDelegate)? {
-    get
-    set
-  }
-  public init(moduleInfo: any TSCoreSDK.ITSModuleInfo, desiredAccuracy: Swift.Double = kCLLocationAccuracyHundredMeters, locationManager: any TSCoreSDK.ITSGeoLocationManager = TSGeoLocationManager())
-  public var authorizationStatus: CoreLocation.CLAuthorizationStatus {
-    get
-  }
-  public func requestCurrentLocation()
-  public func provideLastKnownLocation() -> TSCoreSDK.TSGeoLocationData?
-  public func provideRawLastKnownLocation() -> CoreLocation.CLLocation?
-  public func hasLocationPermission() -> Swift.Bool
-  public func stopUpdatingLocation()
-  @objc deinit
 }
 public class TSCryptoSessionServerProvider {
   public init()
@@ -1177,12 +887,6 @@ extension TSCoreSDK.TSLogLevel : Swift.RawRepresentable {}
 extension TSCoreSDK.TSpseudoRandomAlgorithm : Swift.Equatable {}
 extension TSCoreSDK.TSpseudoRandomAlgorithm : Swift.Hashable {}
 extension TSCoreSDK.TSpseudoRandomAlgorithm : Swift.RawRepresentable {}
-extension TSCoreSDK.TSDeviceDataTypes.BiometryType : Swift.Equatable {}
-extension TSCoreSDK.TSDeviceDataTypes.BiometryType : Swift.Hashable {}
-extension TSCoreSDK.TSDeviceDataTypes.BiometryType : Swift.RawRepresentable {}
-extension TSCoreSDK.TSDeviceDataAttributes.CodingKeys : Swift.Equatable {}
-extension TSCoreSDK.TSDeviceDataAttributes.CodingKeys : Swift.Hashable {}
-extension TSCoreSDK.TSDeviceDataAttributes.CodingKeys : Swift.RawRepresentable {}
 extension TSCoreSDK.TSVolatileECKeySize : Swift.Equatable {}
 extension TSCoreSDK.TSVolatileECKeySize : Swift.Hashable {}
 extension TSCoreSDK.TSVolatileECKeySize : Swift.RawRepresentable {}
