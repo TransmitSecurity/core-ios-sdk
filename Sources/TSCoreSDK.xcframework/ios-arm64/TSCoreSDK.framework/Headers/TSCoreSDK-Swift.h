@@ -327,24 +327,10 @@ SWIFT_CLASS("_TtC9TSCoreSDK3Log")
 @end
 
 
+
 SWIFT_CLASS("_TtC9TSCoreSDK6TSCore")
 @interface TSCore : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-SWIFT_CLASS("_TtC9TSCoreSDK20TSGeoLocationManager")
-@interface TSGeoLocationManager : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC9TSCoreSDK21TSGeoLocationProvider")
-@interface TSGeoLocationProvider : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
