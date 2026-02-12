@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TSCoreSDK
+// swift-compiler-version: Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name TSCoreSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import SystemConfiguration.CaptiveNetwork
@@ -27,13 +27,13 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
-final public class TSSafeCheckedContonuation<T> {
+final public class TSSafeCheckedContinuation<T> where T : Swift.Sendable {
   public init(_ cont: _Concurrency.CheckedContinuation<T, any Swift.Error>)
   final public func resume(returning value: T)
   final public func resume(throwing error: any Swift.Error)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class TSUserDefauls : TSCoreSDK.TSUserDefaulsProtocol {
+@_hasMissingDesignatedInitializers public class TSUserDefauls : TSCoreSDK.TSUserDefaulsProtocol, @unchecked Swift.Sendable {
   public static let shared: TSCoreSDK.TSUserDefauls
   public func set(moduleInfo: any TSCoreSDK.ITSModuleInfo, value: Any?, forKey key: Swift.String) throws
   public func setObject(moduleInfo: any TSCoreSDK.ITSModuleInfo, value: (any Swift.Encodable)?, forKey key: Swift.String) throws
@@ -86,17 +86,26 @@ extension Swift.Encodable {
   @objc override dynamic public init()
   @objc deinit
 }
-public struct TSCryptoBindingData : Swift.Codable {
+public struct TSCryptoBindingData : Swift.Codable, Swift.Sendable {
   public let publicKey: Swift.String?
   public let keyIdentifier: Swift.String?
+  public var deviceMigrationData: TSCoreSDK.TSDeviceMigrationData?
   public init(publicKey: Swift.String?, keyIdentifier: Swift.String?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TSDeviceMigrationData : Swift.Codable, Swift.Sendable {
+  public let invalidPublicKeyId: Swift.String?
+  public let invalidPublicKeyCreationDate: Swift.String?
+  public let migrationCount: Swift.Int?
+  public init(invalidPublicKeyId: Swift.String? = nil, invalidPublicKeyCreationDate: Swift.String? = nil, migrationCount: Swift.Int? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public protocol ITSCryptoBindingDataProvider {
   func providePublicKeyData() async throws -> TSCoreSDK.TSCryptoBindingData
 }
-public protocol ITSModuleInfo {
+public protocol ITSModuleInfo : Swift.Sendable {
   func subSystemName() -> Swift.String
   func isLoggerEnabled() -> Swift.Bool
   func endpointIgnoreList() -> [Swift.String]?
@@ -123,7 +132,7 @@ extension Swift.String {
   public func ts_asciiToHex() -> Swift.String
   public static func ts_generateRandomUUID(size: Swift.Int = 32) -> Swift.String
 }
-@_hasMissingDesignatedInitializers public class TSKeychain {
+@_hasMissingDesignatedInitializers public class TSKeychain : @unchecked Swift.Sendable {
   public enum KeychainError : Swift.Error, Swift.CustomStringConvertible {
     case unknownError
     case itemAddFailed(Darwin.OSStatus)
@@ -166,14 +175,14 @@ extension Swift.Encodable {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class TSStandardUserDefaults {
+@_hasMissingDesignatedInitializers final public class TSStandardUserDefaults : @unchecked Swift.Sendable {
   public static let shared: TSCoreSDK.TSStandardUserDefaults
-  public func set(_ value: Any?, forKey key: Swift.String)
-  public func getValue(forKey key: Swift.String) -> Any?
-  public func getString(forKey key: Swift.String) -> Swift.String?
+  final public func set(_ value: Any?, forKey key: Swift.String)
+  final public func getValue(forKey key: Swift.String) -> Any?
+  final public func getString(forKey key: Swift.String) -> Swift.String?
   @objc deinit
 }
-public enum TSRequestErrorCode : Swift.Error, Swift.Equatable {
+public enum TSRequestErrorCode : Swift.Error, Swift.Equatable, Swift.Sendable {
   case noInternet
   case invalidResponse
   case decodingError
@@ -188,7 +197,7 @@ public enum TSRequestErrorCode : Swift.Error, Swift.Equatable {
   case requestError(errorCode: Swift.Int)
   public static func == (a: TSCoreSDK.TSRequestErrorCode, b: TSCoreSDK.TSRequestErrorCode) -> Swift.Bool
 }
-public class TSRequestError : Swift.Error, Swift.CustomStringConvertible {
+public class TSRequestError : Swift.Error, Swift.CustomStringConvertible, @unchecked Swift.Sendable {
   public var description: Swift.String {
     get
   }
@@ -214,7 +223,7 @@ extension TSCoreSDK.TSConstants {
     public static let X_TS_PROCESSING_TIME_MS: Swift.String
   }
 }
-public struct TSLocalAuthContext {
+public struct TSLocalAuthContext : @unchecked Swift.Sendable {
   public init(interactionNotAllowed: Swift.Bool = false)
 }
 public enum TSCryptoException : Swift.Error, Swift.CustomStringConvertible {
@@ -244,7 +253,7 @@ public enum TSCryptoBindingKeyType : Swift.String {
     get
   }
 }
-public protocol TSCryptoBindingParameters : AnyObject {
+public protocol TSCryptoBindingParameters : AnyObject, Swift.Sendable {
   var keyType: CoreFoundation.CFString { get set }
   var keySize: Swift.Int { get set }
   var signAlgorithm: Security.SecKeyAlgorithm { get set }
@@ -285,7 +294,7 @@ public protocol TSCryptoBindingProtocol : AnyObject {
   func deleteApplicationKeys() async throws
   func deleteApplicationKeysWithFallback(fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws
 }
-public struct TSPublicKeyData {
+public struct TSPublicKeyData : Swift.Sendable {
   public var keyIdentifier: Swift.String
   public var publicKey: Swift.String
   public var keyType: Swift.String
@@ -320,7 +329,7 @@ extension TSCoreSDK.TSCryptoBinding : TSCoreSDK.TSCryptoBindingProtocol {
   public func signWithApplicationKey(_ message: Foundation.Data) async throws -> Foundation.Data
   public func signWithApplicationKeyBase64String(_ message: Swift.String) async throws -> Swift.String
   public func signWithApplicationKeyBase64String(_ message: Foundation.Data) async throws -> Swift.String
-  public func getPublicKeyOf_PEM_format(forTag tag: Swift.String, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?, context: LocalAuthentication.LAContext?) async throws -> Swift.String
+  nonisolated public func getPublicKeyOf_PEM_format(forTag tag: Swift.String, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?, context: LocalAuthentication.LAContext?) async throws -> Swift.String
   public func deleteKeys(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool = false, username: Swift.String? = nil, context: TSCoreSDK.TSLocalAuthContext? = nil) async throws -> Swift.String
   public func deleteApplicationKeys() async throws
 }
@@ -357,16 +366,16 @@ extension TSCoreSDK.TSCryptoBinding {
     get
   }
 }
-public protocol ITSDeviceDataProvider {
-  var deviceName: Swift.String { get }
-  var deviceModel: Swift.String { get }
-  var machineName: Swift.String { get }
-  var systemName: Swift.String { get }
-  var osVersion: Swift.String { get }
-  var productName: Swift.String? { get }
-  var packageName: Swift.String? { get }
-  var appVersion: Swift.String? { get }
-  var appBuild: Swift.String? { get }
+public protocol ITSDeviceDataProvider : Swift.Sendable {
+  @_Concurrency.MainActor var deviceName: Swift.String { get }
+  @_Concurrency.MainActor var deviceModel: Swift.String { get }
+  @_Concurrency.MainActor var machineName: Swift.String { get }
+  @_Concurrency.MainActor var systemName: Swift.String { get }
+  @_Concurrency.MainActor var osVersion: Swift.String { get }
+  @_Concurrency.MainActor var productName: Swift.String? { get }
+  @_Concurrency.MainActor var packageName: Swift.String? { get }
+  @_Concurrency.MainActor var appVersion: Swift.String? { get }
+  @_Concurrency.MainActor var appBuild: Swift.String? { get }
   var currentCountry: Swift.String? { get }
   var currentCurrency: Swift.String? { get }
   var currentCurrencySymbol: Swift.String? { get }
@@ -375,44 +384,44 @@ public protocol ITSDeviceDataProvider {
   var currentTimeZone: Swift.String? { get }
   var currentTimeZoneName: Swift.String? { get }
   var usesMetricSystem: Swift.Bool { get }
-  var cpuType: Swift.Int? { get }
-  var cpuSubType: Swift.Int? { get }
-  var cpuThreadType: Swift.Int? { get }
-  var logicalCPU: Swift.Int? { get }
-  var physicalCPU: Swift.Int? { get }
-  var availCPUs: Swift.Int? { get }
-  var maxCPUs: Swift.Int? { get }
-  var logicalCPUMax: Swift.Int? { get }
-  var physicalCPUMax: Swift.Int? { get }
-  var memorySize: Swift.UInt32? { get }
-  var ram: Swift.UInt64? { get }
-  var batteryLevel: Swift.Float? { get }
-  var batteryState: Swift.Int { get }
-  var isLowPowerModeEnabled: Swift.Bool { get }
-  var screenScale: Swift.Float { get }
-  var screenNativeScale: Swift.Float { get }
-  var screenBrightness: Swift.Float { get }
-  var screenBounds: CoreFoundation.CGRect { get }
-  var screenNativeBounds: CoreFoundation.CGRect { get }
-  var isReduceMotionEnabled: Swift.Bool { get }
-  var buttonShapesEnabled: Swift.Bool { get }
-  var isBoldTextEnabled: Swift.Bool { get }
-  var isGrayscaleEnabled: Swift.Bool { get }
-  var isMonoAudioEnabled: Swift.Bool { get }
-  var prefersCrossFadeTransitions: Swift.Bool { get }
-  var shouldDifferentiateWithoutColor: Swift.Bool { get }
-  var isClosedCaptioningEnabled: Swift.Bool { get }
-  var isPasscodeEnabled: Swift.Bool { get }
-  var isSwitchControlRunning: Swift.Bool { get }
-  var isReduceTransparencyEnabled: Swift.Bool { get }
-  var isShakeToUndoEnabled: Swift.Bool { get }
-  var isDarkerSystemColorsEnabled: Swift.Bool { get }
-  var isOnOffSwitchLabelsEnabled: Swift.Bool { get }
-  var isVoiceOverRunning: Swift.Bool { get }
-  var isInvertColorsEnabled: Swift.Bool { get }
-  var isSpeakSelectionEnabled: Swift.Bool { get }
-  var isSpeakScreenEnabled: Swift.Bool { get }
-  var isVideoAutoplayEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var cpuType: Swift.Int? { get }
+  @_Concurrency.MainActor var cpuSubType: Swift.Int? { get }
+  @_Concurrency.MainActor var cpuThreadType: Swift.Int? { get }
+  @_Concurrency.MainActor var logicalCPU: Swift.Int? { get }
+  @_Concurrency.MainActor var physicalCPU: Swift.Int? { get }
+  @_Concurrency.MainActor var availCPUs: Swift.Int? { get }
+  @_Concurrency.MainActor var maxCPUs: Swift.Int? { get }
+  @_Concurrency.MainActor var logicalCPUMax: Swift.Int? { get }
+  @_Concurrency.MainActor var physicalCPUMax: Swift.Int? { get }
+  @_Concurrency.MainActor var memorySize: Swift.UInt32? { get }
+  @_Concurrency.MainActor var ram: Swift.UInt64? { get }
+  @_Concurrency.MainActor var batteryLevel: Swift.Float? { get }
+  @_Concurrency.MainActor var batteryState: Swift.Int { get }
+  @_Concurrency.MainActor var isLowPowerModeEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var screenScale: Swift.Float { get }
+  @_Concurrency.MainActor var screenNativeScale: Swift.Float { get }
+  @_Concurrency.MainActor var screenBrightness: Swift.Float { get }
+  @_Concurrency.MainActor var screenBounds: CoreFoundation.CGRect { get }
+  @_Concurrency.MainActor var screenNativeBounds: CoreFoundation.CGRect { get }
+  @_Concurrency.MainActor var isReduceMotionEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var buttonShapesEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isBoldTextEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isGrayscaleEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isMonoAudioEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var prefersCrossFadeTransitions: Swift.Bool { get }
+  @_Concurrency.MainActor var shouldDifferentiateWithoutColor: Swift.Bool { get }
+  @_Concurrency.MainActor var isClosedCaptioningEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isPasscodeEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isSwitchControlRunning: Swift.Bool { get }
+  @_Concurrency.MainActor var isReduceTransparencyEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isShakeToUndoEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isDarkerSystemColorsEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isOnOffSwitchLabelsEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isVoiceOverRunning: Swift.Bool { get }
+  @_Concurrency.MainActor var isInvertColorsEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isSpeakSelectionEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isSpeakScreenEnabled: Swift.Bool { get }
+  @_Concurrency.MainActor var isVideoAutoplayEnabled: Swift.Bool { get }
   var isJailbroken: Swift.Bool { get }
   var isSimulator: Swift.Bool { get }
   var isReverseEngineered: Swift.Bool { get }
@@ -422,19 +431,19 @@ public protocol ITSDeviceDataProvider {
   var isConnectedViaWiFi: Swift.Bool { get }
   var isProxied: Swift.Bool { get }
   var cellularProviders: [TSCoreSDK.TSCellularProvider] { get }
-  var isAccelerometerAvailable: Swift.Bool { get }
-  var isGyroAvailable: Swift.Bool { get }
-  var isMagnetometerAvailable: Swift.Bool { get }
-  var isDeviceMotionAvailable: Swift.Bool { get }
-  var isHeadsetPluggedIn: Swift.Bool { get }
-  var isScreenMirrored: Swift.Bool { get }
-  var userInterfaceStyle: Swift.String { get }
-  var kernelHostName: Swift.String? { get }
-  var iOSKernelVersion: Swift.String? { get }
-  var uuid: Swift.String? { get }
-  var deviceOrientation: Swift.Int { get }
-  var connectedAudioAccessories: [TSCoreSDK.TSAudioAccessoryInfo] { get }
-  func isGuidedAccessEnabled() async -> Swift.Bool
+  @_Concurrency.MainActor var isAccelerometerAvailable: Swift.Bool { get }
+  @_Concurrency.MainActor var isGyroAvailable: Swift.Bool { get }
+  @_Concurrency.MainActor var isMagnetometerAvailable: Swift.Bool { get }
+  @_Concurrency.MainActor var isDeviceMotionAvailable: Swift.Bool { get }
+  @_Concurrency.MainActor var isHeadsetPluggedIn: Swift.Bool { get }
+  @_Concurrency.MainActor var isScreenMirrored: Swift.Bool { get }
+  @_Concurrency.MainActor var userInterfaceStyle: Swift.String { get }
+  @_Concurrency.MainActor var kernelHostName: Swift.String? { get }
+  @_Concurrency.MainActor var iOSKernelVersion: Swift.String? { get }
+  @_Concurrency.MainActor var uuid: Swift.String? { get }
+  @_Concurrency.MainActor var deviceOrientation: Swift.Int { get }
+  @_Concurrency.MainActor var connectedAudioAccessories: [TSCoreSDK.TSAudioAccessoryInfo] { get }
+  @_Concurrency.MainActor func isGuidedAccessEnabled() async -> Swift.Bool
   func isAssistiveTouchRunning() async -> Swift.Bool
   func isBackgroundDownloadEnabled() async -> Swift.Bool
   func locationData(moduleInfo: any TSCoreSDK.ITSModuleInfo) async -> TSCoreSDK.TSGeoLocationData?
@@ -464,7 +473,7 @@ extension TSCoreSDK.TSRetriableRequest {
     get
   }
 }
-public enum RecordKeyScheme : Swift.String {
+public enum RecordKeyScheme : Swift.String, @unchecked Swift.Sendable {
   case v1
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -472,7 +481,7 @@ public enum RecordKeyScheme : Swift.String {
     get
   }
 }
-public protocol TSKeysRotationProvider {
+public protocol TSKeysRotationProvider : Swift.Sendable {
   func provideKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?, override: Swift.Bool) async throws -> TSCoreSDK.TSPublicKeyData
   func getKeysWithFallback(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> TSCoreSDK.TSPublicKeyData
   func signBase64StringWithFallback(of message: Foundation.Data, forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, username: Swift.String?, context: TSCoreSDK.TSLocalAuthContext?, fallbackCryptoParams: (any TSCoreSDK.TSCryptoBindingParameters)?) async throws -> Swift.String
@@ -499,7 +508,7 @@ public class TSCryptoSessionManager {
   @objc deinit
 }
 extension TSCoreSDK.TSCryptoSessionManager {
-  @_hasMissingDesignatedInitializers public class ServerResponseData : Swift.Codable {
+  @_hasMissingDesignatedInitializers public class ServerResponseData : Swift.Codable, @unchecked Swift.Sendable {
     required public init(from decoder: any Swift.Decoder) throws
     public func encode(to encoder: any Swift.Encoder) throws
     @objc deinit
@@ -593,23 +602,23 @@ extension Swift.Dictionary where Key == Swift.String, Value == Any {
 public protocol TSResponse : Swift.Decodable, Swift.Encodable {
   var responseHeaders: [Swift.String : Swift.String]? { get set }
 }
-@_hasMissingDesignatedInitializers public class TSNetworkManager {
+@_hasMissingDesignatedInitializers public class TSNetworkManager : @unchecked Swift.Sendable {
   @objc deinit
 }
 extension Swift.Dictionary {
   public func ts_dictionaryAsJsonString() -> Swift.String?
   public func ts_toData() -> Foundation.Data?
 }
-public struct NoReply : Swift.Codable {
+public struct NoReply : Swift.Codable, Swift.Sendable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public class TSNetworkService<Request, Response> where Request : TSCoreSDK.TSBaseNetworkRequest, Response : Swift.Decodable, Response : Swift.Encodable {
+public class TSNetworkService<Request, Response> where Request : TSCoreSDK.TSBaseNetworkRequest, Response : Swift.Decodable, Response : Swift.Encodable, Response : Swift.Sendable {
   public init(request: Request)
-  public func send(moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping (Swift.Result<Response, TSCoreSDK.TSRequestError>) -> Swift.Void)
+  public func send(moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping @Sendable (Swift.Result<Response, TSCoreSDK.TSRequestError>) -> Swift.Void)
   @objc deinit
 }
-public enum TSLogLevel : Swift.Int, Swift.CaseIterable {
+public enum TSLogLevel : Swift.Int, Swift.CaseIterable, Swift.Sendable {
   case verbose
   case debug
   case info
@@ -635,11 +644,11 @@ extension TSCoreSDK.TSLogLevel {
     get
   }
 }
-public struct TSGeoLocationData : Swift.Codable {
+public struct TSGeoLocationData : Swift.Codable, @unchecked Swift.Sendable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum TSpseudoRandomAlgorithm : Swift.Int32 {
+public enum TSpseudoRandomAlgorithm : Swift.Int32, @unchecked Swift.Sendable {
   case sha1
   case sha224
   case sha256
@@ -682,9 +691,9 @@ public enum TSLoggerDestination {
 }
 public typealias TSAudioAccessoryInfo = TSCoreSDK.TSDeviceDataTypes.Hardware.Accessory.AudioAccessoryInfo
 extension TSCoreSDK.TSDeviceDataTypes {
-  @_hasMissingDesignatedInitializers public class Hardware {
-    @_hasMissingDesignatedInitializers public class Accessory {
-      public struct AudioAccessoryInfo : Swift.Codable {
+  @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class Hardware : @unchecked Swift.Sendable {
+    @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class Accessory : @unchecked Swift.Sendable {
+      public struct AudioAccessoryInfo : Swift.Codable, @unchecked Swift.Sendable {
         public func encode(to encoder: any Swift.Encoder) throws
         public init(from decoder: any Swift.Decoder) throws
       }
@@ -762,10 +771,10 @@ extension TSCoreSDK.TSDeviceDataTypes {
 public struct TSCryptoBindingConfiguration {
   public init(cryptoByndingParams: any TSCoreSDK.TSCryptoBindingParameters)
 }
-public struct TSDeviceDataConfiguration {
+public struct TSDeviceDataConfiguration : @unchecked Swift.Sendable {
   public init(cryptoByndingProvider: any TSCoreSDK.ITSCryptoBindingDataProvider, ignoringTypes: [TSCoreSDK.TSDeviceDataAttributes.CodingKeys])
 }
-public struct TSDeviceDataAttributes : Swift.Codable {
+public struct TSDeviceDataAttributes : Swift.Codable, @unchecked Swift.Sendable {
   public enum CodingKeys : Swift.String, Swift.CodingKey, Swift.CaseIterable, Swift.Codable {
     case cpuSubType, osVersion, deviceModel, isReduceMotionEnabled, buttonShapesEnabled, supportedBiometryType, currentTimeZoneName, isProxied, cpuType, deviceName, currentCountry, connectedAudioAccessories, isReverseEngineered, isMonoAudioEnabled, prefersCrossFadeTransitions, shouldDifferentiateWithoutColor, isClosedCaptioningEnabled, isPasscodeEnabled, isSwitchControlRunning, isReduceTransparencyEnabled, iOSKernelVersion, isAccelerometerAvailable, currentLanguage, isConnectedViaWiFi, physicalCPUMax, currentCurrency, isDarkerSystemColorsEnabled, cryptoBindingData, isBoldTextEnabled, screenNativeBounds, screenNativeScale, deviceOrientation, kernelHostName, screenBrightness, isGrayscaleEnabled, screenScale, logicalCPUMax, isVideoAutoplayEnabled, productName, currentTimeZone, isGuidedAccessEnabled, userInterfaceStyle, isShakeToUndoEnabled, isScreenMirrored, machineName, isInternetAvailable, isSimulator, packageName, isGyroAvailable, availCPUs, appBuild, isSpeakScreenEnabled, isMagnetometerAvailable, uuid, currentCurrencySymbol, systemName, cpuThreadType, preferredLanguages, usesMetricSystem, screenBounds, batteryLevel, isAssistiveTouchRunning, memorySize, appVersion, physicalCPU, batteryState, isOnOffSwitchLabelsEnabled, isVoiceOverRunning, isLowPowerModeEnabled, isHeadsetPluggedIn, isBackgroundDownloadEnabled, isDeviceMotionAvailable, logicalCPU, maxCPUs, isBiometricsEnabled, locationData, isJailbroken, isInvertColorsEnabled, cellularProviders, isSpeakSelectionEnabled, ram
     public init?(rawValue: Swift.String)
@@ -796,7 +805,7 @@ public protocol ITSDeviceDataCollector {
   public static func makeDeviceDataProvider(moduleInfo: any TSCoreSDK.ITSModuleInfo, locationProvider: any TSCoreSDK.ITSGeoLocationProvider, cryptoBindingProvider: any TSCoreSDK.ITSCryptoBindingDataProvider) -> any TSCoreSDK.ITSDeviceDataProvider
   @objc deinit
 }
-public class TSDeviceDataCollector : TSCoreSDK.ITSDeviceDataCollector {
+public class TSDeviceDataCollector : TSCoreSDK.ITSDeviceDataCollector, @unchecked Swift.Sendable {
   public init(deviceDataProvider: any TSCoreSDK.ITSDeviceDataProvider)
   public func collect(moduleInfo: any TSCoreSDK.ITSModuleInfo, configuration: TSCoreSDK.TSDeviceDataConfiguration) async throws -> TSCoreSDK.TSDeviceDataAttributes
   @objc deinit
@@ -811,7 +820,7 @@ public struct SystemControlValuesProvider : TSCoreSDK.SystemControlValuesProvidi
 public typealias TSCellularProvider = TSCoreSDK.TSDeviceDataTypes.Carrier.CellularProvider
 extension TSCoreSDK.TSDeviceDataTypes {
   @_hasMissingDesignatedInitializers public class Carrier {
-    @_hasMissingDesignatedInitializers public class CellularProvider : Swift.Codable {
+    @_hasMissingDesignatedInitializers public class CellularProvider : Swift.Codable, @unchecked Swift.Sendable {
       @objc deinit
       public func encode(to encoder: any Swift.Encoder) throws
       required public init(from decoder: any Swift.Decoder) throws
@@ -831,7 +840,7 @@ extension Swift.String : TSCoreSDK.RawPointerConvertible {
   public static func withRawMemory(of size: Swift.Int, body: (inout Swift.UnsafeMutableRawPointer) throws -> Swift.String) rethrows -> Swift.String
   public static func loadValue(_ from: Swift.UnsafeRawPointer, of size: Swift.Int) -> Swift.String
 }
-public protocol TSCryptoDataProvider {
+public protocol TSCryptoDataProvider : Swift.Sendable {
   func getPublicKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> (key: Security.SecKey, creationDate: Foundation.Date?)
   func getPrivateKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> Security.SecKey
   func calcKeyIdentifier(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> Swift.String
@@ -842,7 +851,7 @@ public protocol TSCryptoDataProvider {
   func getPublicKeyRepresentation(publicKey: Security.SecKey) throws -> Foundation.Data
   func getPublicKeyIdentifier(_ publicKeyRef: Security.SecKey) throws -> Swift.String
 }
-public class TSKeychainDataProvider : TSCoreSDK.TSCryptoDataProvider {
+public class TSKeychainDataProvider : TSCoreSDK.TSCryptoDataProvider, @unchecked Swift.Sendable {
   public init()
   public func getPublicKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> (key: Security.SecKey, creationDate: Foundation.Date?)
   public func getPrivateKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> Security.SecKey
@@ -855,7 +864,7 @@ public class TSKeychainDataProvider : TSCoreSDK.TSCryptoDataProvider {
   public func getPublicKeyRepresentation(publicKey: Security.SecKey) throws -> Foundation.Data
   @objc deinit
 }
-public class TSRSAService : TSCoreSDK.TSCryptoBindingParameters {
+public class TSRSAService : TSCoreSDK.TSCryptoBindingParameters, @unchecked Swift.Sendable {
   public var keyType: CoreFoundation.CFString
   public var keySize: Swift.Int
   public var signAlgorithm: Security.SecKeyAlgorithm
@@ -868,8 +877,8 @@ extension TSCoreSDK.TSRSAService {
   public func convertPublicKeyToPEMFormat(_ key: Foundation.Data) -> Swift.String
   public func keyTypeString() -> TSCoreSDK.TSCryptoBindingKeyType
 }
-public protocol TSDataSource {
-  associatedtype DataSourceType
+public protocol TSDataSource : Swift.Sendable {
+  associatedtype DataSourceType : Swift.Sendable
   func addData(data: Self.DataSourceType, moduleInfo: any TSCoreSDK.ITSModuleInfo)
   func addData(dataList: Swift.Array<Self.DataSourceType>, moduleInfo: any TSCoreSDK.ITSModuleInfo)
   func fetchAndRemove(moduleInfo: any TSCoreSDK.ITSModuleInfo) -> [Self.DataSourceType]?
@@ -882,7 +891,7 @@ public protocol TSDataSource {
   public static func readFromPlist<T>(named: Swift.String, bundle: Foundation.Bundle, as type: T.Type) throws -> T where T : Swift.Decodable, T : Swift.Encodable
   @objc deinit
 }
-public class TSSDKError : Swift.Error {
+public class TSSDKError : Swift.Error, @unchecked Swift.Sendable {
   final public let code: Swift.Int
   final public let message: Swift.String
   final public let details: [Swift.String : Any]?
@@ -911,7 +920,7 @@ extension TSCoreSDK.TSAESDataEncrypter {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-public enum TSVolatileECKeySize : Swift.Int {
+public enum TSVolatileECKeySize : Swift.Int, @unchecked Swift.Sendable {
   case s256
   case s384
   public init?(rawValue: Swift.Int)
@@ -945,8 +954,8 @@ public struct TSECVolatile384KeyPair : TSCoreSDK.TSECCVolatileKeyPair {
   public func verifySignature(_ signature: Foundation.Data, for challenge: Foundation.Data) throws -> Swift.Bool
   public func generateRandomPublicKeyId() -> Swift.String
 }
-public class TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT> where DataSource : TSCoreSDK.TSDataSource, DataSyncServer : TSCoreSDK.TSDataSyncServer, TRIGGER_ACTION_EVENT == DataSyncServer.Response, DataSource.DataSourceType == DataSyncServer.TYPE {
-  public struct Configuration {
+public class TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT> : @unchecked Swift.Sendable where DataSource : TSCoreSDK.TSDataSource, DataSyncServer : TSCoreSDK.TSDataSyncServer, TRIGGER_ACTION_EVENT == DataSyncServer.Response, DataSource.DataSourceType == DataSyncServer.TYPE {
+  public struct Configuration : @unchecked Swift.Sendable {
     public init(dataSource: DataSource, serverProvider: DataSyncServer, dataBufferSize: Swift.Int, dataSyncInterval: Swift.Double)
   }
   public typealias TYPE = DataSource.DataSourceType
@@ -955,7 +964,7 @@ public class TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTI
   public func changeParameters(bufferSize: Swift.Int, syncInterval: Swift.Double, moduleInfo: any TSCoreSDK.ITSModuleInfo)
   public func addData(data: TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE, moduleInfo: any TSCoreSDK.ITSModuleInfo)
   public func addData(dataList: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE], moduleInfo: any TSCoreSDK.ITSModuleInfo)
-  public func triggerData(data: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE]? = nil, moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping ((Swift.Result<TRIGGER_ACTION_EVENT, TSCoreSDK.TSRequestErrorCode>) -> Swift.Void))
+  public func triggerData(data: [TSCoreSDK.TSDataSyncServerController<DataSource, DataSyncServer, TRIGGER_ACTION_EVENT>.TYPE]? = nil, moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping @Sendable (Swift.Result<TRIGGER_ACTION_EVENT, TSCoreSDK.TSRequestErrorCode>) -> Swift.Void)
 }
 public protocol ITSGeoLocationProvider {
   var authorizationStatus: CoreLocation.CLAuthorizationStatus { get }
@@ -982,11 +991,11 @@ public protocol ITSGeoLocationProvider {
   public func stopUpdatingLocation()
   @objc deinit
 }
-public class TSCryptoSessionServerProvider {
+public class TSCryptoSessionServerProvider : @unchecked Swift.Sendable {
   public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class TSLog {
+@_hasMissingDesignatedInitializers final public class TSLog : @unchecked Swift.Sendable {
   public static func v(_ info: any TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
   public static func d(_ info: any TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
   public static func i(_ info: any TSCoreSDK.ITSModuleInfo, message: Swift.String, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
@@ -1018,6 +1027,31 @@ extension CryptoKit.SymmetricKey {
   public func serialize() -> Swift.String
   public func keyAsData() -> Foundation.Data
 }
+final public class TSUncheckedCompletionBox<T> : @unchecked Swift.Sendable {
+  public init(_ call: @escaping (T) -> Swift.Void)
+  final public func call(_ result: T)
+  @objc deinit
+}
+final public class TSUncheckedOptionalCompletionBox<T> : @unchecked Swift.Sendable {
+  public init(_ call: ((T) -> Swift.Void)?)
+  final public func call(_ result: T)
+  @objc deinit
+}
+final public class TSUncheckedSendableBox<T> : @unchecked Swift.Sendable {
+  final public let value: T
+  public init(_ value: T)
+  @objc deinit
+}
+final public class TSUncheckedSendableMutableBox<T> : @unchecked Swift.Sendable {
+  final public var value: T
+  public init(_ value: T)
+  @objc deinit
+}
+final public class TSUncheckedSendableMutableWeakBox<T> : @unchecked Swift.Sendable where T : AnyObject {
+  weak final public var value: T?
+  public init(_ value: T?)
+  @objc deinit
+}
 public enum TSStorageErrorCode : Swift.Error {
   case dataNotFoundError
   case internalError
@@ -1027,7 +1061,7 @@ public enum TSStorageErrorCode : Swift.Error {
     get
   }
 }
-public class TSStorageError : Swift.Error {
+public class TSStorageError : Swift.Error, @unchecked Swift.Sendable {
   public init(errorCode: TSCoreSDK.TSStorageErrorCode, errorMessage: Swift.String? = nil)
   @objc deinit
 }
@@ -1076,7 +1110,7 @@ public class TSEncryptServerRequestDataProvider {
 extension TSCoreSDK.TSEncryptServerRequestDataProvider : TSCoreSDK.TSEncryptEventsProviderProtocol {
   public func encrypt(events: Foundation.Data, publicKey: TSCoreSDK.TSEncryptServerRequestDataProvider.EncryptionPublicKey) throws -> TSCoreSDK.TSEncryptServerRequestDataProvider.DataContainer
 }
-public class ThreadSafeContainer<T> {
+public class ThreadSafeContainer<T> : @unchecked Swift.Sendable where T : Swift.Sendable {
   public var safeValue: T {
     get
     set
@@ -1084,7 +1118,7 @@ public class ThreadSafeContainer<T> {
   public init(value: T, accessQueue: Dispatch.DispatchQueue = .init(label: "TSCoreSDK.concurrency.threadSafeContainer", qos: .default, attributes: .concurrent))
   @objc deinit
 }
-public class TSECService : TSCoreSDK.TSCryptoBindingParameters {
+public class TSECService : TSCoreSDK.TSCryptoBindingParameters, @unchecked Swift.Sendable {
   public var keyType: CoreFoundation.CFString
   public var keySize: Swift.Int
   public var signAlgorithm: Security.SecKeyAlgorithm
@@ -1134,7 +1168,7 @@ public class TSNetworkRequestConfiguration {
   public init(cryptoSession: (any TSCoreSDK.TSCryptoSessionProtocol)?)
   @objc deinit
 }
-public protocol TSBaseNetworkRequest {
+public protocol TSBaseNetworkRequest : Swift.Sendable {
   var configuration: TSCoreSDK.TSNetworkRequestConfiguration? { get }
   var httpMethod: TSCoreSDK.TSHttpMethod { get }
   func urlHost() -> Swift.String?
@@ -1158,10 +1192,10 @@ extension TSCoreSDK.TSBaseNetworkRequest {
     get
   }
 }
-public protocol TSDataSyncServer {
-  associatedtype TYPE : Swift.Encodable
-  associatedtype Response : Swift.Decodable
-  func sendDataToServer(dataList: [Self.TYPE], moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping ((Swift.Result<Self.Response, TSCoreSDK.TSRequestErrorCode>) -> Swift.Void)) throws
+public protocol TSDataSyncServer : Swift.Sendable {
+  associatedtype TYPE : Swift.Encodable, Swift.Sendable
+  associatedtype Response : Swift.Decodable, Swift.Sendable
+  func sendDataToServer(dataList: [Self.TYPE], moduleInfo: any TSCoreSDK.ITSModuleInfo, completion: @escaping @Sendable (Swift.Result<Self.Response, TSCoreSDK.TSRequestErrorCode>) -> Swift.Void) throws
 }
 extension TSCoreSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
 extension TSCoreSDK.KeychainSwiftAccessOptions : Swift.Hashable {}
