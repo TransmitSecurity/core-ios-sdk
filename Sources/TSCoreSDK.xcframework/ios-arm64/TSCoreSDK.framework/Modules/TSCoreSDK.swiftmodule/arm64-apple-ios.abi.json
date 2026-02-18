@@ -5806,7 +5806,10 @@
         "name": "Security",
         "printedName": "Security",
         "declKind": "Import",
-        "moduleName": "TSCoreSDK"
+        "moduleName": "TSCoreSDK",
+        "declAttributes": [
+          "Preconcurrency"
+        ]
       },
       {
         "kind": "Import",
@@ -9759,8 +9762,7 @@
             "genericSig": "<τ_0_0 where τ_0_0 : TSCoreSDK.TSCryptoBindingParameters>",
             "sugared_genericSig": "<T where T : TSCoreSDK.TSCryptoBindingParameters>",
             "declAttributes": [
-              "AccessControl",
-              "Nonisolated"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -31451,8 +31453,7 @@
             "mangledName": "$s9TSCoreSDK22TSKeychainDataProviderC22getPublicKeyIdentifierySSSo03SecH3RefaKF",
             "moduleName": "TSCoreSDK",
             "declAttributes": [
-              "AccessControl",
-              "Nonisolated"
+              "AccessControl"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -48359,182 +48360,182 @@
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 370,
+      "offset": 386,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "Dictionary",
-      "offset": 10500,
+      "offset": 10516,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "Array",
-      "offset": 12012,
+      "offset": 12028,
       "length": 6,
       "value": "[0, 1]"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "StringLiteral",
-      "offset": 12161,
+      "offset": 12177,
       "length": 12,
       "value": "\"_biometric\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 14003,
+      "offset": 14007,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 16371,
+      "offset": 16375,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 16925,
+      "offset": 16929,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 17604,
+      "offset": 17608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 18297,
+      "offset": 18301,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 20555,
+      "offset": 20559,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 21694,
+      "offset": 21698,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 33825,
+      "offset": 33829,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "IntegerLiteral",
-      "offset": 33967,
+      "offset": 33971,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 35551,
+      "offset": 35555,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 36445,
+      "offset": 36449,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 38777,
+      "offset": 38936,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 41135,
+      "offset": 41294,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "StringLiteral",
-      "offset": 42989,
+      "offset": 43148,
       "length": 40,
       "value": "\"com.ts.TSCoreSDK_device_key_record_key\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "StringLiteral",
-      "offset": 43073,
+      "offset": 43232,
       "length": 24,
       "value": "\"yyyy-MM-dd'T'HH:mm:ssZ\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 48348,
+      "offset": 48714,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "IntegerLiteral",
-      "offset": 48526,
+      "offset": 48892,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 50492,
+      "offset": 50846,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "IntegerLiteral",
-      "offset": 50718,
+      "offset": 51072,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 51913,
+      "offset": 52255,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "IntegerLiteral",
-      "offset": 52130,
+      "offset": 52472,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/core-ios-sdk\/core-ios-sdk\/core-ios-sdk-dev\/TSCoreSDK\/TSCoreSDK\/Security\/Crypto\/TSCrypto.swift",
       "kind": "BooleanLiteral",
-      "offset": 53843,
+      "offset": 54173,
       "length": 5,
       "value": "false"
     },

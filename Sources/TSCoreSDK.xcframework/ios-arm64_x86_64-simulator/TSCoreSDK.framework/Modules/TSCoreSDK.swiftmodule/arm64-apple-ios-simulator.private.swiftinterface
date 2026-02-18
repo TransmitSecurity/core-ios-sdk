@@ -322,7 +322,7 @@ public enum TSKeychainItemStatus : Swift.Equatable, @unchecked Swift.Sendable {
 public actor TSCryptoBinding<T> : TSCoreSDK.TSKeysRotationProvider where T : TSCoreSDK.TSCryptoBindingParameters {
   public init(service: T, keyStorage: any TSCoreSDK.TSCryptoDataProvider)
   public init(service: T)
-  nonisolated public func getServiceParams() -> T
+  public func getServiceParams() -> T
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
@@ -881,7 +881,7 @@ public protocol TSCryptoDataProvider : Swift.Sendable {
   public func getPublicKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> (key: Security.SecKey, creationDate: Foundation.Date?)
   public func getPrivateKeyReference(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> Security.SecKey
   public func calcKeyIdentifier(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws -> Swift.String
-  nonisolated public func getPublicKeyIdentifier(_ publicKeyRef: Security.SecKey) throws -> Swift.String
+  public func getPublicKeyIdentifier(_ publicKeyRef: Security.SecKey) throws -> Swift.String
   public func deleteSecureKeyPair(forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws
   public func deletePrivateKey(moduleInfo: (any TSCoreSDK.ITSModuleInfo)?, forTag applicationTag: Swift.String, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws
   public func generateSecureKeyPair(forTag applicationTag: Swift.String, isBiometricProtected: Swift.Bool, cryptoService: any TSCoreSDK.TSCryptoBindingParameters, context: LocalAuthentication.LAContext?) async throws
